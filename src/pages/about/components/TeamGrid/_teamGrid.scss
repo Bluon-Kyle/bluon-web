@@ -1,0 +1,9 @@
+.team-grid-2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+}
