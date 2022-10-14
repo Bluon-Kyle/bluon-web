@@ -1,0 +1,13 @@
+.news{
+    &-header{
+
+    }
+    &-body{
+        justify-content: center;
+        align-items: center;
+        //text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}

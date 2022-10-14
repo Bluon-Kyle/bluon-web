@@ -1,0 +1,36 @@
+.manu{
+    &-header{
+        text-align: center;
+        padding-bottom: 4vw;
+        &-text{
+            //width:50%;
+            h1{
+                font-size: 4.5vw;
+            }
+            p{
+                font-size: 1.5vw;
+                padding-bottom: 4vw;
+            }
+
+        }
+        
+        button{
+            height:4vw;
+            width: 12vw; 
+            color:white;
+            background-color: black;
+            border-radius: 50px;
+            font-size: 140%;
+            &:hover{
+                background-color:blue;
+                cursor: pointer;
+            }
+        }
+    }
+    &-img{
+        width:100%;
+        img{
+            width:100%;
+        }
+    }
+}

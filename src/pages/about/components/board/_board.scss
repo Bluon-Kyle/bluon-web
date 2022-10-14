@@ -1,0 +1,10 @@
+.board-component{
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    //background-color: grey;
+
+}

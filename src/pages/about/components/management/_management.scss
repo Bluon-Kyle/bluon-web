@@ -1,0 +1,7 @@
+.management-component{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

@@ -1,0 +1,40 @@
+
+.button-card{
+    margin: 0 0 0 0;
+    min-height: 320px;
+    max-height: 400px;
+    color:white; 
+    &-text{
+        padding-top: 30%;
+        text-align: center;
+        h2{
+            font-size:2.5vw;
+        }
+    }
+    &-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        
+        button{
+            color: black; 
+            background-color: white;
+            width:16vw;
+            height:5vh;
+            border-radius: 50px;
+            border-color: white;
+            font-size: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            &:hover{
+                color: white; 
+                background-color: black;
+                cursor: pointer;
+            }
+        }
+    }
+    
+  
+    
+}

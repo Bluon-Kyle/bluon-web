@@ -1,0 +1,36 @@
+.tdx20{
+    &-header{
+        text-align: center;
+        h1{
+            font-size: 2vw;
+        }
+        p{
+            font-size: 1vw;
+            color:grey; 
+        }
+    }
+    &-map{
+        display: flex;
+        justify-content: center;
+        height: 300px;
+    }
+    &-join{
+        display:flex; 
+        //width:50%;
+        height:20vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #3d5066;
+        color:white;
+        &-text{
+            padding-right:5%;
+            h1{
+                font-size:4vw;
+            }
+            p{
+                padding-top: 3vh;
+                font-size:1.5vw;
+            }
+        }
+    }
+}

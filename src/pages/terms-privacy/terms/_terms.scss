@@ -1,0 +1,50 @@
+.terms{
+    &-content{
+        &-header{
+            text-align: center;
+            h1{
+                padding-top: 4vh;
+                font-size: 4vw;
+
+            }
+            p{
+                font-size: 1.5vw;
+                color:grey; 
+            }
+        }
+    }
+    &-section{
+        //styling for section component
+        padding-left: 20%;
+        padding-right: 5%;
+        max-width: 50vw;
+        .section-content{
+            line-height: 4.5vh;
+            width: 100%;
+            &-title{
+                font-size: 1.5vw;
+                padding-bottom: 4vh;
+                .big-t{
+                    font-size:4rem !important;
+                    padding-bottom: 7vh;
+                }
+                h2{
+                    font-size: 1.7vw;
+                }
+            }
+            &-p{
+                font-size: 1.3vw;
+                //padding-bottom: 3vh;
+                .inner-content{
+                    //padding-bottom: 3vh !important;
+                }
+            }
+            ul{
+                list-style-type: circle;
+                padding-left: 12%;
+                font-size: 1.3vw;
+                padding-bottom: 4vh;
+            }
+        }
+    }
+}

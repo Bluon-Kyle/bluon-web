@@ -1,0 +1,28 @@
+
+
+.headshot{
+
+    &-wrapper{
+        //text-align: center;
+        padding: 1vw 5vw 1vw 1vw;
+        h6{ //name
+            font-size: 1.6vw;
+        }
+        p{//title and bio 
+            font-size: 1.3vw;
+        }
+    }
+    &-contact{
+        &-tel{
+            img{
+
+            }
+        }
+        &-email{
+            img{
+
+            }
+        }
+    }
+    
+}
