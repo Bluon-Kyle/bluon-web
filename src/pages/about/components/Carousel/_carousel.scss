@@ -1,0 +1,17 @@
+.carousel {
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+
+  &-strip {
+    display: flex;
+  }
+
+  &-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 100vw;
+  }
+}

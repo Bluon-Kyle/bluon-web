@@ -1,35 +1,15 @@
-//@import './variables';//this allows all vairables to be used glibally to any imported component
-//@import './root';
-//@import './mixins';
-// @import "../components/header/header";
-// @import "../pages/home/home";
-//@import "../components/footer/footer";
-// body{
-//     //position: relative;
-//     background-color: white; 
-//     .TitleBlue{
-//         color: $bluon-blue; 
-//         //text-decoration: none;
-//     }
-//     //backgrounds
-//     .bg-img-eclipse { 
-//         background-image: url(../media/image/ellipse-circle.png); 
-//         background-position: bottom right; 
-//         background-color: #F8F8F8 !important; 
-//         background-size: inherit; 
-//         background-repeat: no-repeat; 
-//     }
+@import "./variables"; //this allows all vairables to be used globally to any imported component
+@import "./root";
+@import "./mixins";
+@import "../components/header/header";
+@import "../pages/home/home";
+@import "../components/footer/footer";
 
-//     //pages imports
-//     @import '../pages/about/about';
-//     @import "../pages/app/app";
-//     @import "../components/common/card";
-//     @import "../components/common/most-loved-app/most-loved-app";
-//     @import "../pages/distrubutors/distributors";
-//     @import "../components/common/appButton";
-//     @import '../components/common/cards/buttonCard/buttonCard';
-
-    
-
-// }
-
+//pages imports
+@import "../pages/about/about";
+@import "../pages/app/app";
+@import "../components/common/card";
+@import "../components/common/most-loved-app/most-loved-app";
+@import "../pages/distrubutors/distributors";
+@import "../components/common/appButton";
+@import "../components/common/cards/buttonCard/buttonCard";
