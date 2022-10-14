@@ -1,6 +1,7 @@
-//@import './variables';//this allows all vairables to be used glibally to any imported component
+@import './variables';//this allows all vairables to be used glibally to any imported component
 @import './root';
-//@import './mixins';
+@import './mixins';
+@import '../components/header/responsiveHeader';
 // @import "../components/header/header";
 // @import "../pages/home/home";
 //@import "../components/footer/footer";

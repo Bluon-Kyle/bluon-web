@@ -1,14 +1,40 @@
-import {React, useState} from 'react'
+import { useState} from 'react'
+import { NavLink } from 'react-router-dom'
+import { MdClose } from "react-icons/md"
+import { FiMenu } from "react-icons/fi"
 
 const HamburgerMenu = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen)
+  }
+  const closeMenu = () => {
+    setNavbarOpen(false)
+  }
   return (
-    <div>
+    <nav className="navBar">
+      <button onClick={handleToggle}>
+        {navbarOpen ? (
+          <MdClose style={{ color: "#fff", width: "40px", height: "40px" }} />
+        ) : (
+          <FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />
+        )}
+      </button>
 
-        <a href='tel:18554258686'>
-            <button>1-855-425-8686</button>
-        </a>
-    </div>
+      <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+      <NavLink
+        to='/'
+        activeClassName="active-link"
+        onClick={() => closeMenu()}
+        exact
+      >
+        Home
+      </NavLink>
+      </ul>
+
+    </nav>
   )
 }
 
 export default HamburgerMenu
+
