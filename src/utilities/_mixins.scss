@@ -1,0 +1,30 @@
+@mixin flex{
+    display:flex 
+}
+@mixin flex-and-center{
+    @include flex; 
+    align-items: center;
+    justify-content: center; 
+    
+}
+@mixin block{
+    display:block; 
+}
+@mixin block-tablet{
+    @media(min-width:600px) {
+        @include block; 
+    }
+}
+@mixin desktop{
+    @media(min-width:800px){
+        @include flex-and-center; 
+    }
+}
+@mixin blackbutton{
+    color:white; 
+    background-color: black;
+}
+@mixin  blackbuttonhover{
+    color: black; 
+    background-color: white;
+}
