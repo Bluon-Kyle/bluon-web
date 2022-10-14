@@ -1,8 +1,6 @@
-@mixin flex{
-    display:flex 
-}
+
 @mixin flex-and-center{
-    @include flex; 
+    display:flex;
     align-items: center;
     justify-content: center; 
     
@@ -25,6 +23,7 @@
     background-color: $backgroundcolor;
     border-radius: 50px;
 }
+
 @mixin  buttonhover($color, $backgroundcolor){
     color: $color; 
     background-color: $backgroundcolor;
