@@ -11,8 +11,6 @@ import HomeIndex from './pages/home/HomeIndex';
 import AppIndex from './pages/app/AppIndex';
 import DistributorsIndex from './pages/distrubutors/DistrubutorsIndex';
 import ManufacturersIndex from './pages/manufacuters/ManufacturersIndex';
-import Tdx20Index from './pages/tdx20/Tdx20Index';
-import WereHiring from './pages/hiring/WereHiring';
 import ContactUs from './pages/contactus/ContactUs';
 import AboutUs from './pages/about/AboutUs.js';
 import Terms from './pages/terms-privacy/terms/Terms';
@@ -37,9 +35,7 @@ root.render(
         <Route path="/App" element={<AppIndex/>}/>
         <Route path="/Distributors" element={<DistributorsIndex/>}/>
         <Route path="/About" element={<AboutUs/>}/>
-        <Route path="/BluonJobs" element={<WereHiring/>}/>
         <Route path="/Manufacturers" element={<ManufacturersIndex/>}/>
-        <Route path="/TDX20" element={<Tdx20Index/>}/>
         <Route path="/Contact" element={<ContactUs/>}/>
         <Route path="/About" element={<AboutUs/>}/>
         <Route path="/News" element={<News/>}/>

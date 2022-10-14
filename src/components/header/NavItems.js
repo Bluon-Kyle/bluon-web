@@ -18,7 +18,7 @@ export const navItems = [
             },
             {
                 title: "We're Hiring", 
-                url:'BluonJobs'
+                url:'https://bluon.pinpointhq.com/'
             },
             {
                 title: "News", 
