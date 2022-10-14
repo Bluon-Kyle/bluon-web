@@ -1,12 +1,11 @@
-// globals
+//globals
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
 import HeaderIndex from "./components/header/HeaderIndex";
 import FooterIndex from "./components/footer/FooterIndex";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
-
-// routes:
+//routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/home/HomeIndex";
 import AppIndex from "./pages/app/AppIndex";
@@ -20,7 +19,7 @@ import Demo from "./pages/demo/Demo";
 import News from "./pages/news/News";
 import ThankYou from "./pages/demo/ThankYou";
 import TestPage from "./pages/test/TestPage";
-// vitals
+//vitals
 import reportWebVitals from "./reportWebVitals";
 
 // import App from './App';

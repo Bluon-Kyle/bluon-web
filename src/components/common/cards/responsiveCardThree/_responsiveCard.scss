@@ -69,8 +69,8 @@ body.main {
   }
 
   @media (min-width: 40rem) {
-    display: grid;
-    grid: (1, 1fr);
+    // display: grid;
+    // grid: (1, 1fr);
     .cards_item {
       width: 50%;
     }
