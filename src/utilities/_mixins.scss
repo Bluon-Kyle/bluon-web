@@ -10,21 +10,33 @@
 @mixin block{
     display:block; 
 }
-@mixin block-tablet{
+@mixin tablet{
     @media(min-width:600px) {
         @include block; 
     }
 }
 @mixin desktop{
-    @media(min-width:800px){
+    @media(min-width:768px){
         @include flex-and-center; 
     }
 }
-@mixin blackbutton{
-    color:white; 
-    background-color: black;
+@mixin button($color, $backgroundcolor){
+    color: $color; 
+    background-color: $backgroundcolor;
+    border-radius: 50px;
 }
-@mixin  blackbuttonhover{
-    color: black; 
-    background-color: white;
+@mixin  buttonhover($color, $backgroundcolor){
+    color: $color; 
+    background-color: $backgroundcolor;
+    border-radius: 45px;
+    cursor: pointer;
+}
+@mixin teamgrid($gridsize){
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat($gridsize, 1fr);
+    padding-left: 5%;
+    padding-right: 5%;
 }
