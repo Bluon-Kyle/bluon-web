@@ -55,7 +55,7 @@ const AboutUs = () => {
         />
 
         <TeamGrid
-          title="Sales and Marketing"
+          title="Sales & Marketing"
           description="Redefining how a sales team operates with a collaborative culture and approach"
           headshots={salesList}
           columns={2}

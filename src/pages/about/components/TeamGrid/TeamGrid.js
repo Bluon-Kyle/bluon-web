@@ -11,11 +11,13 @@ const TeamGrid = ({ title, description, headshots, columns }) => {
   };
 
   return (
-    <div>
-      <div>{title}</div>
-      <div>{description}</div>
+    <div className="team-grid">
+      <div className="team-grid-header">
+        <h2 className="team-grid-header-title">{title}</h2>
+        <p className="team-grid-header-description">{description}</p>
+      </div>
 
-      <div className={`team-grid-${columns}`}>{renderHeadShots()}</div>
+      <div className={`team-grid-columns-${columns}`}>{renderHeadShots()}</div>
     </div>
   );
 };
