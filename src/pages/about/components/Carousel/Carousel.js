@@ -48,14 +48,14 @@ const Carousel = ({ srcList }) => {
   };
 
   return (
-    <div>
+    <>
       <div className="carousel">
         <div className="carousel-strip" style={stripStyle}>
           {renderCards()}
         </div>
       </div>
       <div className="carousel-indicators">{renderIndicators()}</div>
-    </div>
+    </>
   );
 };
 

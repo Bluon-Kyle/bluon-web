@@ -24,7 +24,7 @@ const AboutUs = () => {
     <div className="about">
       <div className="about-values">
         <div className="about-values-text">
-          <p>About Us </p>
+          <p>About Us</p>
           <h1>Our Values</h1>
         </div>
         {/* <div className='about-values-img1'>
