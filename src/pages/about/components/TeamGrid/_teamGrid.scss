@@ -6,7 +6,7 @@
 
     &-title {
       font-family: "Inter", sans-serif;
-      font-size: 2rem;
+      font-size: 2.375rem;
       margin-bottom: 0.5rem;
     }
 
@@ -25,7 +25,6 @@
 
 .team-grid-columns-2 {
   justify-content: center;
-  align-items: center;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

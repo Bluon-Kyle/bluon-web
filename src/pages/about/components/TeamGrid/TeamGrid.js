@@ -1,5 +1,5 @@
 import React from "react";
-import HeadshotBio from "../../../../components/common/headshots/HeadshotBio";
+import HeadshotBio from "../../../../components/common/HeadshotBio/HeadshotBio";
 
 import "./_teamGrid.scss";
 
