@@ -1,44 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import bluonLogoSecondary from "../../assets/logo/bluon-logo-secondary.svg";
+import phoneIcon from "../../assets/icons/phone.svg";
+import emailIcon from "../../assets/icons/email.svg";
+
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-content">
-        <span className="link-wrapper">
-          <Link className="link" to="/">
-            <h1>bluon&reg;</h1>
-          </Link>
-          <Link className="link" to="/About">
+      {/* Logo */}
+      <Link className="footer-logo" to="/">
+        <img alt="logo" src={bluonLogoSecondary} />
+      </Link>
+
+      {/* NavLinks */}
+      <ul className="footer-list">
+        <li className="footer-list-item">
+          <Link className="footer-list-item-link" to="/About">
             About
           </Link>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link className="link" to="/News">
+        </li>
+        <li className="footer-list-item">
+          <Link className="footer-list-item-link" to="/News">
             News
           </Link>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link className="link" to="/Contact">
+        </li>
+        <li className="footer-list-item">
+          <Link className="footer-list-item-link" to="/Contact">
             Contact
           </Link>
-          <br></br>
-          <br></br>
-          2022 Bluon, Inc.&nbsp;&nbsp;&nbsp;
-          <Link className="small-link" to="/Terms">
-            Terms
+        </li>
+      </ul>
+
+      {/* Contact Information */}
+      <div className="footer-contact">
+        <a className="footer-contact-phone" href="tel:+1-855-425-8686">
+          <img alt="phone-icon" src={phoneIcon} />
+          1-855-425-8686
+        </a>
+        <a className="footer-contact-email" href="mailto:contactus@bluon.com">
+          <img alt="email-icon" src={emailIcon} />
+          contactus@bluon.com
+        </a>
+      </div>
+
+      {/* Terms and Privacy */}
+      <div className="footer-terms-and-privacy">
+        <div>2022 Bluon, Inc.</div>
+        <div className="footer-terms-and-privacy-container">
+          <Link
+            className="footer-terms-and-privacy-container-terms"
+            to="/Terms"
+          >
+            Terms & Conditions
           </Link>
-          &nbsp;&nbsp; | &nbsp;&nbsp;
-          <Link className="small-link" to="/Privacy">
+          |
+          <Link
+            className="footer-terms-and-privacy-container-privacy"
+            to="/Privacy"
+          >
             Privacy
           </Link>
-        </span>
-        <span className="contact-wrapper">
-          <a className="content" href="tel:+1-855-425-8686">
-            1-855-425-8686
-          </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a className="content" href="mailto:contactus@bluon.com">
-            contactus@bluon.com
-          </a>
-        </span>
+        </div>
       </div>
     </div>
   );
