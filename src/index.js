@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
 import HeaderIndex from "./components/header/HeaderIndex";
-import FooterIndex from "./components/footer/FooterIndex";
+import FooterIndex from "./components/Footer/FooterIndex";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";

@@ -5,8 +5,8 @@ import "./_teamGrid.scss";
 
 const TeamGrid = ({ title, description, headshots, columns }) => {
   const renderHeadShots = () => {
-    return headshots.map((headshots) => {
-      return <HeadshotBio {...headshots} />;
+    return headshots.map((headshots, i) => {
+      return <HeadshotBio key={i} {...headshots} />;
     });
   };
 
