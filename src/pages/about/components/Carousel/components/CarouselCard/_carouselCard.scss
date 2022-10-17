@@ -1,0 +1,10 @@
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+
+  &-image {
+    height: 100vw;
+  }
+}

@@ -1,0 +1,31 @@
+.headshot {
+  margin-bottom: 3rem;
+  &-wrapper {
+    //text-align: center;
+    padding: 1vw 5vw 1vw 1vw;
+    h6 {
+      //name
+      font-size: 1rem;
+      font-weight: 400;
+      padding-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      //title and bio
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #212529;
+      line-height: 20px;
+    }
+  }
+  &-contact {
+    &-tel {
+      img {
+      }
+    }
+    &-email {
+      img {
+      }
+    }
+  }
+}
