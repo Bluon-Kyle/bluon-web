@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 //import HeadshotBio from '../../components/common/headshots/HeadshotBio';
 import Join from "../../components/common/join/Join";
 
 //import ScrollSection from '../../components/common/scroll/ScrollSection';
-import ScrollIntoView from "react-scroll-into-view";
+//import ScrollIntoView from "react-scroll-into-view";
 import Carousel from "./components/Carousel/Carousel";
 import { carouselCards } from "./data/carouselCards";
 import TeamGrid from "./components/TeamGrid/TeamGrid";
@@ -15,10 +15,10 @@ import { opsList } from "./data/headshots/opsList";
 import { boardList } from "./data/headshots/boardList";
 
 const AboutUs = () => {
-  const ref = useRef(null);
-  const refClick = () => {
-    ref.current?.scrollIntoView();
-  };
+  // const ref = useRef(null);
+  // const refClick = () => {
+  //   ref.current?.scrollIntoView();
+  // };
 
   return (
     <div className="about">

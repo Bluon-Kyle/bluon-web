@@ -5,7 +5,7 @@ import "./_carouselCard.scss";
 const CarouselCard = ({ src }) => {
   return (
     <div className="carousel-card">
-      <img className="carousel-card-image" src={src} />
+      <img className="carousel-card-image" alt='ccard' src={src} />
     </div>
   );
 };
