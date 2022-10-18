@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 //import HeadshotBio from '../../components/common/headshots/HeadshotBio';
-import Join from "../../components/common/join/Join";
+import JoinBanner from "../../components/common/JoinBanner/JoinBanner";
 
 //import ScrollSection from '../../components/common/scroll/ScrollSection';
 import ScrollIntoView from "react-scroll-into-view";
@@ -56,7 +56,7 @@ const AboutUs = () => {
 
         {renderTeamGrids()}
       </div>
-      <Join button={true}></Join>
+      <JoinBanner button={true}></JoinBanner>
     </div>
   );
 };
