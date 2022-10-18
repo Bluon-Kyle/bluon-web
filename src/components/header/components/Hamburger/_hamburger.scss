@@ -33,6 +33,14 @@
   .link {
     color: blue;
   }
+  // a {
+  //   display: block;
+  //   padding: 10px 40px;
+  //   text-decoration: none;
+  //   color: blue;
+  //   text-transform: uppercase;
+  //   font-weight: bold;
+  // }
 }
 
 .menuNav.close {
@@ -47,14 +55,7 @@
 
 // a tag needs to be nested otherwise it is affecting the whole application
 
-// a {
-//   display: block;
-//   padding: 10px 40px;
-//   text-decoration: none;
-//   color: blue;
-//   text-transform: uppercase;
-//   font-weight: bold;
-// }
+
 
 .menuNav li:first-child {
   margin-top: 3rem;
