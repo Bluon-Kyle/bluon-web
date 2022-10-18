@@ -1,9 +1,29 @@
 .header{
-    display:inline-block; 
+  display:flex; 
+  align-items: baseline;
+  @media (min-width:1280px){
+  display:flex;
+  align-items: baseline;
+  &-wrapper{
+    display: flex;
+    flex: 1 1 auto; 
+    justify-content: space-between;
+    align-items: baseline;
+  }
     &-link{
         
     }
+      
     &-blive{
-        float:left; 
+      //position:relative;
+      display: flex;
+      align-items: baseline; 
+      justify-content: baseline;
+      float:right;
+      
     }
+    
+  }
+
+    
 }

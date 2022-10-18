@@ -1,4 +1,31 @@
 .mla{
+    @media (min-width:768px){
+        &top{
+            display:block; 
+            align-items: center;
+            justify-content: center;
+            &-text{
+
+            }
+            &-img{
+
+            }
+            
+        }
+        &-video{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5%;
+            width:100%;
+            video.video{
+               //width: 200px;
+            }
+        }
+    }
+    @media (min-width:1280px){
+
+    
     &-top{
         padding-top:5vw;
         display: flex;
@@ -52,4 +79,5 @@
            max-width: 70%;
         }
     }
+}
 }

@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 //import HeadshotBio from '../../components/common/headshots/HeadshotBio';
 import JoinBanner from "../../components/common/JoinBanner/JoinBanner";
 
 //import ScrollSection from '../../components/common/scroll/ScrollSection';
-import ScrollIntoView from "react-scroll-into-view";
+//import ScrollIntoView from "react-scroll-into-view";
 import Carousel from "./components/Carousel/Carousel";
 import { carouselCards } from "./data/carouselCards";
 import TeamGrid from "./components/TeamGrid/TeamGrid";
@@ -16,10 +16,10 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 import { teamGridList } from "./data/teamGridList";
 
 const AboutUs = () => {
-  const ref = useRef(null);
-  const refClick = () => {
-    ref.current?.scrollIntoView();
-  };
+  // const ref = useRef(null);
+  // const refClick = () => {
+  //   ref.current?.scrollIntoView();
+  // };
 
   const renderTeamGrids = () => {
     return teamGridList.map((teamGrid, i) => {

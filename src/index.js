@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
 import HeaderIndex from "./components/header/HeaderIndex";
-import FooterIndex from "./components/Footer/FooterIndex";
+import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -65,7 +65,7 @@ root.render(
           <Route path="TestPage" element={<TestPage />} />
         </Routes>
       </ScrollToTop>
-      <FooterIndex></FooterIndex>
+      <Footer></Footer>
     </BrowserRouter>
   </React.StrictMode>
 );
