@@ -2,6 +2,7 @@ import React from 'react'
 import AppButton from '../AppButton';
 import video from '../../../media/video/BluonTechPortal.mp4';
 import app_img from '../../../media/image/bluon-app-logo.png';
+import './_most-loved-app.scss'
 const MostLovedApp = () => {
     const app_phone = require('../../../media/image/testi-phone.png');
   return (

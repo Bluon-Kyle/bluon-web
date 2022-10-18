@@ -2,6 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './utilities/global.scss'
+// import './utilities/_mixins.scss'
+// import './utilities/_variables.scss'
 import HeaderIndex from './components/header/HeaderIndex';
 import FooterIndex from './components/footer/FooterIndex';
 import ScrollToTop from './components/common/scroll/ScrollToTop';
