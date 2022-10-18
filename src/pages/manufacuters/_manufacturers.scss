@@ -1,36 +1,23 @@
-.manu{
-    &-header{
-        text-align: center;
-        padding-bottom: 4vw;
-        &-text{
-            //width:50%;
-            h1{
-                font-size: 4.5vw;
-            }
-            p{
-                font-size: 1.5vw;
-                padding-bottom: 4vw;
-            }
+.manufacturer {
+  &-banner {
+    padding: 2.5rem 2.5rem 4rem;
+    h2 {
+      font-family: "Inter", sans-serif;
+      font-size: 2.375rem;
+      font-weight: 700;
+    }
 
-        }
-        
-        button{
-            height:4vw;
-            width: 12vw; 
-            color:white;
-            background-color: black;
-            border-radius: 50px;
-            font-size: 140%;
-            &:hover{
-                background-color:blue;
-                cursor: pointer;
-            }
-        }
+    h4 {
+      font-weight: 400;
+      line-height: 24px;
+      padding: 0.5rem 0 1.5rem 0;
     }
-    &-img{
-        width:100%;
-        img{
-            width:100%;
-        }
+  }
+
+  &-img {
+    background-color: #e9f4ff;
+    img {
+      width: 100%;
     }
+  }
 }

@@ -10,9 +10,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/home/HomeIndex";
 import AppIndex from "./pages/app/AppIndex";
 import DistributorsIndex from "./pages/distrubutors/DistrubutorsIndex";
-import ManufacturersIndex from "./pages/manufacuters/ManufacturersIndex";
+import Manufacturers from "./pages/Manufacuters/Manufacters";
 import ContactUs from "./pages/contactus/ContactUs";
-import AboutUs from "./pages/about/AboutUs.js";
+import AboutUs from "./pages/About/AboutUs.js";
 import Terms from "./pages/terms-privacy/terms/Terms";
 import Privacy from "./pages/terms-privacy/privacy/Privacy";
 import Demo from "./pages/demo/Demo";
@@ -35,7 +35,7 @@ root.render(
           <Route path="/App" element={<AppIndex />} />
           <Route path="/Distributors" element={<DistributorsIndex />} />
           <Route path="/About" element={<AboutUs />} />
-          <Route path="/Manufacturers" element={<ManufacturersIndex />} />
+          <Route path="/Manufacturers" element={<Manufacturers />} />
           <Route path="/Contact" element={<ContactUs />} />
           <Route path="/About" element={<AboutUs />} />
           <Route path="/News" element={<News />} />

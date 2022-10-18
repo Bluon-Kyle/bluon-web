@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import joinMovementMobile from "../../../assets/images/join-movement-mobile.png";
-import ExternalButton from "../ExternalButton/ExternalButton";
+import ButtonLink from "../ButtonLink/ButtonLink";
 
 import "./_joinBanner.scss";
 
@@ -14,9 +14,9 @@ const JoinBanner = ({ title }) => {
     <Banner image={joinMovementMobile} bannerStyle={bannerStyle}>
       <div className="join-banner">
         <h2 className="join-banner-title">{title}</h2>
-        <ExternalButton link={"https://bluon.com/bluon-live.php"}>
+        <ButtonLink color="secondary" link={"https://bluon.com/bluon-live.php"}>
           {"We're Hiring!"}
-        </ExternalButton>
+        </ButtonLink>
       </div>
     </Banner>
   );
