@@ -1,68 +1,68 @@
-@import '../../../../utilities/mixins';
+@import "../../../../utilities/mixins";
 .navBar {
-    position: relative;
-    //display: flex;
-    justify-content: space-between;
-    float: right;
-  }
-  
-  .navBar button {
-    background: transparent;
-    position: relative;
-    left: 40px;
-    //top: 40px;
-    z-index: 10;
-    cursor: pointer;
-    
-  }
-  
-  .menuNav {
-    overflow-y: scroll;
-    list-style: none;
-    //position: fixed;
-    top: 0;
-    background: lightgray;
-    left: 0;
-    bottom: 0;
-    height: 300px;
-    width: 0;
-    overflow: hidden;
-    max-width: 100%;
-    z-index: 9;
-  }
-  .menuNav{
-    .link{
-        color:blue; 
-    }
-  }
-  
-  .menuNav.close{
-    height:0; 
-  }
-  .menuNav.showMenu {
-    width: 100%;
-    button{
-        @include button(white, black)
-    }
-  }
-  
-  a {
-    display: block;
-    padding: 10px 40px;
-    text-decoration: none;
+  position: relative;
+  //display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+.navBar button {
+  background: transparent;
+  position: relative;
+  left: 40px;
+  //top: 40px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  //position: fixed;
+  top: 0;
+  background: lightgray;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 0;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 9;
+}
+.menuNav {
+  .link {
     color: blue;
-    text-transform: uppercase;
-    font-weight: bold;
   }
-  
-  .menuNav li:first-child {
-    margin-top: 3rem;
-    //color:white;
-  }
+}
 
-  @media (min-width:1280px){
-    .navBar{
-        display:none;
-    }
-
+.menuNav.close {
+  height: 0;
+}
+.menuNav.showMenu {
+  width: 100%;
+  button {
+    @include button(white, black);
   }
+}
+
+// a tag needs to be nested otherwise it is affecting the whole application
+
+// a {
+//   display: block;
+//   padding: 10px 40px;
+//   text-decoration: none;
+//   color: blue;
+//   text-transform: uppercase;
+//   font-weight: bold;
+// }
+
+.menuNav li:first-child {
+  margin-top: 3rem;
+  //color:white;
+}
+
+@media (min-width: 1280px) {
+  .navBar {
+    display: none;
+  }
+}

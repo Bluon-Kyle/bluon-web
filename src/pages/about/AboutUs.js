@@ -14,6 +14,8 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 // import { opsList } from "./data/headshots/opsList";
 // import { boardList } from "./data/headshots/boardList";
 import { teamGridList } from "./data/teamGridList";
+import { Link } from "react-router-dom";
+import ExternalButton from "../../components/common/ExternalButton/ExternalButton";
 
 const AboutUs = () => {
   // const ref = useRef(null);
@@ -52,11 +54,9 @@ const AboutUs = () => {
           <p>Our Team</p>
           <h1>The Core Of Bluon</h1>
         </div>
-        <div className="about-core-nav"></div>
-
         {renderTeamGrids()}
       </div>
-      <JoinBanner button={true}></JoinBanner>
+      <JoinBanner title={"Join the Bluon Team"} />
     </div>
   );
 };

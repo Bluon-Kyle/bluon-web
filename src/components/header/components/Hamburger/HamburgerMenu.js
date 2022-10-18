@@ -1,19 +1,19 @@
-import { useState} from 'react'
-import { MdClose } from "react-icons/md"
-import { FiMenu } from "react-icons/fi"
-import './_hamburger.scss'
-import { hamItems } from './HamItems'
-import HamMenuRender from './HamMenuRender'
+import { useState } from "react";
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
+import "./_hamburger.scss";
+import { hamItems } from "./HamItems";
+import HamMenuRender from "./HamMenuRender";
 
 const HamburgerMenu = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleToggle = () => {
-    setNavbarOpen(!navbarOpen)
-  }
+    setNavbarOpen(!navbarOpen);
+  };
   const closeMenu = () => {
-    setNavbarOpen(false)
-  }
+    setNavbarOpen(false);
+  };
 
   return (
     <nav className="navBar">
@@ -25,18 +25,15 @@ const HamburgerMenu = () => {
         )}
       </button>
 
-      <ul className={`menuNav ${navbarOpen ? " showMenu" : "close"}`} >
-
-          {hamItems.map((menu, index) =>{
-            return(
-              <HamMenuRender items={menu} key={index} closeMenu={closeMenu}/>
-            )
-          })}
+      <ul className={`menuNav ${navbarOpen ? " showMenu" : "close"}`}>
+        {hamItems.map((menu, index) => {
+          return (
+            <HamMenuRender items={menu} key={index} closeMenu={closeMenu} />
+          );
+        })}
       </ul>
-
     </nav>
-  )
-}
+  );
+};
 
-export default HamburgerMenu
-
+export default HamburgerMenu;
