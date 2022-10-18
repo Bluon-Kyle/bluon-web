@@ -28,7 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <HeaderIndex />
+      {/* <HeaderIndex /> */}
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomeIndex />} />
@@ -65,7 +65,7 @@ root.render(
           <Route path="TestPage" element={<TestPage />} />
         </Routes>
       </ScrollToTop>
-      <Footer></Footer>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

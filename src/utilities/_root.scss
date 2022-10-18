@@ -15,7 +15,7 @@ body {
   }
   //backgrounds
   .bg-img-eclipse {
-    background-image: url(../media/image/ellipse-circle.png);
+    background-image: url(../assets/images/ellipse-circle.png);
     background-position: bottom right;
     background-color: #f8f8f8 !important;
     background-size: inherit;
@@ -34,4 +34,8 @@ ul {
 a {
   color: initial;
   text-decoration: none;
+}
+
+.displayNone {
+  display: none;
 }

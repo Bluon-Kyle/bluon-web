@@ -1,4 +1,4 @@
-export const techList = [
+export const technicianList = [
   {
     picSrc: require("../../images/headshots/bryan-johnson.png"),
     picAlt: "null",
