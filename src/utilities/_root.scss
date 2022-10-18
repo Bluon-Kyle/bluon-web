@@ -1,4 +1,37 @@
-*{
-    padding: 0 0 0 0;
-    margin: 0 0 0 0; 
+* {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+body {
+  //position: relative;
+  font-family: "Neue Haas Unica", sans-serif;
+  background-color: white;
+  margin: 0;
+
+  .TitleBlue {
+    color: $bluon-blue;
+    //text-decoration: none;
+  }
+  //backgrounds
+  .bg-img-eclipse {
+    background-image: url(../media/image/ellipse-circle.png);
+    background-position: bottom right;
+    background-color: #f8f8f8 !important;
+    background-size: inherit;
+    background-repeat: no-repeat;
+  }
+}
+
+button {
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
 }

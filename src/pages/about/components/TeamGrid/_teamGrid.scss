@@ -1,0 +1,33 @@
+.team-grid {
+  padding: 0 0.75rem;
+
+  &-header {
+    padding: 1.5rem 0.75rem 1.875rem;
+
+    &-title {
+      font-family: "Inter", sans-serif;
+      font-size: 2.375rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #212529;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.team-grid:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.team-grid-columns-2 {
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+}
