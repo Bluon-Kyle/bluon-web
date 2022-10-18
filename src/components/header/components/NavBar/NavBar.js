@@ -1,7 +1,7 @@
 import React from 'react'
 import NavItemRender from './NavItemRender';
 import { navItems } from './NavItems'
-//import { Route } from 'react-router-dom';
+import './_navBar.scss'
 const NavBar = () => {
   return (
     <nav>

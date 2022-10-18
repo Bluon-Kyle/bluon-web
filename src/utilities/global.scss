@@ -4,6 +4,8 @@
 @import "../components/header/header";
 @import "../pages/home/home";
 @import "../components/footer/footer";
+@import '../components/header/_responsiveHeader.scss';
+
 
 // pages imports
 @import "../pages/about/about";

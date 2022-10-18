@@ -1,10 +1,11 @@
 .app-link{
     display: inline;
     justify-content: center;
+    max-width: 100%;
     //height:2rem;
     &-img{
         height:5vw;
-        width: 11vw; 
+        width: 100%; 
 
     }
 }
