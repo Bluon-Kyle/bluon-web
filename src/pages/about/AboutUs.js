@@ -15,7 +15,7 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 // import { boardList } from "./data/headshots/boardList";
 import { teamGridList } from "./data/teamGridList";
 import { Link } from "react-router-dom";
-import ExternalButton from "../../components/common/ExternalButton/ExternalButton";
+import ExternalButton from "../../components/common/ButtonLink/ButtonLink";
 
 const AboutUs = () => {
   // const ref = useRef(null);
