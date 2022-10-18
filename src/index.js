@@ -5,7 +5,7 @@ import './utilities/global.scss'
 // import './utilities/_mixins.scss'
 // import './utilities/_variables.scss'
 import HeaderIndex from './components/header/HeaderIndex';
-import FooterIndex from './components/footer/FooterIndex';
+import FooterIndex from './components/Footer/FooterIndex';
 import ScrollToTop from './components/common/scroll/ScrollToTop';
 //routes:
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
