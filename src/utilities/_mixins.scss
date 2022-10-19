@@ -37,3 +37,21 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+
+
+
+
+//fonts 
+@mixin title-mobile{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    font-family: "Inter", sans-serif;
+}
+@mixin p-mobile{ 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
