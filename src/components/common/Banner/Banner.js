@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./_banner.scss";
 
 const Banner = ({ image, bannerStyle, children }) => {

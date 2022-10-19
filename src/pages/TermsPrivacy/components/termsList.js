@@ -70,7 +70,7 @@ export const sectionList = [
         content_bottom: []
     },
     {
-        title: '7. Monitoring and Enfporcement; Termination',
+        title: '7. Monitoring and Enforcement; Termination',
         content: ['We have the right to:'],
         list: [
             "Remove or refuse to post any User Contributions for any or no reason in our sole",

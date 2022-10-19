@@ -2,13 +2,13 @@
 @import "./root";
 @import "./mixins";
 @import "../components/header/header";
-@import "../pages/home/home";
+@import "../pages/Home/home";
 @import "../components/Footer/footer";
 @import "../components/header/_responsiveHeader.scss";
 
 // pages imports
-@import "../pages/about/about";
-@import "../pages/app/app";
+@import "../pages/About/about";
+@import "../pages/App/app";
 @import "../components/common/card";
 @import "../components/common/most-loved-app/most-loved-app";
 @import "../pages/distrubutors/distributors";

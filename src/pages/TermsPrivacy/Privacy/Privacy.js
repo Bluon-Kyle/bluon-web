@@ -6,7 +6,7 @@ const Privacy = () => {
     <div className='privacy'>
       <div className='privacy-content'>
         <div className='privacy-content-header'>
-          <h1>Mobile App Terms of Uses </h1>
+          <h2>Mobile App Terms of Uses </h2>
           <p> Bluon, Inc</p>
         </div>
         <div className='privacy-content-section-wrapper'>

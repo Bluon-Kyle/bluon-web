@@ -6,11 +6,11 @@ const Terms = () => {
     <div className='terms'>
       <div className='terms-content'>
         <div className='terms-content-header'>
-          <h1>Mobile App Terms of Uses </h1>
+          <h2>Mobile App<br></br>Terms of Uses </h2>
           <p> Bluon, Inc</p>
         </div>
         <div className='terms-content-section-wrapper'>
-          <Section type="Terms"></Section>
+          <Section type="terms"></Section>
         </div>
       </div>
 

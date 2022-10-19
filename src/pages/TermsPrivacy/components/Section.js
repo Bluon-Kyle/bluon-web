@@ -1,17 +1,17 @@
 import SectionRender from './SectionRender';
-import { sectionList } from './sectionList';
+import { sectionList } from './termsList';
 import { privacyList } from './privacyList';
 const Section = (props) => {
     let temp = null; 
     const type = props.type; 
-    if(props.type === "Terms"){
+    if(props.type === "terms"){
         temp = sectionList; 
     }
     else if(props.type === "Privacy"){
         temp = privacyList;
     }
   return (
-    <div className='terms-section'>
+    <div className={`${props.type}-section`}>
         {temp.map((menu, index) => {
             return(
             <SectionRender page={type} items={menu} key={index} />

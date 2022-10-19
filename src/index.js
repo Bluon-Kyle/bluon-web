@@ -7,14 +7,14 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeIndex from "./pages/home/HomeIndex";
-import AppIndex from "./pages/app/AppIndex";
+import HomeIndex from "./pages/Home/HomeIndex";
+import AppIndex from "./pages/App/AppIndex";
 import DistributorsIndex from "./pages/distrubutors/DistrubutorsIndex";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import ContactUs from "./pages/contactus/ContactUs";
 import AboutUs from "./pages/About/AboutUs.js";
-import Terms from "./pages/terms-privacy/terms/Terms";
-import Privacy from "./pages/terms-privacy/privacy/Privacy";
+import Terms from "./pages/TermsPrivacy/Terms/Terms";
+import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
 import Demo from "./pages/demo/Demo";
 import News from "./pages/news/News";
 import ThankYou from "./pages/demo/ThankYou";

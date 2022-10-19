@@ -3,19 +3,13 @@ import React from 'react'
 const SectionRender = ({page, 
     items:{title, content, list, content_bottom,bigtitle, loudtitle, numberedList,
     list1, list2, list3, inner1, inner2, inner3, bottom_content}}) => {
-    // function looper(l){
-    //     return(
-    //         </li>
-    //         for(let i=0; i< l.length; i++){
-            
-    //     })
-    //}
+
   if(page=== "Privacy"){
     return(
         <div className='section-content'>
          
             <div className='section-content-title'>
-                {title ? <h1>{title}</h1>: <></>}
+                {title ? <h2>{title}</h2>: <></>}
             </div>
             <div className='section-content-p'>
                 {content ?
@@ -101,8 +95,8 @@ const SectionRender = ({page,
         <div className='section-content'>
             
             <div className='section-content-title'>
-            {title ? <h1>{title}</h1>: <></>}
-            {bigtitle ? <h1 className='big-t'>{bigtitle}</h1>:<></>}
+            {title ? <h2>{title}</h2>: <></>}
+            {bigtitle ? <h2 className='big-t'>{bigtitle}</h2>:<></>}
             {loudtitle ? <strong><h2>{loudtitle}</h2></strong>:<></>}
             </div>
             <div className='section-content-p'>
