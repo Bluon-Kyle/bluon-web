@@ -4,7 +4,7 @@ const SectionRender = ({page,
     items:{title, content, list, content_bottom,bigtitle, loudtitle, numberedList,
     list1, list2, list3, inner1, inner2, inner3, bottom_content}}) => {
 
-  if(page=== "Privacy"){
+  if(page=== "privacy"){
     return(
         <div className='section-content'>
          

@@ -41,11 +41,13 @@
     }
     &-section{
         //styling for section component
-        @include padding; 
+         
         .section-content{
+            @include padding;
             // line-height: 4.5vh;
             // width: 100%;
             &-title{
+                
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: 22px;
@@ -53,10 +55,7 @@
                 font-feature-settings: 'pnum' on, 'lnum' on;
                 padding-bottom: 1.5rem;
                 padding-top:1rem;
-                .big-t{
-                    @include title; 
-                    padding-bottom: 1.5rem;
-                }
+
                 h2{
                     @include title-small;
                 }
@@ -64,7 +63,8 @@
             &-p{
                 @include ptext;
                 .inner-content{
-                    padding-bottom: 2rem;
+                    //padding-bottom: 2rem;
+                    padding-top:2rem; 
                 }
             }
             ul{
