@@ -1,83 +1,49 @@
+@import '../../../utilities/mixins';
 .mla{
-    @media (min-width:768px){
-        &top{
-            display:block; 
-            align-items: center;
-            justify-content: center;
-            &-text{
-
-            }
-            &-img{
-
-            }
-            
-        }
-        &-video{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 5%;
-            width:100%;
-            video.video{
-               //width: 200px;
-            }
-        }
-    }
-    @media (min-width:1280px){
-
-    
+    display: block;
     &-top{
-        padding-top:5vw;
-        display: flex;
-        &-text{
-            padding-top: 15vw;
-            width:49%;
-            h1{
-                font-size: 4.5vw;
+        &-img{
+            &-app{
+                width:100%; 
             }
-            h2{
-                font-size: 3vw;
+        }
+        &-text{
+            text-align: center;
+            h3{
+                font-size: 1.5rem;
             }
             p{
-                padding-top: 1vw;
-                font-size: 2vw;
-                padding-bottom: 3vw;
-                color:grey;
+                padding-top: 1.5rem;
+                font-size: 1rem;
+                padding-bottom: 1.5rem;
+                color: grey; 
             }
-        }
-        &-img{
-            width:58%;
-            &-app{
-                width:100%
+            h4{
+                padding-top: 1rem;
+                padding-bottom: 2rem;
             }
         }
     }
     &-testimonials{
-        padding-top:5vw;
-        display: flex;
-    }
-    h3{
-        text-align: center;
-        padding-bottom: .5vw;
+
     }
     &-link{
-        &-wrapper{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        .app-logo{
-
+        &-text{
+            text-align: center;
         }
-    }
+        &-wrapper{
+            @include flex-and-center;
+            width:100%; 
+            .app-logo{
+                display:none; 
+            }
+            
+        }
     }
     &-video{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 5%;
-        video.video{
-           max-width: 70%;
+        .video{
+            width:100%; 
         }
     }
-}
+    
 }

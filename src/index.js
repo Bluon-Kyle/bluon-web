@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
-import HeaderIndex from "./components/header/HeaderIndex";
+//import HeaderIndex from "./components/header/HeaderIndex";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:

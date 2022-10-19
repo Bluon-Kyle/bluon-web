@@ -13,12 +13,12 @@ const MostLovedApp = () => {
           <img className="mla-top-img-app" alt="app examples" src={app_phone} />
         </div>
         <span className="mla-top-text">
-          <h1>The Most Loved App</h1>
+          <h3>The Most Loved App</h3>
           <p>This is the real deal</p>
-          <h2>
+          <h4>
             "Bluon is the best app that you can<br></br>
             possibly get."
-          </h2>
+          </h4>
         </span>
       </div>
       <div className="mla-testimonials">
