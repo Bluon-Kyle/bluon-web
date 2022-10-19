@@ -7,7 +7,7 @@ const Section = (props) => {
     if(props.type === "terms"){
         temp = sectionList; 
     }
-    else if(props.type === "Privacy"){
+    else if(props.type === "privacy"){
         temp = privacyList;
     }
   return (

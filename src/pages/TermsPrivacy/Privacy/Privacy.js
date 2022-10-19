@@ -10,7 +10,7 @@ const Privacy = () => {
           <p> Bluon, Inc</p>
         </div>
         <div className='privacy-content-section-wrapper'>
-          <Section type="Privacy"></Section>
+          <Section type="privacy"></Section>
         </div>
       </div>
 
