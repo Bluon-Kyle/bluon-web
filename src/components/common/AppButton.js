@@ -3,8 +3,8 @@ import React from "react";
 const AppButton = (props) => {
   //depending on prop this will display iphone or andriod button
   const type = props.type;
-  const iphone = require("../../assets/images/download-iphone.png");
-  const andriod = require("../../assets/images/download-samsung.png");
+  const iphone = require("../../assets/images/buttons/download-iphone.png");
+  const andriod = require("../../assets/images/buttons/download-samsung.png");
   return type === "ios" ? (
     <a
       className="app-link"

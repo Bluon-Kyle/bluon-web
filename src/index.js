@@ -16,7 +16,7 @@ import AboutUs from "./pages/About/AboutUs.js";
 import Terms from "./pages/terms-privacy/terms/Terms";
 import Privacy from "./pages/terms-privacy/privacy/Privacy";
 import Demo from "./pages/demo/Demo";
-import News from "./pages/news/News";
+import News from "./pages/News/News";
 import ThankYou from "./pages/demo/ThankYou";
 import TestPage from "./pages/test/TestPage";
 //vitals
