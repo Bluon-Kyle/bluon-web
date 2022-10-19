@@ -1,10 +1,9 @@
 
-//import ResponsiveCard from "../../components/common/cards/responsiveCardThree/ResponsiveCard"
-//import img1 from '../../media/image'
+import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp"
 const TestPage = () => {
   return (
     <div className="test">
-
+      <MostLovedApp/>
     </div>
   )
 }

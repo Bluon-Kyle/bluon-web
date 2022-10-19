@@ -21,9 +21,11 @@ const MostLovedApp = () => {
           </h4>
         </span>
       </div>
+      
       <div className="mla-testimonials">
         <div className="testimonials"></div>
       </div>
+
       <h3 className="mla-link-text">Join the Bluon Community</h3>
       <div className="mla-link-wrapper">
         <AppButton className="link" type="ios" />
