@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bluonLogoSecondary from "../../assets/logo/bluon-logo-secondary.svg";
-import phoneIcon from "../../assets/icons/phone.svg";
-import emailIcon from "../../assets/icons/email.svg";
+import bluonLogoSecondary from "../../../assets/logo/bluon-logo-secondary.svg";
+import phoneIcon from "../../../assets/icons/phone.svg";
+import emailIcon from "../../../assets/icons/email.svg";
+import IconInformation from "../IconInformation/IconInformation";
 
 const Footer = () => {
   return (
@@ -33,14 +34,20 @@ const Footer = () => {
 
       {/* Contact Information */}
       <div className="footer-contact">
-        <a className="footer-contact-phone" href="tel:+1-855-425-8686">
-          <img alt="phone-icon" src={phoneIcon} />
-          1-855-425-8686
-        </a>
-        <a className="footer-contact-email" href="mailto:contactus@bluon.com">
-          <img alt="email-icon" src={emailIcon} />
-          contactus@bluon.com
-        </a>
+        <IconInformation
+          className="footer-contact-phone"
+          href={"tel:+1-855-425-8686"}
+          src={phoneIcon}
+          alt="phone-icon"
+          information="1-855-425-8686"
+        />
+        <IconInformation
+          className="footer-contact-email"
+          href={"mailto:info@bluon.com"}
+          src={emailIcon}
+          alt="email-icon"
+          information="info@bluon.com"
+        />
       </div>
 
       {/* Terms and Privacy */}

@@ -1,0 +1,37 @@
+.contact-page {
+  background-color: #1352fe;
+}
+
+.contact {
+  color: #ffffff;
+  padding: 4rem 3rem 3rem 3rem;
+
+  &-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2.375rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  &-information-list {
+    li {
+      margin-bottom: 1rem;
+      a {
+        color: #ffffff;
+        line-height: 1.5rem;
+        img {
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &-social-media-list {
+    display: flex;
+    margin: 2.375rem 0 1.25rem;
+    li {
+      margin-right: 1rem;
+    }
+  }
+}

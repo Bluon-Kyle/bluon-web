@@ -1,0 +1,27 @@
+.button-nav {
+  &-link {
+    display: inline-block;
+    padding: 1.25rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  .primary {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .primary:hover {
+    background-color: #1352fe;
+    color: #ffffff;
+  }
+
+  .secondary {
+    background-color: ffffff;
+    color: #000000;
+  }
+  .secondary:hover {
+    background-color: #000000;
+    color: ffffff;
+  }
+}
