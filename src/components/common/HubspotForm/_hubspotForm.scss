@@ -1,0 +1,13 @@
+.hubspot {
+  &-form {
+    padding-left: calc(8vw - 8px);
+  }
+}
+
+.mobile {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 1rem;
+}

@@ -1,0 +1,21 @@
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0;
+
+  .thank-you {
+    padding-right: 3rem;
+    &-title {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 2.375rem;
+      margin-bottom: 1rem;
+    }
+
+    &-message {
+      color: #333333;
+      margin-bottom: 2.375rem;
+    }
+  }
+}
