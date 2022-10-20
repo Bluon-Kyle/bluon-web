@@ -1,133 +1,87 @@
+@mixin padding-side($num) {
+    padding-left:$num;
+    padding-right:$num;
+}
 .distributors{
     &-top{
-        display: flex;
-        width:100%; 
-        height:30vw;
-        padding-top:4vw;
+        background-color:#f8f8f8;
         &-text{
-            //display:flex;
-            //text-align: center;
-            width:50%;
-            height:100%;
-            padding-top: 10%;
-            padding-left: 5%;
-            h1{
-                font-size: 4vw;
-                width: 70%
+            padding-top:2.5rem;
+            padding-left: 2.6rem;
+            padding-bottom:2.5rem;
+            width:80%;
+            h2{
+                font-size: 2rem;
             }
             p{
-                font-size: 1.6vw;
-                width: 70%
+                font-size: 1.28rem;
+                width: 90%; 
             }
         }
-        &-video1{
-            width:60%;
-            height:100%;
+        &-video{
             .dist-vid{
-                //height: 100%;
-                width: 100%;
-            }
-        }
-    }
-    
-    &-divider{
-        //todo add img here
-    }
-    &-partners{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 4vw;
-        padding-bottom: 2vw;
-
-        
-    }
-    &-partners-logos{
-        padding-left: 2vw;
-        padding-right: 2vw;
-    }
-    &-bluon-live{
-        &-demo{
-            &-search{
-
-            }
-        }
-    }
-
-    &-impact{
-       display:flex;
-       padding-top:5vw;
-        min-height: 28vw;
-        &-text{
-            padding-left: 7vw;
-            width: 50%;
-            p{
-                color:grey;
-                padding-bottom: 2vw;
-                font-size: 1.4vw;
-            }
-            h1{
-                font-size: 3vw;
-            }
-            h3{
-                padding-top: 2vw;
-                font-size: 1.4vw;
-            }
-        }
-        &-map{
-            width:50%;
-            &-img{
                 width:100%;
             }
         }
+
     }
-    &-video2{
-        padding-top:4vw;
+    &-divider{
+
+    }
+    &-partners{
+        padding-top:2rem;
         &-text{
             text-align: center;
+
+        }
+    }
+    &-bluon-live{
+
+    }
+    &-impact{
+        @include padding-side(2rem); 
+        padding-top:2rem;
+        &-text{
             p{
                 color:grey;
-                font-size: 1.8vw;
-                padding-bottom: 1vw;
+                font-size: 1.2rem;
+                padding-bottom: 1.5rem;
             }
-            h1{
-                font-size: 4.5vw;
-                //padding-bottom: 2.5vw;
+            h2{
+                font-size: 1.7rem;
+                padding-bottom: 1.5rem;
             }
-        }
-        &-vid-wrapper{
-            display:flex; 
-            align-items: center;
-            justify-content: center;
-            height: 60vw;
-            .dist-vid{
-               width:80%; 
-               height:80%
+            h3{
+                font-size: 1rem;
             }
         }
-        &-demo-button{
+        &-map{
+            padding-top:3rem; 
+            &-img{
+                width:100%; 
+            }
+        }
+    }
+    &-bottom{
+        padding-top:2.6rem;
+        &-video-text{
+            text-align: center;
+            p{
+                color: grey; 
+                padding-bottom: 1.5rem;
+            }
+            h2{
+                font-size: 1.5rem;
+                padding-bottom:1.5rem;
+            }
+        }
+        &-video-demo-button{
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding-bottom: 3vw;
-            &-link{
-                button.dist-btn{
-                    width: 20vw;
-                    height:4.5vw;
-                    border-radius: 50px;
-                    background-color: black;
-                    font-size: 1.7vw;
-                    color:white;
-                    &:hover{
-                        color:black; 
-                        background-color: white;
-                        cursor: pointer;
-                    }
-    
-                }
-            }
-            
+            align-content: center;
+            padding-top:2rem; 
+            padding-bottom:2rem; 
         }
     }
 }
+

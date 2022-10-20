@@ -9,7 +9,7 @@ import ScrollToTop from "./components/common/scroll/ScrollToTop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex";
 import AppIndex from "./pages/App/AppIndex";
-import DistributorsIndex from "./pages/distrubutors/DistrubutorsIndex";
+import DistributorsIndex from "./pages/Distrubutors/DistrubutorsIndex";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import Contact from "./pages/Contact/Contact";
 import AboutUs from "./pages/About/AboutUs.js";
@@ -18,6 +18,7 @@ import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
 import Demo from "./pages/demo/Demo";
 import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
+import BluonLiveStores from "./pages/Maps/Distributors/BluonLiveStores";
 import TestPage from "./pages/test/TestPage";
 //vitals
 import reportWebVitals from "./reportWebVitals";
@@ -62,6 +63,7 @@ root.render(
         />
         <Route path="/ThankYou" element={<ThankYou />} />
         <Route path="TestPage" element={<TestPage />} />
+        <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
       </Routes>
     </ScrollToTop>
     <Footer />
