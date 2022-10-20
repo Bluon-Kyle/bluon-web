@@ -9,6 +9,7 @@ import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
 //import GameCard from '../../components/common/cards/gameCard/GameCard';
 //import PicCard from '../../components/common/cards/picCard/PicCard';
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
+
 const HomeIndex = () => {
   return (
     <div className="home">
@@ -30,8 +31,8 @@ const HomeIndex = () => {
       </div>
       <br></br>
       <div className="home-impact">
-        <h3>The Bluon Impact</h3>
-        <br></br>
+        <h1>The Bluon Impact</h1>
+
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
           <span className="home-impact-map"></span>

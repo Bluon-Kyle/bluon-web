@@ -1,103 +1,180 @@
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin padding($size) {
+  padding-left: $size;
+  padding-right: $size;
+
+}
 .home {
-  padding-top: 5vw;
-  &-welcome-wrapper {
-    h1 {
-      color: $bluon-blue;
+  display:block; 
+  &-welcome-wrapper{
+    h1{
+      padding-top:2rem; 
+      color:$bluon-blue; 
       text-align: center;
-      font-size: 4.5vw;
+      font-size: 2.1rem;
+      padding-bottom: 2rem;
     }
   }
-
-  &-video-container {
-    //background-image: url('../../media/image/HVAC-system-graphic-large.png') ;
-    //background;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .home-video {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
+  &-video-container{
+    @include center-flex; 
+    .home-video{
+      width:100%
     }
   }
-  &-impact {
+  &-impact{
     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
-    background-position: right;
-    padding-top: 2rem;
-    text-align: center;
-    min-height: 25vw;
-    h2 {
-      font-size: 3vw;
+    background-position: right; 
+    height:400px; 
+    @include padding(2.2rem);
+    h1{
+      color:grey; 
+      font-size: 1rem;
+      padding-bottom: .8rem;
     }
-    h3 {
-      color: #959595;
+    h2{
+      font-size: 1.8rem;
+      //width:70%;
     }
+
   }
-  &-cards {
-    display: flex;
-    justify-content: center;
-    //height: 40vw;
+  &-cards{
+    @include center-flex; 
   }
-  &-app {
+  &-app{
     background-color: $bluon-blue;
-    display: flex;
-    width: 100%;
-    //padding-bottom: 4vw;
-    &-text {
-      color: white;
-      padding-top: 5vw;
-      padding-left: 10vw;
-      width: 50%;
-
-      h1 {
-        font-size: 4.8vw;
-        width: 65%;
+    &-text{
+      color: white; 
+      @include padding(2rem);
+      ul{
+        padding-left: 2rem;
+        list-style: circle;
+        padding-bottom: 1.2rem;
       }
-      ul {
-        width: 35%;
-        padding-top: 1vw;
-        padding-bottom: 2vw;
-
-        li {
-          padding-bottom: 1vw;
-          line-height: 115%;
-        }
-      }
-      button {
+      //button will be changed
+      button{
+        color: black; 
         background-color: white;
-        color: black;
-        width: 20vw;
-        height: 5vw;
-        border-radius: 25px;
-        border: none;
-        font-size: 130%;
-        &:hover {
-          color: white;
-          background-color: black;
-          border-radius: 50px;
-          cursor: pointer;
-        }
+        border-radius: 50px;
+        width: 100px;
+        height: 45px; 
       }
     }
-    &-img {
-      height: 50%;
-      padding-top: 3vw;
-      .img {
-        width: 20vw;
+    &-img{
+      padding-top:1.2rem; 
+      @include center-flex; 
+      img{
+        width:50%; 
+        overflow-y: hidden;
+        
       }
-    }
-  }
+     
+    
 
-  &-pic-cards {
-    display: flex;
-    margin: 0 0 0 0;
-  }
-  &-button-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    //grid-gap: 30px;
-    width: 100%;
+    }
   }
 }
+// padding-top: 5vw;
+//   &-welcome-wrapper {
+//     h1 {
+//       color: $bluon-blue;
+//       text-align: center;
+//       font-size: 4.5vw;
+//     }
+//   }
+
+//   &-video-container {
+//     //background-image: url('../../media/image/HVAC-system-graphic-large.png') ;
+//     //background;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .home-video {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 80%;
+//     }
+//   }
+//   &-impact {
+//     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
+//     background-position: right;
+//     padding-top: 2rem;
+//     text-align: center;
+//     min-height: 25vw;
+//     h2 {
+//       font-size: 3vw;
+//     }
+//     h3 {
+//       color: #959595;
+//     }
+//   }
+//   &-cards {
+//     display: flex;
+//     justify-content: center;
+//     //height: 40vw;
+//   }
+//   &-app {
+//     background-color: $bluon-blue;
+//     display: flex;
+//     width: 100%;
+//     //padding-bottom: 4vw;
+//     &-text {
+//       color: white;
+//       padding-top: 5vw;
+//       padding-left: 10vw;
+//       width: 50%;
+
+//       h1 {
+//         font-size: 4.8vw;
+//         width: 65%;
+//       }
+//       ul {
+//         width: 35%;
+//         padding-top: 1vw;
+//         padding-bottom: 2vw;
+
+//         li {
+//           padding-bottom: 1vw;
+//           line-height: 115%;
+//         }
+//       }
+//       button {
+//         background-color: white;
+//         color: black;
+//         width: 20vw;
+//         height: 5vw;
+//         border-radius: 25px;
+//         border: none;
+//         font-size: 130%;
+//         &:hover {
+//           color: white;
+//           background-color: black;
+//           border-radius: 50px;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//     &-img {
+//       height: 50%;
+//       padding-top: 3vw;
+//       .img {
+//         width: 20vw;
+//       }
+//     }
+//   }
+
+//   &-pic-cards {
+//     display: flex;
+//     margin: 0 0 0 0;
+//   }
+//   &-button-cards {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     //grid-gap: 30px;
+//     width: 100%;
+//   }
