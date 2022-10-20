@@ -80,12 +80,12 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      <MostLovedApp></MostLovedApp>
+      <MostLovedApp className='home-mla'></MostLovedApp>
 
       <div className="home-button-cards">
         <ButtonCard
           title="Distributors"
-          img="tech"
+          img="dist"
           imgalt="Distributors"
           hover_title="Distributors"
           content="Bluon brings more buisness to distributors, fill out our form to learn more!"

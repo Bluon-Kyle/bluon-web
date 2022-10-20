@@ -8,6 +8,13 @@
   padding-right: $size;
 
 }
+@mixin grid($rowCount, $spacing) {
+  display: grid;
+  grid-template-columns: repeat($rowCount, 1fr);
+  grid-gap: $spacing;
+  width: 100%;
+
+}
 .home {
   display:block; 
   &-welcome-wrapper{
@@ -47,6 +54,7 @@
   }
   &-app{
     background-color: $bluon-blue;
+    overflow-y: hidden;
     &-text{
       color: white; 
       @include padding(2rem);
@@ -77,17 +85,20 @@
     &-img{
       padding-top:1.2rem; 
       @include center-flex; 
+      transform: translateY(2rem);
       img{
         width:50%; 
-        overflow-y: hidden;
-        
       }
-     
-    
-
     }
+
+  }
+    &-button-cards {
+      padding-top: .5rem;
+      @include grid(1, .5rem);
   }
 }
+
+//old desktop styling (delete me when done styling desktop)
 // padding-top: 5vw;
 //   &-welcome-wrapper {
 //     h1 {
