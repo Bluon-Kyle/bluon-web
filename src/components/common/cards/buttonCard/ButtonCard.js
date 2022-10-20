@@ -3,7 +3,7 @@ import distPic from "../../../../assets/images/distributors.png";
 import conPic from "../../../../assets/images/contractors.png";
 import techPic from "../../../../assets/images/technicians.png";
 import { Link } from "react-router-dom";
-//import './_buttonCard.scss'
+import './_buttonCard.scss'
 const ButtonCard = (props) => {
   let src = null;
   const img = props.img;

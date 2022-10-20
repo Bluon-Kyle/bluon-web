@@ -2,14 +2,11 @@
 .mla{
     display: block;
     &-top{
-        &-img{
-            &-app{
-                width:100%; 
-            }
-        }
+        
         &-text{
             text-align: center;
             h3{
+                padding-top:4rem; 
                 font-size: 1.5rem;
             }
             p{
@@ -23,9 +20,20 @@
                 padding-bottom: 2rem;
             }
         }
+        &-img{
+            &-app{
+                width:100%; 
+            }
+        }
     }
     &-testimonials{
 
+    }
+    &-join{
+        @include flex-and-center;
+        img{
+            width: 16%; 
+        }
     }
     &-link{
         &-text{
@@ -34,7 +42,7 @@
         &-wrapper{
             @include flex-and-center;
             width:100%; 
-            .app-logo{
+            .app-logo-desktop{
                 display:none; 
             }
             

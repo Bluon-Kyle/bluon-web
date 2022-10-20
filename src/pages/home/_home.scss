@@ -34,6 +34,7 @@
       color:grey; 
       font-size: 1rem;
       padding-bottom: .8rem;
+      padding-top:2rem; 
     }
     h2{
       font-size: 1.8rem;
@@ -49,17 +50,27 @@
     &-text{
       color: white; 
       @include padding(2rem);
+      .outer{
+        padding-top:4rem;
+        width: 80%;  
+        padding-bottom: 2rem;
+      }
       ul{
         padding-left: 2rem;
+        padding-right: 2rem;
         list-style: circle;
         padding-bottom: 1.2rem;
+        li{
+          padding-bottom: 1rem;
+          line-height: 1.5rem;
+        }
       }
       //button will be changed
       button{
         color: black; 
         background-color: white;
         border-radius: 50px;
-        width: 100px;
+        width: 130px;
         height: 45px; 
       }
     }
