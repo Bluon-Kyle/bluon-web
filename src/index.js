@@ -9,7 +9,7 @@ import ScrollToTop from "./components/common/scroll/ScrollToTop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex";
 import AppIndex from "./pages/App/AppIndex";
-import DistributorsIndex from "./pages/Distrubutors/DistrubutorsIndex";
+import DistributorsIndex from "./pages/Distrubutors/Distrubutors";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import Contact from "./pages/Contact/Contact";
 import AboutUs from "./pages/About/AboutUs.js";
