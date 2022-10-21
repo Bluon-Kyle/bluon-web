@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import bluonLogo from "../../../assets/logo/bluon-logo-primary.svg";
-import { options, subMenuOptions } from "../../../utilities/data/options";
+import { options, subMenuOptions } from "../../../data/header/options";
 
 import "./_header.scss";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";

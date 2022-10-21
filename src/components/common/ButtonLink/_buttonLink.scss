@@ -1,3 +1,5 @@
+@use "../../../assets/scss/colors" as *;
+
 .button {
   &-link {
     display: inline-block;
@@ -5,24 +7,24 @@
     border-radius: 50px;
     font-size: 1.125rem;
     font-weight: 700;
-    background-color: white;
+    background-color: $bluon-brand-white;
   }
 
   .primary {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $bluon-brand-black;
+    color: $bluon-brand-white;
   }
   .primary:hover {
-    background-color: #1352fe;
-    color: #ffffff;
+    background-color: $bluon-brand-blue;
+    color: $bluon-brand-white;
   }
 
   .secondary {
-    background-color: ffffff;
-    color: #000000;
+    background-color: $bluon-brand-white;
+    color: $bluon-brand-black;
   }
   .secondary:hover {
-    background-color: #000000;
-    color: ffffff;
+    background-color: $bluon-brand-black;
+    color: $bluon-brand-white;
   }
 }

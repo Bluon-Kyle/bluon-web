@@ -1,11 +1,13 @@
-//$padding: padding-left=4%, padding-right=4%;
+@use "../../assets/scss/colors" as *;
+@use "../../assets/scss/mixins" as *;
+
 .about {
   &-values {
     &-text {
       padding-top: 6vw;
       text-align: center;
       p {
-        color: #6c757d;
+        color: $bluon-background-grey;
         font-size: 1.25rem;
         font-weight: 300;
         margin-bottom: 1.25rem;
@@ -37,12 +39,12 @@
   }
   &-core {
     padding: 2.1875rem 0.75rem 0;
-    background-color: #f8f8f8;
+    background-color: $bluon-background-grey-2;
     &-text {
       padding: 2.1875rem 0.75rem 1.875rem;
       text-align: center;
       p {
-        color: #6c757d;
+        color: $bluon-background-grey;
         font-size: 1.25rem;
         font-weight: 300;
         margin-bottom: 1.25rem;
@@ -55,12 +57,6 @@
       }
     }
     &-management {
-      // display: flex;
-      // justify-content:center ;
-      // align-items: center;
-      //max-width: 100%;
-      //padding-left: 4vw;
-      //padding-right: 4vw;
       &-text {
         h1 {
           font-size: 5vw;
@@ -69,8 +65,7 @@
       }
     }
     &-board {
-      //padding-left: 5%;
-      background-color: #f8f8f8;
+      background-color: $bluon-background-grey-2;
     }
   }
 }

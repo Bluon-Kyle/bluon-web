@@ -1,5 +1,7 @@
+@use "../../../../assets/scss/colors" as *;
+
 .news-card:first-child {
-  border-top: 1px solid #dfe9f5;
+  border-top: 1px solid $bluon-background-grey-5;
 }
 
 .news-card {
@@ -10,7 +12,7 @@
 
   &-date {
     font-size: 0.875rem;
-    color: #333333;
+    color: $bluon-background-grey-6;
     margin: 1rem 0 1.25rem;
   }
 
@@ -19,12 +21,12 @@
   }
 
   &-description {
-    color: #212529;
+    color: $bluon-background-grey-3;
     margin-bottom: 1.5rem;
   }
 
   &-link {
-    color: #1352fe;
+    color: $bluon-brand-blue;
     font-family: "Inter", sans-serif;
     font-size: 1.125rem;
     font-weight: 700;

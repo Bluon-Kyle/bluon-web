@@ -1,19 +1,17 @@
 //globals
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./utilities/global.scss";
-//import HeaderIndex from "./components/header/HeaderIndex";
 import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex";
-import AppIndex from "./pages/App/AppIndex";
+import App from "./pages/App/App";
 import Distributors from "./pages/Distrubutors/Distrubutors";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import Contact from "./pages/Contact/Contact";
-import AboutUs from "./pages/About/AboutUs.js";
+import About from "./pages/About/About.js";
 import Terms from "./pages/TermsPrivacy/Terms/Terms";
 import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
 import Demo from "./pages/demo/Demo";
@@ -24,7 +22,8 @@ import TestPage from "./pages/test/TestPage";
 //vitals
 import reportWebVitals from "./reportWebVitals";
 
-// import App from './App';
+import "./_index.scss";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -34,12 +33,11 @@ root.render(
     <ScrollToTop>
       <Routes>
         <Route path="/" element={<HomeIndex />} />
-        <Route path="/App" element={<AppIndex />} />
-        <Route path="/Distributors" element={<Distributors/>} />
-        <Route path="/About" element={<AboutUs />} />
+        <Route path="/App" element={<App />} />
+        <Route path="/Distributors" element={<Distributors />} />
         <Route path="/Manufacturers" element={<Manufacturers />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<AboutUs />} />
+        <Route path="/About" element={<About />} />
         <Route path="/News" element={<News />} />
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
@@ -65,7 +63,7 @@ root.render(
         />
         <Route path="/ThankYou" element={<ThankYou />} />
         <Route path="TestPage" element={<TestPage />} />
-        <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
+        <Route path="BluonLiveStores" element={<BluonLiveStores />} />
       </Routes>
     </ScrollToTop>
     <Footer />

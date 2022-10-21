@@ -1,3 +1,5 @@
+@use "../../../assets/scss/colors" as *;
+
 .hamburger-sub-menu {
   a,
   button,
@@ -17,7 +19,7 @@
   }
 
   .active {
-    color: #1352fe;
+    color: $bluon-brand-blue;
     background-color: transparent;
   }
 }

@@ -1,93 +1,87 @@
+@use "../../assets/scss/colors" as *;
+
 @mixin padding-side($num) {
-    padding-left:$num;
-    padding-right:$num;
+  padding-left: $num;
+  padding-right: $num;
 }
-.distributors{
-    &-top{
-        background-color:#f8f8f8;
-        &-text{
-            padding-top:2.5rem;
-            padding-left: 2.6rem;
-            padding-bottom:2.5rem;
-            width:80%;
-            h2{
-                font-size: 2rem;
-            }
-            p{
-                font-size: 1.28rem;
-                width: 90%; 
-            }
-        }
-        &-video{
-            .dist-vid{
-                width:100%;
-            }
-        }
+.distributors {
+  &-top {
+    background-color: $bluon-background-grey-2;
 
+    &-text {
+      padding-top: 2.5rem;
+      padding-left: 2.6rem;
+      padding-bottom: 2.5rem;
+      width: 80%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.28rem;
+        width: 90%;
+      }
     }
-    &-divider{
-
+    &-video {
+      .dist-vid {
+        width: 100%;
+      }
     }
-    &-partners{
-        padding-top:2rem;
-        &-text{
-            text-align: center;
-            h2{
-                padding-bottom: 2rem; 
-            }
-
-        }
-        &-logos{
-            padding-bottom: 2rem; 
-        }
+  }
+  &-partners {
+    padding-top: 2rem;
+    &-text {
+      text-align: center;
+      h2 {
+        padding-bottom: 2rem;
+      }
     }
-    &-bluon-live{
-
+    &-logos {
+      padding-bottom: 2rem;
     }
-    &-impact{
-        @include padding-side(2rem); 
-        padding-top:2rem;
-        &-text{
-            p{
-                color:grey;
-                font-size: 1.2rem;
-                padding-bottom: 1.5rem;
-            }
-            h2{
-                font-size: 1.7rem;
-                padding-bottom: 1.5rem;
-            }
-            h3{
-                font-size: 1rem;
-            }
-        }
-        &-map{
-            padding-top:3rem; 
-            &-img{
-                width:100%; 
-            }
-        }
+  }
+  &-impact {
+    @include padding-side(2rem);
+    padding-top: 2rem;
+    &-text {
+      p {
+        color: $bluon-background-grey;
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+        padding-bottom: 1.5rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
     }
-    &-bottom{
-        padding-top:2.6rem;
-        &-video-text{
-            text-align: center;
-            p{
-                color: grey; 
-                padding-bottom: 1.5rem;
-            }
-            h2{
-                font-size: 1.5rem;
-                padding-bottom:1.5rem;
-            }
-        }
-        &-video-demo-button{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            padding-top:2rem; 
-            padding-bottom:2rem; 
-        }
+    &-map {
+      padding-top: 3rem;
+      &-img {
+        width: 100%;
+      }
     }
+  }
+  &-bottom {
+    padding-top: 2.6rem;
+    &-video-text {
+      text-align: center;
+      p {
+        color: $bluon-background-grey;
+        padding-bottom: 1.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+    }
+    &-video-demo-button {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
 }
-

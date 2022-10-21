@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./_appButton.scss";
+
 const AppButton = (props) => {
   //depending on prop this will display iphone or andriod button
   const type = props.type;
