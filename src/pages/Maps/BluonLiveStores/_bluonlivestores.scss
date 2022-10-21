@@ -1,0 +1,14 @@
+.distributorsMap{
+    h3{
+        text-align: center;
+        padding-top:1.5rem; 
+        padding-bottom: .5rem;
+    }
+    &-inner{
+        width:100%; 
+        height:calc(100vh - 46px); 
+        display:flex; 
+        align-content:center; 
+        justify-content:center;
+    }
+}
