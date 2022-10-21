@@ -1,0 +1,20 @@
+.hamburger-menu {
+  a,
+  button {
+    display: inline-block;
+    padding: 1rem 2.75rem;
+    width: 100%;
+    font-size: 1.125rem;
+  }
+
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .active {
+    color: #1352fe;
+    background-color: transparent;
+  }
+}

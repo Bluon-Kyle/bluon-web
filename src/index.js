@@ -3,13 +3,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
 //import HeaderIndex from "./components/header/HeaderIndex";
+import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex";
 import AppIndex from "./pages/App/AppIndex";
-import DistributorsIndex from "./pages/Distrubutors/Distrubutors";
+import Distributors from "./pages/Distrubutors/Distrubutors";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import Contact from "./pages/Contact/Contact";
 import AboutUs from "./pages/About/AboutUs.js";
@@ -29,11 +30,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     {/* <HeaderIndex /> */}
+    <Header />
     <ScrollToTop>
       <Routes>
         <Route path="/" element={<HomeIndex />} />
         <Route path="/App" element={<AppIndex />} />
-        <Route path="/Distributors" element={<DistributorsIndex />} />
+        <Route path="/Distributors" element={<Distributors/>} />
         <Route path="/About" element={<AboutUs />} />
         <Route path="/Manufacturers" element={<Manufacturers />} />
         <Route path="/Contact" element={<Contact />} />

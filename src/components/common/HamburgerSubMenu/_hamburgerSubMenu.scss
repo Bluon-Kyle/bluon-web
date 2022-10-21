@@ -1,0 +1,23 @@
+.hamburger-sub-menu {
+  a,
+  button,
+  h2 {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 2.75rem;
+  }
+
+  button {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .active {
+    color: #1352fe;
+    background-color: transparent;
+  }
+}
