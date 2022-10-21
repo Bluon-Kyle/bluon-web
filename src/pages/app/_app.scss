@@ -1,5 +1,6 @@
 @use "../../assets/scss/colors" as *;
-@import "../../utilities/mixins";
+@use "../../assets/scss/mixins" as *;
+
 @mixin app-padding {
   padding-left: 2rem;
   padding-right: 2.5rem;

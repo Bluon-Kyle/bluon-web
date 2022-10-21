@@ -1,11 +1,10 @@
-@import '../../utilities/mixins';
-.app-link{
-    @include flex-and-center;
-    
-    &-img{
-        width: 150px;
-    }
-    @media (min-width: 780px){
+@use "../../assets/scss/mixins.scss" as *;
+.app-link {
+  @include flex-and-center;
 
-    }
+  &-img {
+    width: 150px;
+  }
+  @media (min-width: 780px) {
+  }
 }

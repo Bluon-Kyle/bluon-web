@@ -3,6 +3,9 @@ import video1 from "../../assets/video/BluonLive-Video.mp4";
 import ButtonNav from "../../components/common/ButtonNav/ButtonNav";
 import arrow from "../../assets/icons/arrow.svg";
 import Logos from "./components/Logos";
+
+import "./_distributors.scss";
+
 const Distrubutors = () => {
   const map = require("./map1.png");
   return (
