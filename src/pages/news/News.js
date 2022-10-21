@@ -1,7 +1,7 @@
 import React from "react";
 import FeaturedNewsCard from "./components/FeaturedNewsCard/FeaturedNewsCard";
 import NewsCard from "./components/NewsCard/NewsCard";
-import { news } from "./data/news";
+import { news } from "../../data/news/news";
 
 const News = () => {
   const featuredNews = news[0];

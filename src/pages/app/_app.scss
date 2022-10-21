@@ -1,126 +1,117 @@
-@import '../../utilities/mixins';
-@mixin app-padding{
-    padding-left:2rem; 
-    padding-right: 2.5rem;
+@import "../../utilities/mixins";
+@mixin app-padding {
+  padding-left: 2rem;
+  padding-right: 2.5rem;
 }
-.app{
-    overflow-x: hidden;
-    width:100%;
-    display: block; 
-    //margin-top:3rem;
-    &-top{
-        background:url('./images/bg-app-header.jpg');
-        background-size: cover;
-        //margin-bottom: 3rem;
-        h2{
-            padding-top:3rem;
-            color:white; 
-            text-align: center;
-            @include title-mobile; 
-        }
-        &-btn-wrapper{
-            display:grid; 
-            grid-template-columns: repeat(2, 1fr);
-            @media(min-width:780px){
-                grid-template-columns: repeat(3, 1fr);
-                justify-content: space-between;
-            }
-            .app-top-badge{
-                justify-content: flex-end; 
-                width: 55%; 
-            }
-
-        }
-        &-content{
-            display: flex;
-            justify-content: center;
-            // transform: translateY(30%);
-            
-
-            &-img{
-                min-width: 130vw;
-                margin:auto; 
-                overflow-x: hidden;
-                
-            }
-        }
+.app {
+  overflow-x: hidden;
+  width: 100%;
+  display: block;
+  //margin-top:3rem;
+  &-top {
+    background: url("../../assets//images/app/bg-app-header.jpg");
+    background-size: cover;
+    //margin-bottom: 3rem;
+    h2 {
+      padding-top: 3rem;
+      color: white;
+      text-align: center;
+      @include title-mobile;
     }
-    &-homebase{
-        padding-top:10%;
-        @include app-padding; 
-        h2{
-            @include title-mobile;
-        }
-        p{
-            @include p-mobile; 
-        }
-
-
+    &-btn-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @media (min-width: 780px) {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+      }
+      .app-top-badge {
+        justify-content: flex-end;
+        width: 55%;
+      }
     }
-    &-support{
-        &-text-wrapper{
-            @include app-padding; 
-            h2{
-                padding-top:2.5rem; 
-                @include title-mobile; 
-                
-            }
-            h2.app-support-blue-h2{
-                color: $bluon-blue; 
-            }
-            p{
-                @include p-mobile; 
-            }
-        }
-        &-image{
-            @include app-padding;  
-            width:100%; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &-techs{
-                width:90%;
-            }
-        }
-    }
-    &-youtube{
-        //width:100%; 
-        //height: 600px;
-        box-sizing: inherit;
-        &-video1{
-            width:100%; 
-            height:250px;
-        }
-    }
-    &-community{
-        background-color: $bluon-blue;
+    &-content {
+      display: flex;
+      justify-content: center;
+      // transform: translateY(30%);
 
-        &-text{
-            color:white;
-            @include app-padding;
-            padding-top: 2rem;
-            font-size: 1rem;
-            p{
-                padding-top:1rem;
-                padding-bottom: 1rem;
-            }
-        }
-        &-img-wrapper{
-            display:flex;
-            .app-community-img{
-                width: 100%;
-            }
-        }
-        
-        &-links{
-            @include flex-and-center;
-            padding-bottom: 1rem;
+      &-img {
+        min-width: 130vw;
+        margin: auto;
+        overflow-x: hidden;
+      }
+    }
+  }
+  &-homebase {
+    padding-top: 10%;
+    @include app-padding;
+    h2 {
+      @include title-mobile;
+    }
+    p {
+      @include p-mobile;
+    }
+  }
+  &-support {
+    &-text-wrapper {
+      @include app-padding;
+      h2 {
+        padding-top: 2.5rem;
+        @include title-mobile;
+      }
+      h2.app-support-blue-h2 {
+        color: $bluon-blue;
+      }
+      p {
+        @include p-mobile;
+      }
+    }
+    &-image {
+      @include app-padding;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-techs {
+        width: 90%;
+      }
+    }
+  }
+  &-youtube {
+    //width:100%;
+    //height: 600px;
+    box-sizing: inherit;
+    &-video1 {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  &-community {
+    background-color: $bluon-blue;
 
-        }
+    &-text {
+      color: white;
+      @include app-padding;
+      padding-top: 2rem;
+      font-size: 1rem;
+      p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+    &-img-wrapper {
+      display: flex;
+      .app-community-img {
+        width: 100%;
+      }
     }
 
-    @media (min-width:780px){
-
+    &-links {
+      @include flex-and-center;
+      padding-bottom: 1rem;
     }
+  }
 
+  @media (min-width: 780px) {
+  }
 }

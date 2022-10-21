@@ -16,7 +16,7 @@ import { teamGridList } from "./data/teamGridList";
 //import { Link } from "react-router-dom";
 //import ExternalButton from "../../components/common/ButtonLink/ButtonLink";
 
-const AboutUs = () => {
+const About = () => {
   // const ref = useRef(null);
   // const refClick = () => {
   //   ref.current?.scrollIntoView();
@@ -59,4 +59,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default About;

@@ -9,11 +9,11 @@ import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex";
-import AppIndex from "./pages/App/AppIndex";
+import App from "./pages/App/App";
 import DistributorsIndex from "./pages/distrubutors/DistrubutorsIndex";
 import Manufacturers from "./pages/Manufacuters/Manufacters";
 import Contact from "./pages/Contact/Contact";
-import AboutUs from "./pages/About/AboutUs.js";
+import About from "./pages/About/About.js";
 import Terms from "./pages/TermsPrivacy/Terms/Terms";
 import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
 import Demo from "./pages/demo/Demo";
@@ -33,12 +33,11 @@ root.render(
     <ScrollToTop>
       <Routes>
         <Route path="/" element={<HomeIndex />} />
-        <Route path="/App" element={<AppIndex />} />
+        <Route path="/App" element={<App />} />
         <Route path="/Distributors" element={<DistributorsIndex />} />
-        <Route path="/About" element={<AboutUs />} />
         <Route path="/Manufacturers" element={<Manufacturers />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<AboutUs />} />
+        <Route path="/About" element={<About />} />
         <Route path="/News" element={<News />} />
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
