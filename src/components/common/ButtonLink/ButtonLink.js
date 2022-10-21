@@ -1,12 +1,12 @@
 import React from "react";
 import "./_buttonLink.scss";
 
-const ButtonLink = ({ link, children, color = "" }) => {
+const ButtonLink = ({ href, children, color = "" }) => {
   return (
     <div className="button">
       <a
         className={`button-link ${color}`}
-        href={link}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
       >

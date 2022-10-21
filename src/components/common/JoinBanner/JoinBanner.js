@@ -14,7 +14,7 @@ const JoinBanner = ({ title }) => {
     <Banner image={joinMovementMobile} bannerStyle={bannerStyle}>
       <div className="join-banner">
         <h2 className="join-banner-title">{title}</h2>
-        <ButtonLink color="secondary" link={"https://bluon.com/bluon-live.php"}>
+        <ButtonLink color="secondary" href={"https://bluon.com/bluon-live.php"}>
           {"We're Hiring!"}
         </ButtonLink>
       </div>
