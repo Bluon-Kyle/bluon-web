@@ -1,99 +1,97 @@
+// .header{
+//     background: transparent;
+//     display: flex ;
+//     align-items: center;
+//     padding-left: 4.5vw;
+//     padding-top: 1.5vw;
 
-.header{
-    background: transparent;
-    display: flex ;
-    align-items: center;
-    padding-left: 4.5vw;
-    padding-top: 1.5vw;
-    
-    &-blive{
-        margin-left: auto;
-        font-size: 1.3vw;
-        padding-right: 1.5vw;
-        a{
-            text-decoration: none;
-            color: $bluon-blue;
-            &:hover{
-                color:rgb(78, 110, 154);
-            }
-        }
-    }
-    h1{
-        margin-top: 0;
-        margin-bottom: 0;
-        
+//     &-blive{
+//         margin-left: auto;
+//         font-size: 1.3vw;
+//         padding-right: 1.5vw;
+//         a{
+//             text-decoration: none;
+//             color: $bluon-blue;
+//             &:hover{
+//                 color:rgb(78, 110, 154);
+//             }
+//         }
+//     }
+//     h1{
+//         margin-top: 0;
+//         margin-bottom: 0;
 
-    }
-    &-link{
-        text-decoration: none;
-    }
-    .nav{
-        &-menu{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            list-style: none;
-            &-items{
-                position: relative;
-                font-size: 1.3vw;
-                a{
-                    display: block;
-                    font-size: 1.3vw;
-                    color: inherit;
-                    text-decoration: none;
-                    text-align: left;
-                    padding: 0.0rem 1rem;
+//     }
+//     &-link{
+//         text-decoration: none;
+//     }
+//     .nav{
+//         &-menu{
+//             display: flex;
+//             align-items: center;
+//             flex-wrap: wrap;
+//             list-style: none;
+//             &-items{
+//                 position: relative;
+//                 font-size: 1.3vw;
+//                 a{
+//                     display: block;
+//                     font-size: 1.3vw;
+//                     color: inherit;
+//                     text-decoration: none;
+//                     text-align: left;
+//                     padding: 0.0rem 1rem;
 
-                    &:hover{
-                        font-size: 1.8vw;
-                        color: $bluon-blue; 
-                    }
-                }
-                button{
-                    display: flex;
-                    align-items: center;
-                    color: inherit;
-                    font-size: 100%;
-                    border: none;
-                    background-color: transparent;
-                    cursor: pointer;
-                    width: 100%;
-                    &:hover{
-                        font-size: 115%;
-                        color: $bluon-blue; 
-                    }
-                }
-            }
-            
-        }
-        
-    }
-    .content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 3rem 20px;
-        h2{
-            margin-bottom: 1rem;
-        }
-        a {
-            color: $bluon-blue;
-            margin-right: 10px;
-        }
-    }
-    @media screen and (max-width: 768px){
-        .nav-menu{
-            display:none; 
-        }
-        &-blive{
-            display: none;
-        }
-        &-hamburger{
-            display: block;
-            &-nav{
+//                     &:hover{
+//                         font-size: 1.8vw;
+//                         color: $bluon-blue;
+//                     }
+//                 }
+//                 button{
+//                     display: flex;
+//                     align-items: center;
+//                     color: inherit;
+//                     font-size: 100%;
+//                     border: none;
+//                     background-color: transparent;
+//                     cursor: pointer;
+//                     width: 100%;
+//                     &:hover{
+//                         font-size: 115%;
+//                         color: $bluon-blue;
+//                     }
+//                 }
+//             }
 
-            }
-        }
-        
-    }
+//         }
 
-}
+//     }
+//     .content {
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         padding: 3rem 20px;
+//         h2{
+//             margin-bottom: 1rem;
+//         }
+//         a {
+//             color: $bluon-blue;
+//             margin-right: 10px;
+//         }
+//     }
+//     @media screen and (max-width: 768px){
+//         .nav-menu{
+//             display:none;
+//         }
+//         &-blive{
+//             display: none;
+//         }
+//         &-hamburger{
+//             display: block;
+//             &-nav{
+
+//             }
+//         }
+
+//     }
+
+// }

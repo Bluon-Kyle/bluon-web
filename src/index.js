@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./utilities/global.scss";
 //import HeaderIndex from "./components/header/HeaderIndex";
+import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
@@ -28,6 +29,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     {/* <HeaderIndex /> */}
+    <Header />
     <ScrollToTop>
       <Routes>
         <Route path="/" element={<HomeIndex />} />
