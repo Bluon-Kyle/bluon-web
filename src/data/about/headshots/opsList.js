@@ -1,6 +1,6 @@
 export const opsList = [
   {
-    picSrc: require("../../images/headshots/daisy-chang.png"),
+    picSrc: require("../../../assets/images/about/headshots/daisy-chang.png"),
     picAlt: "null",
     name: "Daisy Chang",
     position: "Controller",
@@ -10,7 +10,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/tailor-distler.png"),
+    picSrc: require("../../../assets/images/about/headshots/tailor-distler.png"),
     picAlt: "Taylor Distler",
     name: "Taylor",
     position: "Director of Org Dev",
@@ -20,7 +20,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/tanner-morgan.png"),
+    picSrc: require("../../../assets/images/about/headshots/tanner-morgan.png"),
     picAlt: "null",
     name: "Tanner Morgan",
     position: "Director of Operations",
@@ -30,7 +30,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/chris-mekdara.png"),
+    picSrc: require("../../../assets/images/about/headshots/chris-mekdara.png"),
     picAlt: "null",
     name: "Chris Mekdara",
     position: "Director of Internal Projects",
@@ -40,7 +40,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/imanie-patel.png"),
+    picSrc: require("../../../assets/images/about/headshots/imanie-patel.png"),
     picAlt: "Imanie Patel",
     name: "Imanie",
     position: "Operations Associate",
@@ -50,7 +50,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/kellen-givens.png"),
+    picSrc: require("../../../assets/images/about/headshots/kellen-givens.png"),
     picAlt: "null",
     name: "Kellen Givens",
     position: "Operations Associate",
@@ -60,7 +60,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/caitlin-dillon.png"),
+    picSrc: require("../../../assets/images/about/headshots/caitlin-dillon.png"),
     picAlt: "null",
     name: "Caitlin Dillon",
     position: "Organizational Development Director",
@@ -70,7 +70,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/hector-garcia.png"),
+    picSrc: require("../../../assets/images/about/headshots/hector-garcia.png"),
     picAlt: "null",
     name: "Hector Garcia",
     position: "Talent Aquisition Manager",
@@ -80,7 +80,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ralph-tovar.png"),
+    picSrc: require("../../../assets/images/about/headshots/ralph-tovar.png"),
     picAlt: "null",
     name: "Ralph Tovar",
     position: "Sales Operations Associate",
@@ -90,7 +90,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ryan-neidwick.png"),
+    picSrc: require("../../../assets/images/about/headshots/ryan-neidwick.png"),
     picAlt: "null",
     name: "Ryan Neidwick",
     position: "Director of Logistics",
@@ -100,7 +100,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ambirly.png"),
+    picSrc: require("../../../assets/images/about/headshots/ambirly.png"),
     picAlt: "null",
     name: "Ambirly Vuthy",
     position: "Recruiting Coordinator",
@@ -110,7 +110,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/maria-woo.png"),
+    picSrc: require("../../../assets/images/about/headshots/maria-woo.png"),
     picAlt: "null",
     name: "Maria Woo",
     position: "Operations Associate",
@@ -120,7 +120,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ryan-shramo.png"),
+    picSrc: require("../../../assets/images/about/headshots/ryan-shramo.png"),
     picAlt: "null",
     name: "Ryan Shramo",
     position: "Buisness Analyst",
@@ -130,7 +130,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/micheal-graham.png"),
+    picSrc: require("../../../assets/images/about/headshots/micheal-graham.png"),
     picAlt: "null",
     name: "Micheal Graham",
     position: "Financial Analyst",
@@ -140,7 +140,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/adam-lecrone.png"),
+    picSrc: require("../../../assets/images/about/headshots/adam-lecrone.png"),
     picAlt: "null",
     name: "Adam Lecrone",
     position: "Operations Associate",
@@ -150,7 +150,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ryan-graff.png"),
+    picSrc: require("../../../assets/images/about/headshots/ryan-graff.png"),
     picAlt: "null",
     name: "Ryan Graff",
     position: "AP/AR Specialist",
@@ -160,7 +160,7 @@ export const opsList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/eunice-kim.png"),
+    picSrc: require("../../../assets/images/about/headshots/eunice-kim.png"),
     picAlt: "null",
     name: "Eunice Kim",
     position: "Senior Staff Accountant",

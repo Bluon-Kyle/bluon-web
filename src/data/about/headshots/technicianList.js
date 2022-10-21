@@ -1,6 +1,6 @@
 export const technicianList = [
   {
-    picSrc: require("../../images/headshots/bryan-johnson.png"),
+    picSrc: require("../../../assets/images/about/headshots/bryan-johnson.png"),
     picAlt: "null",
     name: "Bryan Johnson",
     position: "Director of Tech Community",
@@ -10,7 +10,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/michael-mabry.png"),
+    picSrc: require("../../../assets/images/about/headshots/michael-mabry.png"),
     picAlt: "Mike Mabry",
     name: "Michael Mabry",
     position: "Director of Systems & Technology",
@@ -20,7 +20,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/nathan-facine.png"),
+    picSrc: require("../../../assets/images/about/headshots/nathan-facine.png"),
     picAlt: "null",
     name: "Nathan Facine",
     position: "Senior Research Technician",
@@ -30,7 +30,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/david-ellis.png"),
+    picSrc: require("../../../assets/images/about/headshots/david-ellis.png"),
     picAlt: "null",
     name: "David Ellis",
     position: "Senior Research Technician",
@@ -40,7 +40,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/mark-manger.png"),
+    picSrc: require("../../../assets/images/about/headshots/mark-manger.png"),
     picAlt: "Mark Manger",
     name: "Mark Manger",
     position: "Senior Lead Technician",
@@ -50,7 +50,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/dennis-carlton.png"),
+    picSrc: require("../../../assets/images/about/headshots/dennis-carlton.png"),
     picAlt: "null",
     name: "Dennis Carlton",
     position: "Senior Lead Technician",
@@ -60,7 +60,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/logan-marshall.png"),
+    picSrc: require("../../../assets/images/about/headshots/logan-marshall.png"),
     picAlt: "null",
     name: "Logan Marshall",
     position: "Technician Projects Lead",
@@ -70,7 +70,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/danny-meinecke.png"),
+    picSrc: require("../../../assets/images/about/headshots/danny-meinecke.png"),
     picAlt: "null",
     name: "Danny Meinecke",
     position: "Lead Technician",
@@ -80,7 +80,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/jason-hayes.png"),
+    picSrc: require("../../../assets/images/about/headshots/jason-hayes.png"),
     picAlt: "null",
     name: "Jason Hayes",
     position: "Lead Technician",
@@ -90,7 +90,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/raul-ibarra.png"),
+    picSrc: require("../../../assets/images/about/headshots/raul-ibarra.png"),
     picAlt: "null",
     name: "Raul Ibarra",
     position: "Lead Technician",
@@ -100,7 +100,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/todd-messer.png"),
+    picSrc: require("../../../assets/images/about/headshots/todd-messer.png"),
     picAlt: "null",
     name: "Todd Messer",
     position: "Technician Projects Lead",
@@ -110,7 +110,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/jim-seagriff.png"),
+    picSrc: require("../../../assets/images/about/headshots/jim-seagriff.png"),
     picAlt: "null",
     name: "Jim Seagriff",
     position: "Lead Technician",
@@ -120,7 +120,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/brett-brimhall.png"),
+    picSrc: require("../../../assets/images/about/headshots/brett-brimhall.png"),
     picAlt: "null",
     name: "Brett Brimhall",
     position: "Lead Technician",
@@ -130,7 +130,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/dan-horstkotte.png"),
+    picSrc: require("../../../assets/images/about/headshots/dan-horstkotte.png"),
     picAlt: "null",
     name: "Dan Horstkotte",
     position: "Lead Technician",
@@ -140,7 +140,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots//george-soto.png"),
+    picSrc: require("../../../assets/images/about/headshots//george-soto.png"),
     picAlt: "null",
     name: "George Soto",
     position: "Lead Technician",
@@ -150,7 +150,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/steven-wiley.png"),
+    picSrc: require("../../../assets/images/about/headshots/steven-wiley.png"),
     picAlt: "null",
     name: "Steven Wiley",
     position: "Lead Technician",
@@ -160,7 +160,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/steven-langewicz.png"),
+    picSrc: require("../../../assets/images/about/headshots/steven-langewicz.png"),
     picAlt: "null",
     name: "Steven Langewicz",
     position: "Lead Technician",
@@ -170,7 +170,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/randy-lehman.png"),
+    picSrc: require("../../../assets/images/about/headshots/randy-lehman.png"),
     picAlt: "null",
     name: "Randy Lehman",
     position: "Lead Technician",
@@ -180,7 +180,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ed-atencio.png"),
+    picSrc: require("../../../assets/images/about/headshots/ed-atencio.png"),
     picAlt: "null",
     name: "Ed Atencio",
     position: "Lead Technician",
@@ -190,7 +190,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/michael-mcnaughten.png"),
+    picSrc: require("../../../assets/images/about/headshots/michael-mcnaughten.png"),
     picAlt: "null",
     name: "Mike Mcnaughten",
     position: "Lead Technician",
@@ -200,7 +200,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/bradley-neel.png"),
+    picSrc: require("../../../assets/images/about/headshots/bradley-neel.png"),
     picAlt: "null",
     name: "Bradley Neel",
     position: "Lead Technician",
@@ -210,7 +210,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/dominique-finley.png"),
+    picSrc: require("../../../assets/images/about/headshots/dominique-finley.png"),
     picAlt: "null",
     name: "Dominique Finley",
     position: "Traveling Support Technician",
@@ -220,7 +220,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/dan-lish.png"),
+    picSrc: require("../../../assets/images/about/headshots/dan-lish.png"),
     picAlt: "null",
     name: "Dan Lish",
     position: "Lead Technician",
@@ -230,7 +230,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/jon-davis.png"),
+    picSrc: require("../../../assets/images/about/headshots/jon-davis.png"),
     picAlt: "null",
     name: "Jon Davis",
     position: "Lead Technician",
@@ -240,7 +240,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/vinny-lopez.png"),
+    picSrc: require("../../../assets/images/about/headshots/vinny-lopez.png"),
     picAlt: "null",
     name: "Vinny Lopez",
     position: "Lead Technician",
@@ -250,7 +250,7 @@ export const technicianList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/john-goldberg.png"),
+    picSrc: require("../../../assets/images/about/headshots/john-goldberg.png"),
     picAlt: "null",
     name: "John Goldberg",
     position: "Lead Technician",

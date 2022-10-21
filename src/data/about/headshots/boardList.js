@@ -1,6 +1,6 @@
 export const boardList = [
   {
-    picSrc: require("../../images/headshots/peter-capuciati.png"),
+    picSrc: require("../../../assets/images/about/headshots/peter-capuciati.png"),
     picAlt: "null",
     name: "Peter Capuciati",
     position: "Chairman & CEO",
@@ -10,7 +10,7 @@ export const boardList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/matt-case.png"),
+    picSrc: require("../../../assets/images/about/headshots/matt-case.png"),
     picAlt: "Matt",
     name: "Matt Case",
     position: "Partner",
@@ -20,7 +20,7 @@ export const boardList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/devin-whatley.png"),
+    picSrc: require("../../../assets/images/about/headshots/devin-whatley.png"),
     picAlt: "null",
     name: "Devin Whatley",
     position: "Partner",
@@ -30,7 +30,7 @@ export const boardList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/david-gordon.png"),
+    picSrc: require("../../../assets/images/about/headshots/david-gordon.png"),
     picAlt: "null",
     name: "David Gordon",
     position: "Vice Chairman",
@@ -40,7 +40,7 @@ export const boardList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/chanel-damphousse.png"),
+    picSrc: require("../../../assets/images/about/headshots/chanel-damphousse.png"),
     picAlt: "null",
     name: "Chanel Damphousse",
     position: "Partner",

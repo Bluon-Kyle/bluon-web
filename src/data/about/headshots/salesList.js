@@ -1,6 +1,6 @@
 export const salesList = [
   {
-    picSrc: require("../../images/headshots/will-rawley.png"),
+    picSrc: require("../../../assets/images/about/headshots/will-rawley.png"),
     picAlt: "null",
     name: "Will Rawley",
     position: "VP of Supply Accounts",
@@ -10,7 +10,7 @@ export const salesList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/will-frey.png"),
+    picSrc: require("../../../assets/images/about/headshots/will-frey.png"),
     picAlt: "null",
     name: "Will Frey",
     position: "Director of Business Development",
@@ -20,7 +20,7 @@ export const salesList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/brandon-havas.png"),
+    picSrc: require("../../../assets/images/about/headshots/brandon-havas.png"),
     picAlt: "null",
     name: "Brandon Havas",
     position: "Director of Platform Sales",
@@ -30,7 +30,7 @@ export const salesList = [
     email: "bhavas@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/shawn-riggs.png"),
+    picSrc: require("../../../assets/images/about/headshots/shawn-riggs.png"),
     picAlt: "null",
     name: "Shawn Regis",
     position: "Director of Platform Sales",
@@ -40,7 +40,7 @@ export const salesList = [
     email: "sregis@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/tiffany.png"),
+    picSrc: require("../../../assets/images/about/headshots/tiffany.png"),
     picAlt: "Tiffany Karabin",
     name: "Adam Curry",
     position: "SVP of Software",
@@ -50,7 +50,7 @@ export const salesList = [
     email: "tkarabin@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/mary-grace.png"),
+    picSrc: require("../../../assets/images/about/headshots/mary-grace.png"),
     picAlt: "null",
     name: "Mary Grace Shuster",
     position: "Business Development",
@@ -60,7 +60,7 @@ export const salesList = [
     email: "mgshuster@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/jeremy-williams.png"),
+    picSrc: require("../../../assets/images/about/headshots/jeremy-williams.png"),
     picAlt: "Jeremy Williams",
     name: "Jeremy Williams",
     position: "Business Development",
@@ -70,7 +70,7 @@ export const salesList = [
     email: "(410) 660-7138",
   },
   {
-    picSrc: require("../../images/headshots/clay-naiser.png"),
+    picSrc: require("../../../assets/images/about/headshots/clay-naiser.png"),
     picAlt: "null",
     name: "Clay Naiser",
     position: "Business Development",
@@ -80,7 +80,7 @@ export const salesList = [
     email: "cnaiser@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/adrian-marquez.png"),
+    picSrc: require("../../../assets/images/about/headshots/adrian-marquez.png"),
     picAlt: "null",
     name: "Adrian Marquez",
     position: "Business Development",
@@ -90,7 +90,7 @@ export const salesList = [
     email: "amarquez@bluon.com",
   },
   {
-    picSrc: require("../../images/headshots/jessica-morell.png"),
+    picSrc: require("../../../assets/images/about/headshots/jessica-morell.png"),
     picAlt: "Jess",
     name: "Jess Morrell",
     position: "Growth Manager",
@@ -100,7 +100,7 @@ export const salesList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/sergio-flores.png"),
+    picSrc: require("../../../assets/images/about/headshots/sergio-flores.png"),
     picAlt: "sergio!",
     name: "Sergio Flores",
     position: "Senior Graphic Artist",
@@ -110,7 +110,7 @@ export const salesList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/maddy.png"),
+    picSrc: require("../../../assets/images/about/headshots/maddy.png"),
     picAlt: "null",
     name: "Maddy Patcheak",
     position: "Marketing & Social Media Associate",
@@ -120,7 +120,7 @@ export const salesList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/jesse-pickard.png"),
+    picSrc: require("../../../assets/images/about/headshots/jesse-pickard.png"),
     picAlt: "null",
     name: "Jesse Pickard",
     position: "Business Development",

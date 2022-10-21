@@ -1,6 +1,6 @@
 export const platformList = [
   {
-    picSrc: require("../../images/headshots/kristine-gill.png"),
+    picSrc: require("../../../assets/images/about/headshots/kristine-gill.png"),
     picAlt: "null",
     name: "Kristina Gill",
     position: "Director of Member Experience",
@@ -10,7 +10,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/evan-canter.png"),
+    picSrc: require("../../../assets/images/about/headshots/evan-canter.png"),
     picAlt: "null",
     name: "Evan Carter",
     position: "Lead Member Experience",
@@ -20,7 +20,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/aaron-alferos.png"),
+    picSrc: require("../../../assets/images/about/headshots/aaron-alferos.png"),
     picAlt: "null",
     name: "Aaron Alferos",
     position: "Lead Member Experience",
@@ -30,7 +30,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/korie.png"),
+    picSrc: require("../../../assets/images/about/headshots/korie.png"),
     picAlt: "null",
     name: "Korrie Schroyer",
     position: "Member Experience Associate",
@@ -40,7 +40,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/violet-harvey.png"),
+    picSrc: require("../../../assets/images/about/headshots/violet-harvey.png"),
     picAlt: "null",
     name: "Violet Harvey",
     position: "Member Experience Associate",
@@ -50,7 +50,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/lauren-miller.png"),
+    picSrc: require("../../../assets/images/about/headshots/lauren-miller.png"),
     picAlt: "null",
     name: "Lauren Miller",
     position: "Member Experience Associate",
@@ -60,7 +60,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/ruby-hernandez.png"),
+    picSrc: require("../../../assets/images/about/headshots/ruby-hernandez.png"),
     picAlt: "null",
     name: "Ruby Hernandez",
     position: "Member Experience Associate",
@@ -70,7 +70,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/muskan-lall.png"),
+    picSrc: require("../../../assets/images/about/headshots/muskan-lall.png"),
     picAlt: "null",
     name: "Muskan Lal",
     position: "Member Experience Associate",
@@ -80,7 +80,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/dylan-nicklin.png"),
+    picSrc: require("../../../assets/images/about/headshots/dylan-nicklin.png"),
     picAlt: "null",
     name: "Dylan Nicklin",
     position: "Member Experience Associate",
@@ -90,7 +90,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/joanna-martinez.png"),
+    picSrc: require("../../../assets/images/about/headshots/joanna-martinez.png"),
     picAlt: "null",
     name: "Joanna Martinez",
     position: "Member Experience Associate",
@@ -100,7 +100,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/devin-zofrea.png"),
+    picSrc: require("../../../assets/images/about/headshots/devin-zofrea.png"),
     picAlt: "null",
     name: "Devin Zofrea",
     position: "Member Experience Associate",
@@ -110,7 +110,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/cayleigh-clark.png"),
+    picSrc: require("../../../assets/images/about/headshots/cayleigh-clark.png"),
     picAlt: "null",
     name: "Cayleigh Clark",
     position: "Member Experience Associate",
@@ -120,7 +120,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/anaid-ortega.png"),
+    picSrc: require("../../../assets/images/about/headshots/anaid-ortega.png"),
     picAlt: "null",
     name: "Anaid Ortega",
     position: "Member Experience Associate",
@@ -130,7 +130,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/betty-merkebu.png"),
+    picSrc: require("../../../assets/images/about/headshots/betty-merkebu.png"),
     picAlt: "null",
     name: "Betty Merkebu",
     position: "Member Experience Associate",
@@ -140,7 +140,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/cierra-slaughter.png"),
+    picSrc: require("../../../assets/images/about/headshots/cierra-slaughter.png"),
     picAlt: "null",
     name: "Cierra Slaughter",
     position: "Member Experience Associate",
@@ -150,7 +150,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/sarah-hinely.png"),
+    picSrc: require("../../../assets/images/about/headshots/sarah-hinely.png"),
     picAlt: "null",
     name: "Sarah Hinely",
     position: "Member Experience Associate",
@@ -160,7 +160,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/shenelle-gaston.png"),
+    picSrc: require("../../../assets/images/about/headshots/shenelle-gaston.png"),
     picAlt: "null",
     name: "Shenelle Gaston",
     position: "Member Experience Associate",
@@ -170,7 +170,7 @@ export const platformList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/jinhee-im.png"),
+    picSrc: require("../../../assets/images/about/headshots/jinhee-im.png"),
     picAlt: "null",
     name: "Jinhee Im",
     position: "Member Experience Associate",

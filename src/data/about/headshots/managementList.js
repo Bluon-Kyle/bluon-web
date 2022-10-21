@@ -1,6 +1,6 @@
 export const managementList = [
   {
-    picSrc: require("../../images/headshots/peter-capuciati.png"),
+    picSrc: require("../../../assets/images/about/headshots/peter-capuciati.png"),
     picAlt: "null",
     name: "Peter Capuciati",
     position: "Chief Executive Officer",
@@ -10,7 +10,7 @@ export const managementList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/danica-bunnett.png"),
+    picSrc: require("../../../assets/images/about/headshots/danica-bunnett.png"),
     picAlt: "null",
     name: "Danica Bunnett",
     position: "Chief Operating Officer",
@@ -20,7 +20,7 @@ export const managementList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/matt-case.png"),
+    picSrc: require("../../../assets/images/about/headshots/matt-case.png"),
     picAlt: "null",
     name: "Peter Capuciati",
     position: "SVP Growth",
@@ -30,7 +30,7 @@ export const managementList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/drew-eckman.png"),
+    picSrc: require("../../../assets/images/about/headshots/drew-eckman.png"),
     picAlt: "null",
     name: "Drew Eckman",
     position: "Senior Vice President",
@@ -40,7 +40,7 @@ export const managementList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/adam-curry.png"),
+    picSrc: require("../../../assets/images/about/headshots/adam-curry.png"),
     picAlt: "Adam Curry",
     name: "Adam Curry",
     position: "SVP of Software",
@@ -50,7 +50,7 @@ export const managementList = [
     email: null,
   },
   {
-    picSrc: require("../../images/headshots/nick-jaros.png"),
+    picSrc: require("../../../assets/images/about/headshots/nick-jaros.png"),
     picAlt: "null",
     name: "Peter Capuciati",
     position: "Chief Executive Officer",
