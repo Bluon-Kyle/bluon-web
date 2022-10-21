@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 * {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
@@ -6,18 +8,18 @@
 body {
   //position: relative;
   font-family: "Neue Haas Unica", sans-serif;
-  background-color: white;
+  background-color: $bluon-brand-white;
   margin: 0;
 
   .TitleBlue {
-    color: $bluon-blue;
+    color: $bluon-brand-blue;
     //text-decoration: none;
   }
   //backgrounds
   .bg-img-eclipse {
-    background-image: url(../assets/images/ellipse-circle.png);
+    background-image: url(../../assets/images/ellipse-circle.png);
     background-position: bottom right;
-    background-color: #f8f8f8 !important;
+    background-color: $bluon-background-grey-2 !important;
     background-size: inherit;
     background-repeat: no-repeat;
   }

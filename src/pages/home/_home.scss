@@ -1,3 +1,5 @@
+@use "../../assets/scss/colors" as *;
+
 @mixin center-flex {
   display: flex;
   justify-content: center;
@@ -6,95 +8,91 @@
 @mixin padding($size) {
   padding-left: $size;
   padding-right: $size;
-
 }
 @mixin grid($rowCount, $spacing) {
   display: grid;
   grid-template-columns: repeat($rowCount, 1fr);
   grid-gap: $spacing;
   width: 100%;
-
 }
 .home {
-  display:block; 
-  &-welcome-wrapper{
-    h1{
-      padding-top:2rem; 
-      color:$bluon-blue; 
+  display: block;
+  &-welcome-wrapper {
+    h1 {
+      padding-top: 2rem;
+      color: $bluon-brand-blue;
       text-align: center;
       font-size: 2.1rem;
       padding-bottom: 2rem;
     }
   }
-  &-video-container{
-    @include center-flex; 
-    .home-video{
-      width:100%
+  &-video-container {
+    @include center-flex;
+    .home-video {
+      width: 100%;
     }
   }
-  &-impact{
+  &-impact {
     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
-    background-position: right; 
-    height:400px; 
+    background-position: right;
+    height: 400px;
     @include padding(2.2rem);
-    h1{
-      color:grey; 
+    h1 {
+      color: grey;
       font-size: 1rem;
-      padding-bottom: .8rem;
-      padding-top:2rem; 
+      padding-bottom: 0.8rem;
+      padding-top: 2rem;
     }
-    h2{
+    h2 {
       font-size: 1.8rem;
       //width:70%;
     }
-
   }
-  &-cards{
-    @include center-flex; 
+  &-cards {
+    @include center-flex;
   }
-  &-app{
-    background-color: $bluon-blue;
+  &-app {
+    background-color: $bluon-brand-blue;
     overflow-y: hidden;
-    &-text{
-      color: white; 
+    &-text {
+      color: white;
       @include padding(2rem);
-      .outer{
-        padding-top:4rem;
-        width: 80%;  
+      .outer {
+        padding-top: 4rem;
+        width: 80%;
         padding-bottom: 2rem;
       }
-      ul{
+      ul {
         padding-left: 2rem;
         padding-right: 2rem;
         list-style: circle;
         padding-bottom: 1.2rem;
-        li{
+        li {
           padding-bottom: 1rem;
           line-height: 1.5rem;
         }
       }
       //button will be changed
-      button{
-        color: black; 
+      button {
+        color: black;
         background-color: white;
         border-radius: 50px;
         width: 130px;
-        height: 45px; 
+        height: 45px;
       }
     }
-    &-img{
-      padding-top:1.2rem; 
-      @include center-flex; 
+    &-img {
+      padding-top: 1.2rem;
+      @include center-flex;
       transform: translateY(2rem);
-      img{
-        width:50%; 
+      img {
+        width: 50%;
       }
     }
-
   }
-    &-button-cards {
-      padding-top: .5rem;
-      @include grid(1, .5rem);
+  &-button-cards {
+    padding-top: 0.5rem;
+    @include grid(1, 0.5rem);
   }
 }
 

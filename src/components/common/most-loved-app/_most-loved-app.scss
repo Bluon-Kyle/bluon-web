@@ -1,58 +1,54 @@
-@import '../../../utilities/mixins';
-.mla{
-    display: block;
-    &-top{
-        
-        &-text{
-            text-align: center;
-            h3{
-                padding-top:4rem; 
-                font-size: 1.5rem;
-            }
-            p{
-                padding-top: 1.5rem;
-                font-size: 1rem;
-                padding-bottom: 1.5rem;
-                color: grey; 
-            }
-            h4{
-                padding-top: 1rem;
-                padding-bottom: 2rem;
-            }
-        }
-        &-img{
-            &-app{
-                width:100%; 
-            }
-        }
+@import "../../../assets/scss/mixins";
+.mla {
+  display: block;
+  &-top {
+    &-text {
+      text-align: center;
+      h3 {
+        padding-top: 4rem;
+        font-size: 1.5rem;
+      }
+      p {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+        color: grey;
+      }
+      h4 {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+      }
     }
-    &-testimonials{
-
+    &-img {
+      &-app {
+        width: 100%;
+      }
     }
-    &-join{
-        @include flex-and-center;
-        img{
-            width: 16%; 
-        }
+  }
+  &-testimonials {
+  }
+  &-join {
+    @include flex-and-center;
+    img {
+      width: 16%;
     }
-    &-link{
-        &-text{
-            text-align: center;
-        }
-        &-wrapper{
-            @include flex-and-center;
-            width:100%; 
-            .app-logo-desktop{
-                display:none; 
-            }
-            
-        }
+  }
+  &-link {
+    &-text {
+      text-align: center;
     }
-    &-video{
-        display: flex;
-        .video{
-            width:100%; 
-        }
+    &-wrapper {
+      @include flex-and-center;
+      width: 100%;
+      .app-logo-desktop {
+        display: none;
+      }
     }
-    
+  }
+  &-video {
+    display: flex;
+    .video {
+      width: 100%;
+    }
+  }
 }

@@ -6,6 +6,8 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 import { teamGridList } from "../../data/about/teamGridList";
 import bluonTeamImage from "../../assets/images/about/bluon-team.jpg";
 
+import "./_about.scss";
+
 const About = () => {
   const renderTeamGrids = () => {
     return teamGridList.map((teamGrid, i) => {

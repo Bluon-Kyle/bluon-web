@@ -23,7 +23,8 @@ import TestPage from "./pages/test/TestPage";
 //vitals
 import reportWebVitals from "./reportWebVitals";
 
-// import App from './App';
+import "./_index.scss";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(

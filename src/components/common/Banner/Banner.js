@@ -1,9 +1,9 @@
 import React from "react";
 import "./_banner.scss";
 
-const Banner = ({ image, bannerStyle, children }) => {
+const Banner = ({ image, children, className }) => {
   return (
-    <div className="banner" style={bannerStyle}>
+    <div className={`banner ${className}`}>
       {children}
       <img className="banner-image" src={image} alt="banner" />
     </div>

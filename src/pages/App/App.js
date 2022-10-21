@@ -8,6 +8,8 @@ import appExamples from "../../assets/images/app/app-phone.png";
 import appTechs from "../../assets/images/app/techs.png";
 import appJoin from "../../assets/images/app/join-movement-mobile.png";
 
+import "./_app.scss";
+
 const App = () => {
   return (
     <div className="app">

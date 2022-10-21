@@ -1,3 +1,4 @@
+@use "../../assets/scss/colors" as *;
 @import "../../utilities/mixins";
 @mixin app-padding {
   padding-left: 2rem;
@@ -60,7 +61,7 @@
         @include title-mobile;
       }
       h2.app-support-blue-h2 {
-        color: $bluon-blue;
+        color: $bluon-brand-blue;
       }
       p {
         @include p-mobile;
@@ -87,7 +88,7 @@
     }
   }
   &-community {
-    background-color: $bluon-blue;
+    background-color: $bluon-brand-blue;
 
     &-text {
       color: white;

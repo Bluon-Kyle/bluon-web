@@ -1,59 +1,57 @@
+@use "../../assets/scss/colors" as *;
 
-.bluon-card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    max-width: 300px;
-    max-height: 430px;
-    min-height: 380px;
-    margin: 1em;
-    height: 38vw;
-    background-color: $logo-grey;
-    &-container{
-        padding: 2px 16px;
-        .bluon-card-text{
-            
-            h1{
+.bluon-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 430px;
+  min-height: 380px;
+  margin: 1em;
+  height: 38vw;
+  background-color: $bluon-background-grey-9;
+  &-container {
+    padding: 2px 16px;
+    .bluon-card-text {
+      h1 {
+      }
+      p {
+        padding-top: 1vw;
+        font-size: 100%;
+      }
+    }
+    .bluon-card-button {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      width: 100%;
+      height: 4vw;
+      font-size: 100%;
+      margin-bottom: 0;
+      padding-left: 1vw;
+      padding-right: 1vw;
 
-            }
-            p{
-                padding-top: 1vw;
-                font-size: 100%;
-            }
-        }
-        .bluon-card-button{
-            display: flex;
-            justify-content: center;
-            
-        }
-        button{
-            background-color:black;
-            color:white; 
-            border-radius: 50px;
-            width:100%;
-            height:4vw;
-            font-size: 100% ;
-            margin-bottom: 0;
-            padding-left: 1vw;
-            padding-right: 1vw;
-            
-            &:hover{
-                //opacity: 0.65;
-                color:black; 
-                background-color: white;
-                cursor: pointer;
-            }
-        }
+      &:hover {
+        //opacity: 0.65;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+      }
     }
-    &-text{
-        margin-bottom: 20px;
-    }
-    &-img{
-        border-radius: 5px 5px 0 0;
-        max-width: 100%;
-    }
-    
-    &:hover{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
+  }
+  &-text {
+    margin-bottom: 20px;
+  }
+  &-img {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 }
