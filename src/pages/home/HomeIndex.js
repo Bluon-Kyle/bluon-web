@@ -9,6 +9,7 @@ import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
 //import GameCard from '../../components/common/cards/gameCard/GameCard';
 //import PicCard from '../../components/common/cards/picCard/PicCard';
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
+
 const HomeIndex = () => {
   return (
     <div className="home">
@@ -28,10 +29,10 @@ const HomeIndex = () => {
         </div>
         {/* <div className='home-container-background'><br></br></div> */}
       </div>
-      <br></br>
+
       <div className="home-impact">
-        <h3>The Bluon Impact</h3>
-        <br></br>
+        <h1>The Bluon Impact</h1>
+
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
           <span className="home-impact-map"></span>
@@ -40,33 +41,6 @@ const HomeIndex = () => {
       </div>
 
       <div className="home-cards">
-        {/* <Card 
-          img='Distributors'
-          img_alt="Check out our distributors"
-          title='For Distributors'
-          content='Transform your counter staff with a single tool to receive live orders from 100k+ Bluon Techs in the field.'
-          content_bottom ='Also gain access to the most comprehensive cross-reference search in the industry'
-          button_text="Get a demo"
-          button_link = "RequestDemo"
-          />
-          <Card 
-          img='Contractors'
-          img_alt="Check out our Contractors"
-          title='For Contractors'
-          content='Empower your techs to get more jobs done. Bluon is a mobile support platform your techs will actually use.'
-          content_bottom ='Identify and order parts directly from your local suppliers - no more wrong parts or extra supply runs.'
-          button_text="Learn More"
-          button_link='TechDemo'
-          />
-          <Card 
-          img='Techs'
-          img_alt="Check out our Technicians"
-          title='For Technicians'
-          content='Join the largest community of HVAC techs and the only support platform to truly empower those in the trade.'
-          content_bottom ='Get access to 325k HVAC units with manuals, original parts lists and 24/7 tech support.'
-          button_text="Get the Bluon App"
-          button_link='App'
-          /> */}
         <ResponsiveCard
           title1="For Distributors"
           img1={require("./ForDistributors.jpg")}
@@ -98,7 +72,7 @@ const HomeIndex = () => {
             <li>Order parts from local suppliers</li>
           </ul>
           <Link to={"/App"}>
-            <button> Explore App</button>
+            <button> <strong>Explore App</strong></button>
           </Link>
         </div>
         <div className="home-app-img">
@@ -106,12 +80,12 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      <MostLovedApp></MostLovedApp>
+      <MostLovedApp className='home-mla'></MostLovedApp>
 
       <div className="home-button-cards">
         <ButtonCard
           title="Distributors"
-          img="tech"
+          img="dist"
           imgalt="Distributors"
           hover_title="Distributors"
           content="Bluon brings more buisness to distributors, fill out our form to learn more!"
