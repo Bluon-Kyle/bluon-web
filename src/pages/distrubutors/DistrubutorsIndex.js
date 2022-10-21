@@ -1,9 +1,8 @@
 import React from "react";
 import video1 from "../../assets/video/BluonLive-Video.mp4";
-import { Link } from "react-router-dom";
 import ButtonNav from '../../components/common/ButtonNav/ButtonNav'
 import arrow from '../../assets/icons/arrow.svg'
-
+import Logos from "./components/Logos";
 const DistrubutorsIndex = () => {
   const map = require("./map1.png");
   return (
@@ -29,9 +28,11 @@ const DistrubutorsIndex = () => {
         <div className="distributors-partners-text">
           <h2>Select Partners</h2>
           <div className="distributors-partners-logos">
-
+            <Logos/>
           </div>
-          <ButtonNav to='BluonLiveStores' color='primary'/>
+          <ButtonNav to='/BluonLiveStores' color='primary'>
+            See Local Distributors
+          </ButtonNav>
         </div>
 
         <div className="distributors-partners-logos"></div>
