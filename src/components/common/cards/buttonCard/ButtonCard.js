@@ -6,7 +6,8 @@ import distIcn from './icons/dist-icon.svg';
 import techIcn from './icons/tech-icon.svg';
 import conIcn from './icons/contr-icon.svg';
 import { Link } from "react-router-dom";
-import './_buttonCard.scss'
+import "./_buttonCard.scss";
+
 const ButtonCard = (props) => {
   let src = null;
   let icn = null; 
