@@ -19,6 +19,7 @@ import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
 import Demo from "./pages/demo/Demo";
 import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
+import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 import TestPage from "./pages/test/TestPage";
 //vitals
 import reportWebVitals from "./reportWebVitals";
@@ -64,6 +65,7 @@ root.render(
         />
         <Route path="/ThankYou" element={<ThankYou />} />
         <Route path="TestPage" element={<TestPage />} />
+        <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
       </Routes>
     </ScrollToTop>
     <Footer />

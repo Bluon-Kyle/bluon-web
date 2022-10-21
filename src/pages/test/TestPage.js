@@ -1,9 +1,9 @@
 
-import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp"
+import Logos from "../Distrubutors/components/Logos"
 const TestPage = () => {
   return (
     <div className="test">
-      <MostLovedApp/>
+      <Logos/>
     </div>
   )
 }
