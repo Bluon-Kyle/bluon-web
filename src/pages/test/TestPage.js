@@ -9,7 +9,6 @@ import ani from './lottiejson.json';
 const TestPage = () => {
   //test1
   //let animationContainer = React.createRef(); 
-  //const json = url('https://assets6.lottiefiles.com/packages/lf20_agbnhoz0.json');
   // lottie.loadAnimation({
   //   container: animationContainer.current, 
   //   renderer:'svg',
@@ -31,7 +30,7 @@ const TestPage = () => {
   const lottieRef = React.useRef();
 
   React.useEffect(() => {
-    var animDuration = 2000;
+    var animDuration = 1000;
     const anim = lottie.loadAnimation({
       container: lottieRef.current,
       renderer: "svg",
@@ -60,10 +59,12 @@ const TestPage = () => {
       document.removeEventListener("scroll", onScroll);
     };
   }, []);
+
+
   return (
     <div className="test">
       
-      <div className="animation-container" style={{position:'fixed'}} ref={lottieRef}>
+      <div className="animation-container" style={{position:'relative'}} ref={lottieRef}>
         <div>Test</div>
 
       </div>
