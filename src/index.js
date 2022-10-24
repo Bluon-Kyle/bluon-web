@@ -18,6 +18,7 @@ import Demo from "./pages/demo/Demo";
 import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
+import SignUp from "./pages/SignUp/SignUp";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
 //vitals
@@ -74,6 +75,7 @@ root.render(
         <Route path="/ThankYou" element={<ThankYou />} />
         {/* <Route path="TestPage" element={<LottieTest />} /> */}
         <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
+        <Route path='SignUp' element={<SignUp/>}/>
       </Routes>
     </ScrollToTop>
     <Footer />
