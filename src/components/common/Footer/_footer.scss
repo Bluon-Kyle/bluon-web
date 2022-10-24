@@ -1,8 +1,10 @@
+@use "../../../assets/scss/colors" as *;
+
 .footer {
-  background-color: #013060;
+  background-color: $bluon-brand-blue-2;
   width: 100%;
   padding: 3rem 2.5rem;
-  color: #a4b4c6;
+  color: $bluon-background-grey-7;
 
   &-logo {
     display: block;
@@ -18,7 +20,7 @@
     &-item {
       padding: 0.8rem 0;
       &-link {
-        color: #a4b4c6;
+        color: $bluon-background-grey-7;
       }
     }
   }
@@ -29,7 +31,7 @@
     margin: 1.5rem 0;
 
     a {
-      color: #ccd6df;
+      color: $bluon-background-grey-8;
     }
 
     img {
@@ -54,7 +56,7 @@
       margin-top: 1rem;
 
       a {
-        color: #a4b4c6;
+        color: $bluon-background-grey-7;
       }
 
       &-terms {

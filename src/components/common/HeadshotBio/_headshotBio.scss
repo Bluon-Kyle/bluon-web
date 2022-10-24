@@ -1,3 +1,5 @@
+@use "../../../assets/scss/colors" as *;
+
 .headshot {
   margin-bottom: 3rem;
   &-wrapper {
@@ -14,18 +16,8 @@
       //title and bio
       font-size: 0.875rem;
       font-weight: 400;
-      color: #212529;
+      color: $bluon-background-grey-3;
       line-height: 20px;
-    }
-  }
-  &-contact {
-    &-tel {
-      img {
-      }
-    }
-    &-email {
-      img {
-      }
     }
   }
 }

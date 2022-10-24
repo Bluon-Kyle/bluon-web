@@ -1,42 +1,40 @@
-@import '../../../../utilities/mixins';
-.button-card{
-    margin: 0 0 0 0;
-    height: 18rem;
-    max-height: 400px;
-    //color:blue; 
-    &-content{
-        padding-top:5rem; 
+@use "../../../../assets/scss/mixins" as *;
+
+.button-card {
+  margin: 0 0 0 0;
+  height: 18rem;
+  max-height: 400px;
+  //color:blue;
+  &-content {
+    padding-top: 5rem;
+  }
+  &-text {
+    @include flex-and-center;
+    text-align: center;
+    h2 {
+      font-size: 1rem;
+      color: white;
     }
-    &-text{
-        @include flex-and-center;
-        text-align: center;
-        h2{
-            font-size:1rem;
-            color:white; 
-        }
+  }
+  &-link {
+    @include flex-and-center;
+    padding-top: 2vh;
+
+    button {
+      color: black;
+      background-color: white;
+      width: 11rem;
+      height: 5vh;
+      border-radius: 50px;
+      border-color: white;
+      font-size: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      &:hover {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
     }
-    &-link{
-        @include flex-and-center; 
-        padding-top: 2vh;
-        
-        button{
-            color: black; 
-            background-color: white;
-            width:11rem;
-            height:5vh;
-            border-radius: 50px;
-            border-color: white;
-            font-size: 100%;
-            padding-left: 10%;
-            padding-right: 10%;
-            &:hover{
-                color: white; 
-                background-color: black;
-                cursor: pointer;
-            }
-        }
-    }
-    
-  
-    
+  }
 }

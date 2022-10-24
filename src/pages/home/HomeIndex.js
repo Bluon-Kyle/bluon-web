@@ -10,6 +10,8 @@ import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
 //import PicCard from '../../components/common/cards/picCard/PicCard';
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 
+import "./_home.scss";
+
 const HomeIndex = () => {
   return (
     <div className="home">
@@ -72,7 +74,10 @@ const HomeIndex = () => {
             <li>Order parts from local suppliers</li>
           </ul>
           <Link to={"/App"}>
-            <button> <strong>Explore App</strong></button>
+            <button>
+              {" "}
+              <strong>Explore App</strong>
+            </button>
           </Link>
         </div>
         <div className="home-app-img">
@@ -80,7 +85,7 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      <MostLovedApp className='home-mla'></MostLovedApp>
+      <MostLovedApp className="home-mla"></MostLovedApp>
 
       <div className="home-button-cards">
         <ButtonCard

@@ -6,15 +6,11 @@ import ButtonLink from "../ButtonLink/ButtonLink";
 import "./_joinBanner.scss";
 
 const JoinBanner = ({ title }) => {
-  const bannerStyle = {
-    backgroundColor: "#1352fe",
-  };
-
   return (
-    <Banner image={joinMovementMobile} bannerStyle={bannerStyle}>
+    <Banner className={"join-banner-container"} image={joinMovementMobile}>
       <div className="join-banner">
         <h2 className="join-banner-title">{title}</h2>
-        <ButtonLink color="secondary" link={"https://bluon.com/bluon-live.php"}>
+        <ButtonLink color="secondary" href={"https://bluon.com/bluon-live.php"}>
           {"We're Hiring!"}
         </ButtonLink>
       </div>

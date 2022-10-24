@@ -5,6 +5,8 @@ import phoneIcon from "../../../assets/icons/phone.svg";
 import emailIcon from "../../../assets/icons/email.svg";
 import IconInformation from "../IconInformation/IconInformation";
 
+import "./_footer.scss";
+
 const Footer = () => {
   return (
     <div className="footer">

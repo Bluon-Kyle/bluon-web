@@ -1,9 +1,12 @@
 import React from "react";
 import video1 from "../../assets/video/BluonLive-Video.mp4";
-import ButtonNav from '../../components/common/ButtonNav/ButtonNav'
-import arrow from '../../assets/icons/arrow.svg'
+import ButtonNav from "../../components/common/ButtonNav/ButtonNav";
+import arrow from "../../assets/icons/arrow.svg";
 import Logos from "./components/Logos";
-const DistrubutorsIndex = () => {
+
+import "./_distributors.scss";
+
+const Distrubutors = () => {
   const map = require("./map1.png");
   return (
     <div className="distributors">
@@ -28,9 +31,9 @@ const DistrubutorsIndex = () => {
         <div className="distributors-partners-text">
           <h2>Select Partners</h2>
           <div className="distributors-partners-logos">
-            <Logos/>
+            <Logos />
           </div>
-          <ButtonNav to='/BluonLiveStores' color='primary'>
+          <ButtonNav to="/BluonLiveStores" color="primary">
             See Local Distributors
           </ButtonNav>
         </div>
@@ -73,13 +76,13 @@ const DistrubutorsIndex = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
-            width='100%'
-            height='230vw'
+            width="100%"
+            height="230vw"
           />
         </div>
         <div className="distributors-bottom-video-demo-button">
-          <ButtonNav to='RequestDemo' color='primary'>
-            Get a Demo <img alt='arrow' src={arrow}/>
+          <ButtonNav to="RequestDemo" color="primary">
+            Get a Demo <img alt="arrow" src={arrow} />
           </ButtonNav>
         </div>
       </div>
@@ -87,4 +90,4 @@ const DistrubutorsIndex = () => {
   );
 };
 
-export default DistrubutorsIndex;
+export default Distrubutors;

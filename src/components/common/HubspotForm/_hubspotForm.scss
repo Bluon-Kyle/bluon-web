@@ -1,3 +1,5 @@
+@use "../../../assets/scss/colors" as *;
+
 .hubspot {
   &-form {
     padding-left: calc(8vw - 8px);
@@ -7,7 +9,7 @@
 .mobile {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: $bluon-brand-white;
   border-radius: 25px;
   padding: 1rem;
 }

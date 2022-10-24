@@ -1,3 +1,5 @@
+@use "../../assets/scss/colors" as *;
+
 .thank-you-container {
   display: flex;
   justify-content: center;
@@ -14,7 +16,7 @@
     }
 
     &-message {
-      color: #333333;
+      color: $bluon-background-grey-6;
       margin-bottom: 2.375rem;
     }
   }
