@@ -1,5 +1,10 @@
 @use "../../assets/scss/colors" as *;
-
+// @use '../../assets/scss/mixins' as m; 
+@mixin center {
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+}
 @mixin padding-side($num) {
   padding-left: $num;
   padding-right: $num;
@@ -27,6 +32,11 @@
       }
     }
   }
+  &-divider{
+    img{
+      width:100%; 
+    }
+  }
   &-partners {
     padding-top: 2rem;
     &-text {
@@ -38,6 +48,36 @@
     &-logos {
       padding-bottom: 2rem;
     }
+  }
+  &-bluon-live{
+    @include padding-side(2rem);
+    h2{
+      font-size: 1.4rem; 
+    }
+    ul{
+      @include padding-side(1.5rem);
+      list-style-type:circle;
+      li{
+        
+        padding-bottom: 1rem;
+        padding-top: .8rem;
+        line-height: 1.4rem;
+      }
+    }
+    img{
+      width:40%;
+      padding-bottom: 1.6rem;
+    }
+    .demo-button{
+      @include center(); 
+      padding-bottom: 1.5rem;
+    }
+    &-demo{
+      padding-top: 2rem;
+      padding-bottom: 2rem; 
+    
+    }
+   
   }
   &-impact {
     @include padding-side(2rem);
