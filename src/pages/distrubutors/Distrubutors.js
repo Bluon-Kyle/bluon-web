@@ -8,8 +8,8 @@ import blive from '../../assets/images/distributors/BluonLive-Logo.svg'
 import bsearch from '../../assets/images/distributors/BluonSearch-Logo.svg'
 //lotties
 import LottieLoop2 from "../../components/common/LottieLoop/LottieLoop2";
-import anim1 from '../../data/lottie/lottiejson.json'
-import anim2 from '../../data/lottie/lottie-bluon-search.json';
+import anim1 from '../../data/lottie/lottie-bluon-live.json'
+import anim2 from '../../data/lottie/lottie-bluon-search.json'
 import "./_distributors.scss";
 
 const Distrubutors = () => {

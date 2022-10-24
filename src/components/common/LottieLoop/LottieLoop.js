@@ -1,6 +1,6 @@
 import React from 'react'
 import lottie from 'lottie-web'
-import ani from '../../../data/lottie/lottiejson.json'
+import ani from '../../../data/lottie/lottie-bluon-live.json'
 import './_lottieloop.scss'
 //import { useEffect } from 'react'
 const LottieLoop = () => {
