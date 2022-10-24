@@ -1,0 +1,28 @@
+@use "../../../../assets/scss/colors" as *;
+
+.tech-support {
+  background-color: $bluon-background-grey-2;
+  padding: 2.25rem;
+
+  &-header,
+  &-header-two {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+
+  &-header-two {
+    color: $bluon-brand-blue;
+    padding-top: 3rem;
+  }
+
+  &-paragraph {
+    color: $bluon-background-grey-3;
+    padding: 1rem 0 1.5rem;
+  }
+
+  &-image {
+    height: 100%;
+    width: 100%;
+  }
+}

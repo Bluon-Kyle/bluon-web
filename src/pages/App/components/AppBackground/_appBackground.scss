@@ -1,0 +1,11 @@
+.app-background {
+  position: absolute;
+  position: absolute;
+  z-index: -9999;
+  background-image: url("../../../../assets/images/app/bg-app-header.jpg");
+  height: 120vh;
+  width: 100vw;
+  // need to make variable for header height
+  // variable should calculate transform needed to bg-img
+  transform: translateY(calc(-6rem - 26px));
+}

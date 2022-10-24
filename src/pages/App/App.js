@@ -13,35 +13,22 @@ import iPhoneImage from "../../assets/images/buttons/download-iphone.png";
 import androidImage from "../../assets/images/buttons/download-samsung.png";
 import stamp from "../../assets/images/app/stamp.png";
 import phones from "../../assets/images/app/phones.png";
+import AppBackground from "./components/AppBackground/AppBackground";
+import FrontPage from "./components/FrontPage/FrontPage";
+import LottiePlayers from "./components/LottiePlayers/LottiePlayers";
+import TechSupport from "./components/TechSupport/TechSupport";
+import AppleReviews from "./components/AppleReviews/AppleReviews";
 
 const App = () => {
-  const iPhoneHref = "https://apps.apple.com/us/app/bluon-hvac/id1357521880";
-  const androidHref = "https://play.google.com/store/apps/details?id=com.bluon";
-
   return (
     <div className="app">
-      <div className="app-banner"></div>
-
-      <div className="app-header">
-        <h2>
-          The App
-          <br />
-          HVAC Techs Actually Use
-        </h2>
-      </div>
-
-      <div className="app-buttons">
-        <ButtonImage href={iPhoneHref} src={iPhoneImage} />
-        <ButtonImage href={androidHref} src={androidImage} />
-      </div>
-
-      <div className="app-stamp">
-        <img src={stamp} alt="stamp" />
-      </div>
-
-      <div className="app-phones">
-        <img src={phones} alt="phone" />
-      </div>
+      <AppBackground />
+      <FrontPage />
+      <LottiePlayers />
+      <TechSupport />
+      {/* Video */}
+      <AppleReviews />
+      {/* Video */}
     </div>
   );
   //   <div className="app">

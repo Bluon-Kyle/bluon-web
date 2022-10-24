@@ -1,0 +1,22 @@
+@use "../../../../assets/scss/colors" as *;
+
+.lottie-players {
+  padding: 1.5rem;
+  &-header {
+    &-heading {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-paragraph {
+      color: $bluon-background-grey-3;
+      line-height: 25px;
+    }
+  }
+
+  &-list {
+    padding: 0 0.5rem;
+  }
+}
