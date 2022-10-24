@@ -1,19 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import bluonLogo from "../../../assets/logo/bluon-logo-primary.svg";
+import bluonLogoSecondary from "../../../assets/logo/bluon-logo-secondary.svg";
+import hamburgerIconPrimary from "../../../assets/icons/hamburger-primary.svg";
+import hamburgerIconSecondary from "../../../assets/icons/hamburger-secondary.svg";
 import { options, subMenuOptions } from "../../../data/header/options";
 
 import "./_header.scss";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import HamburgerSubMenu from "../HamburgerSubMenu/HamburgerSubMenu";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [isApp, setIsApp] = useState(false);
+  const location = useLocation();
   const isOpen = open ? "" : "displayNone";
   const subMenuButtonLabel = "More";
+
+  useEffect(() => {
+    setIsApp(location.pathname === "/App");
+  }, [location]);
+
+  const isHeaderOpen = () => {
+    return open ? "open" : "";
+  };
+
+  const getLogo = () => {
+    return isApp && !open ? bluonLogoSecondary : bluonLogo;
+  };
+
+  const getHamburgerIcon = () => {
+    return isApp && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
+  };
 
   const resetOpen = () => {
     setMenuOpen(true);
@@ -21,10 +43,15 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className={`header ${isHeaderOpen()}`}>
       <div className="header-container">
-        <img src={bluonLogo} alt="bluon-logo" />
-        <HamburgerIcon open={open} setOpen={setOpen} resetOpen={resetOpen} />
+        <img src={getLogo()} alt="bluon-logo" />
+        <HamburgerIcon
+          open={open}
+          setOpen={setOpen}
+          resetOpen={resetOpen}
+          src={getHamburgerIcon()}
+        />
       </div>
       <div className={`header-hamburger-menu ${isOpen}`}>
         <HamburgerMenu
