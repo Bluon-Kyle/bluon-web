@@ -12,7 +12,8 @@ import anim1 from '../../data/lottie/lottie-bluon-live.json'
 import anim2 from '../../data/lottie/lottie-bluon-search.json'
 import "./_distributors.scss";
 
-const Distrubutors = () => {
+const Distrubutors = (props) => {
+  const signup = props.signup; 
   const map = require("./map1.png");
   return (
     <div className="distributors">
@@ -20,7 +21,17 @@ const Distrubutors = () => {
         <div className="distributors-top-text">
           <h2>Ultimate Tool for Counter Staff</h2>
           <p>Unleash new-found productivity for your team</p>
+
         </div>
+        <div className="distributors-top-signup">
+          {signup ? 
+              <ButtonNav to='/RequestSignUp' color='primary'>
+                Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+              </ButtonNav> :
+              <></>
+          }
+        </div>
+        
         <div className="distributors-top-video">
           <video
             className="dist-vid"
@@ -42,14 +53,14 @@ const Distrubutors = () => {
             <Logos />
           </div>
           <ButtonNav to="/BluonLiveStores" color="primary">
-            See Local Distributors
+            See Local Distributors &nbsp;&nbsp;<img alt="arrow" src={arrow} />
           </ButtonNav>
         </div>
       </div>
 
       <div className="distributors-bluon-live">
         <div className="distributors-bluon-live-demo">
-          <img className='img' src={blive} alt='bluon live makes your life easier'/>
+          <img className='bluon-logo' src={blive} alt='bluon live makes your life easier'/>
           <h2>Receive Order Requests from Techs in the Field</h2>
           <ul>
             <li key='1'>See model, parts and cross references.</li>
@@ -57,14 +68,22 @@ const Distrubutors = () => {
           </ul>
           <LottieLoop2 anii={anim1}/>
           <div className='demo-button'>
-            <ButtonNav to="/BluonLiveStores" color="primary">
-              Get a demo
-            </ButtonNav>
+            
+            {signup ? 
+              <ButtonNav to='/RequestSignUp' color='primary'>
+                <div className="button-arrow">
+                  Sign up for BluonLive <img alt="arrow" src={arrow} />
+                </div>
+              </ButtonNav> :
+              <ButtonNav to="/BluonLiveStores" color="primary">
+                Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+              </ButtonNav>
+          }
           </div>
         </div>
 
         <div className="distributors-bluon-live-demo-search">
-          <img className='searchimg' src={bsearch} alt='bluon search'/>
+          <img className='bluon-logo' src={bsearch} alt='bluon search'/>
           <h2>The Best Cross Reference Engine</h2>
           <ul>
             <li key='1'>Cross reference 100+ brands with over 3M parts</li>
@@ -73,9 +92,16 @@ const Distrubutors = () => {
           </ul>
           <LottieLoop2 anii={anim2}/>
           <div className='demo-button'>
-            <ButtonNav to="/BluonLiveStores" color="primary">
-              Get a demo
-            </ButtonNav>
+
+            {signup ? 
+              <ButtonNav to='/RequestSignUp' color='primary'>
+                Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+              </ButtonNav> :
+              <ButtonNav to="/BluonLiveStores" color="primary">
+                Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+              </ButtonNav>
+            }
+
           </div>
         </div>
       </div>
@@ -115,9 +141,15 @@ const Distrubutors = () => {
           />
         </div>
         <div className="distributors-bottom-video-demo-button">
-          <ButtonNav to="RequestDemo" color="primary">
-            Get a Demo <img alt="arrow" src={arrow} />
-          </ButtonNav>
+          
+          {signup ? 
+              <ButtonNav to='/RequestSignUp' color='primary'>
+                Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+              </ButtonNav> :
+              <ButtonNav to="RequestDemo" color="primary">
+              Get a Demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+            </ButtonNav>
+          }
         </div>
       </div>
     </div>
