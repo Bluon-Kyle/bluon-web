@@ -19,7 +19,7 @@ import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 //import TestPage from "./pages/test/TestPage";
-import LottieTest from './pages/test/LottieTest'
+//import LottieTest from './pages/test/LottieTest'
 //vitals
 import reportWebVitals from "./reportWebVitals";
 
@@ -62,8 +62,17 @@ root.render(
             />
           }
         />
+        <Route 
+          path='/Request-a-Demo'
+          element={
+            <Demo 
+              formId='85050616-88e4-4c49-82e3-62df96cf221a'
+              title='Request a Demo'
+              desc='Submit the form and we will get in contact'/>
+          }
+        />
         <Route path="/ThankYou" element={<ThankYou />} />
-        <Route path="TestPage" element={<LottieTest />} />
+        {/* <Route path="TestPage" element={<LottieTest />} /> */}
         <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
       </Routes>
     </ScrollToTop>

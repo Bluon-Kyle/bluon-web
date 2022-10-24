@@ -3,7 +3,13 @@ import video1 from "../../assets/video/BluonLive-Video.mp4";
 import ButtonNav from "../../components/common/ButtonNav/ButtonNav";
 import arrow from "../../assets/icons/arrow.svg";
 import Logos from "./components/Logos";
-
+import divider from '../../assets/images/distributors/Lineart-Blue.png'
+import blive from '../../assets/images/distributors/BluonLive-Logo.svg'
+import bsearch from '../../assets/images/distributors/BluonSearch-Logo.svg'
+//lotties
+import LottieLoop2 from "../../components/common/LottieLoop/LottieLoop2";
+import anim1 from '../../data/lottie/lottiejson.json'
+import anim2 from '../../data/lottie/lottie-bluon-search.json';
 import "./_distributors.scss";
 
 const Distrubutors = () => {
@@ -26,7 +32,9 @@ const Distrubutors = () => {
           ></video>
         </div>
       </div>
-      <div className="distributors-divider"></div>
+      <div className="distributors-divider">
+        <img src={divider} alt='divider'/>
+      </div>
       <div className="distributors-partners">
         <div className="distributors-partners-text">
           <h2>Select Partners</h2>
@@ -37,13 +45,39 @@ const Distrubutors = () => {
             See Local Distributors
           </ButtonNav>
         </div>
-
-        <div className="distributors-partners-logos"></div>
       </div>
 
       <div className="distributors-bluon-live">
-        <div className="distributors-bluon-live-demo"></div>
-        <div className="distributors-bluon-live-demo-search"></div>
+        <div className="distributors-bluon-live-demo">
+          <img className='img' src={blive} alt='bluon live makes your life easier'/>
+          <h2>Receive Order Requests from Techs in the Field</h2>
+          <ul>
+            <li key='1'>See model, parts and cross references.</li>
+            <li key='2'>Save hours of research and headache.</li>
+          </ul>
+          <LottieLoop2 anii={anim1}/>
+          <div className='demo-button'>
+            <ButtonNav to="/BluonLiveStores" color="primary">
+              Get a demo
+            </ButtonNav>
+          </div>
+        </div>
+
+        <div className="distributors-bluon-live-demo-search">
+          <img className='searchimg' src={bsearch} alt='bluon search'/>
+          <h2>The Best Cross Reference Engine</h2>
+          <ul>
+            <li key='1'>Cross reference 100+ brands with over 3M parts</li>
+            <li key='2'>See parts w/ specs & manuals for 300k model</li>
+            <li key='3'>Unlimited access for all BluonLive distributors</li>
+          </ul>
+          <LottieLoop2 anii={anim2}/>
+          <div className='demo-button'>
+            <ButtonNav to="/BluonLiveStores" color="primary">
+              Get a demo
+            </ButtonNav>
+          </div>
+        </div>
       </div>
 
       <div className="distributors-impact bg-img-eclipse">
