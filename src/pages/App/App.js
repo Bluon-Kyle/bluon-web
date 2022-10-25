@@ -1,11 +1,4 @@
 import React from "react";
-import AppButton from "../../components/common/AppButton";
-import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
-
-// images
-// import appExamples from "../../assets/images/app/app-phone.png";
-import appTechs from "../../assets/images/app/techs.png";
-import appJoin from "../../assets/images/app/join-movement-mobile.png";
 
 import "./_app.scss";
 import AppBackground from "./components/AppBackground/AppBackground";
