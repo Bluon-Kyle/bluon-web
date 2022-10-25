@@ -10,6 +10,7 @@ const HamburgerMenu = ({
   setSubMenuOpen,
   menuOpen,
   setMenuOpen,
+  setOpen
 }) => {
   const isOpen = menuOpen ? "" : "displayNone";
 
@@ -21,7 +22,7 @@ const HamburgerMenu = ({
     return options.map(({ label, route }, i) => {
       return (
         <li key={i}>
-          <NavLink to={route} className={activeClassName()}>
+          <NavLink to={route} className={activeClassName()} onClick={close}>
             {label}
           </NavLink>
         </li>
@@ -33,6 +34,9 @@ const HamburgerMenu = ({
     setMenuOpen(false);
     setSubMenuOpen(true);
   };
+  const close = () =>{
+    setOpen(false); 
+  }
 
   const renderSubMenuButton = () => {
     return (

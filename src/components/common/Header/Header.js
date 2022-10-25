@@ -60,6 +60,7 @@ const Header = () => {
           setSubMenuOpen={setSubMenuOpen}
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
+          setOpen = {setOpen}
         />
         <HamburgerSubMenu
           subMenuOpen={subMenuOpen}
@@ -67,6 +68,7 @@ const Header = () => {
           setSubMenuOpen={setSubMenuOpen}
           setMenuOpen={setMenuOpen}
           subMenuButtonLabel={subMenuButtonLabel}
+          setOpen = {setOpen}
         />
       </div>
     </div>
