@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: center;
 }
+@mixin colorTest {
+  background-color: red; 
+}
 @mixin block {
   display: block;
 }
