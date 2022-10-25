@@ -1,37 +1,34 @@
 import React from "react";
-import ButtonImage from "../../../../components/common/ButtonImage/ButtonImage";
-import iPhoneImage from "../../../../assets/images/buttons/download-iphone.png";
-import androidImage from "../../../../assets/images/buttons/download-samsung.png";
+import fiveStars from "../../../../assets/icons/five-stars.png";
+import ratings from "../../../../assets/images/app/ratings.png";
 
-import { iPhoneHref } from "../../../../data/hrefs";
-import { androidHref } from "../../../../data/hrefs";
+import "./_appleReviews.scss";
 
 const AppleReviews = () => {
   return (
-    <div>
-      <div>
-        <h2>The Most Loved App</h2>
-        <p>This is the real deal</p>
+    <div className="apple-reviews">
+      <div className="apple-reviews-header">
+        <h2 className="apple-reviews-header-heading">The Most Loved App</h2>
+        <p className="apple-reviews-header-paragraph">This is the real deal</p>
       </div>
 
-      <div>
-        <h2>{`"Bluon is the best app that you can possibly get."`}</h2>
-        <p>Chris Rice</p>
-        <img alt="5-stars" />
+      <div className="apple-reviews-testimonial">
+        <p className="apple-reviews-testimonial-quote">{`"Bluon is the best app that you can possibly get."`}</p>
+
+        <div className="apple-reviews-testimonial-container">
+          <p className="apple-reviews-testimonial-container-name">Chris Rice</p>
+          <img
+            className="apple-reviews-testimonial-container-stars"
+            src={fiveStars}
+            alt="5-stars"
+          />
+        </div>
       </div>
-      <img alt="ratings" />
+
+      <img className="apple-reviews-ratings" src={ratings} alt="ratings" />
 
       {/* Apple Reviews */}
       <div></div>
-
-      <div>
-        <img alt="bluon-app-logo" />
-        <h2>Join the Bluon Community</h2>
-        <div>
-          <ButtonImage href={iPhoneHref} src={iPhoneImage} />
-          <ButtonImage href={androidHref} src={androidImage} />
-        </div>
-      </div>
     </div>
   );
 };

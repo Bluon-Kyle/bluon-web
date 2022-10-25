@@ -1,49 +1,17 @@
 @use "../../assets/scss/colors" as *;
 
 .app {
-  &-banner {
-    position: absolute;
-    z-index: -9999;
-    background-image: url("../../assets/images/app/bg-app-header.jpg");
-    height: 120vh;
-    width: 100vw;
-    // need to make variable for header height
-    // variable should calculate transform needed to bg-img
-    transform: translateY(calc(-6rem - 26px));
+  overflow: hidden;
+
+  &-youtube-video-1 {
+    width: 100%;
+    height: 60vw;
+    border: none;
   }
 
-  &-header {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    color: $bluon-brand-white;
-    text-align: center;
-    padding: 3rem 0 1rem;
-    h2 {
-      font-size: 2.8125rem;
-    }
-  }
-
-  &-buttons {
-    display: flex;
-    padding: 0.5rem 1rem;
-  }
-
-  &-stamp {
-    display: flex;
-    justify-content: flex-end;
-
-    img {
-      width: 100px;
-    }
-  }
-
-  &-phones {
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 170vw;
-    }
+  &-youtube-video-2 {
+    position: relative;
+    width: 100%;
   }
 }
 

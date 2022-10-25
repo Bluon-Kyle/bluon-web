@@ -1,0 +1,46 @@
+@use "../../../../assets/scss/colors" as *;
+
+.apple-reviews {
+  padding: 0 0.75rem;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-heading {
+      font-family: "Inter", sans-serif;
+      color: $bluon-background-grey-3;
+      font-size: 1.75rem;
+      padding-bottom: 1.25rem;
+    }
+
+    &-paragraph {
+      color: $bluon-background-grey-10;
+      padding-bottom: 3.125rem;
+    }
+  }
+
+  &-testimonial {
+    padding: 0 2.25rem;
+    &-quote {
+      font-family: "Inter", sans-serif;
+      font-feature-settings: "pnum" on, "lnum" on;
+      font-size: 1.875rem;
+      font-weight: 300;
+      padding-bottom: 1rem;
+    }
+
+    &-container {
+      padding-left: 1rem;
+      &-name {
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &-ratings {
+    width: 100%;
+  }
+}
