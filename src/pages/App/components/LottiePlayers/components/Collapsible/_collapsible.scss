@@ -1,0 +1,29 @@
+@use "../../../../../../assets/scss/colors" as *;
+
+.collapsible {
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+
+    h2 {
+      font-family: "Inter", sans-serif;
+      font-size: 1.375rem;
+      text-align: left;
+    }
+  }
+
+  .transform {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-content {
+    &-paragraph {
+      color: $bluon-background-grey-3;
+    }
+  }
+}

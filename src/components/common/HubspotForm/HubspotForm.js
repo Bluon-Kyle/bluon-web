@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./_hubspotForm.scss";
 
-const HubspotForm = ({ portalId, formId, className }) => {
+const HubspotForm = ({ portalId, formId, navigateTo, className }) => {
   const navigate = useNavigate();
   const targetId = `hubspot-form-${formId}`;
 
@@ -19,7 +19,7 @@ const HubspotForm = ({ portalId, formId, className }) => {
           formId,
           target: `#${targetId}`,
           onFormSubmit: () => {
-            navigate("/ThankYou");
+            navigate({ navigateTo });
           },
         });
       }
