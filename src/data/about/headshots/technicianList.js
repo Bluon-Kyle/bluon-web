@@ -259,4 +259,14 @@ export const technicianList = [
     tel: null,
     email: null,
   },
+  {
+    picSrc: require("../../../assets/images/about/headshots/Todd-Flygare.png"),
+    picAlt: "null",
+    name: "Todd Flygare",
+    position: "Lead Technician",
+    bio: "25-Year HVAC Vet",
+    contact: false,
+    tel: null,
+    email: null,
+  },
 ];
