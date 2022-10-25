@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import arrowDownCollapsible from "../../../../../../assets/icons/arrow-down-collapsible.svg";
 import "./_collapsible.scss";
-
+import LottieLoop2 from "../../../../../../components/common/LottieLoop/LottieLoop2";
 const Collapsible = ({
   selected,
   setSelected,
@@ -38,7 +38,7 @@ const Collapsible = ({
 
       <div className={`collapsible-content ${isCollapsed()}`}>
         <p className="collapsible-content-paragraph">{description}</p>
-        {/* Lottie Player goes here */}
+        <LottieLoop2 anii={lottiePlayerJson}/>
       </div>
     </div>
   );

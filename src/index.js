@@ -14,7 +14,7 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About.js";
 import Terms from "./pages/TermsPrivacy/Terms/Terms";
 import Privacy from "./pages/TermsPrivacy/Privacy/Privacy";
-import Demo from "./pages/demo/Demo";
+import Demo from "./pages/Demo/Demo";
 import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
@@ -69,7 +69,8 @@ root.render(
             <Demo 
               formId='85050616-88e4-4c49-82e3-62df96cf221a'
               title='Request a Demo'
-              desc='Submit the form and we will get in contact'/>
+              desc='Submit the form and we will get in contact!'
+              />
           }
         />
         <Route path="/ThankYou" element={<ThankYou />} />
