@@ -25,7 +25,9 @@ const AppleReviews = () => {
         </div>
       </div>
 
-      <img className="apple-reviews-ratings" src={ratings} alt="ratings" />
+      <div className="apple-reviews-ratings-wrapper"> 
+        <img className="apple-reviews-ratings" src={ratings} alt="ratings" />
+      </div>
 
       {/* Apple Reviews */}
       <div></div>

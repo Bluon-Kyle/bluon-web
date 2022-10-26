@@ -1,5 +1,5 @@
 @use "../../assets/scss/colors" as *;
-
+@use '../../assets/scss/mixins' as m;
 @mixin center-flex {
   display: flex;
   justify-content: center;
@@ -87,114 +87,43 @@
       transform: translateY(2rem);
       img {
         width: 50%;
+        max-width:290px;
       }
     }
   }
   &-button-cards {
     padding-top: 0.5rem;
-    @include grid(1, 0.5rem);
+    @include m.team-grid(1);
+    justify-content: center;
   }
+
+  @media (min-width:786px){
+    &-welcome-wrapper{
+      h1{
+        font-size: 3rem;
+      }
+    }
+    &-app{
+      display:flex; 
+      &-text{
+
+      }
+      &-img{
+        img{
+          width: 55%;
+        }
+      }
+    }
+    &-button-cards{
+      @include center-flex(); 
+    }
+  }
+  @media(min-width: 1028px){
+    &-button-cards{
+      @include m.team-grid(3); 
+    }
+  }
+
+
 }
 
-//old desktop styling (delete me when done styling desktop)
-// padding-top: 5vw;
-//   &-welcome-wrapper {
-//     h1 {
-//       color: $bluon-blue;
-//       text-align: center;
-//       font-size: 4.5vw;
-//     }
-//   }
-
-//   &-video-container {
-//     //background-image: url('../../media/image/HVAC-system-graphic-large.png') ;
-//     //background;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     .home-video {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 80%;
-//     }
-//   }
-//   &-impact {
-//     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
-//     background-position: right;
-//     padding-top: 2rem;
-//     text-align: center;
-//     min-height: 25vw;
-//     h2 {
-//       font-size: 3vw;
-//     }
-//     h3 {
-//       color: #959595;
-//     }
-//   }
-//   &-cards {
-//     display: flex;
-//     justify-content: center;
-//     //height: 40vw;
-//   }
-//   &-app {
-//     background-color: $bluon-blue;
-//     display: flex;
-//     width: 100%;
-//     //padding-bottom: 4vw;
-//     &-text {
-//       color: white;
-//       padding-top: 5vw;
-//       padding-left: 10vw;
-//       width: 50%;
-
-//       h1 {
-//         font-size: 4.8vw;
-//         width: 65%;
-//       }
-//       ul {
-//         width: 35%;
-//         padding-top: 1vw;
-//         padding-bottom: 2vw;
-
-//         li {
-//           padding-bottom: 1vw;
-//           line-height: 115%;
-//         }
-//       }
-//       button {
-//         background-color: white;
-//         color: black;
-//         width: 20vw;
-//         height: 5vw;
-//         border-radius: 25px;
-//         border: none;
-//         font-size: 130%;
-//         &:hover {
-//           color: white;
-//           background-color: black;
-//           border-radius: 50px;
-//           cursor: pointer;
-//         }
-//       }
-//     }
-//     &-img {
-//       height: 50%;
-//       padding-top: 3vw;
-//       .img {
-//         width: 20vw;
-//       }
-//     }
-//   }
-
-//   &-pic-cards {
-//     display: flex;
-//     margin: 0 0 0 0;
-//   }
-//   &-button-cards {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     //grid-gap: 30px;
-//     width: 100%;
-//   }

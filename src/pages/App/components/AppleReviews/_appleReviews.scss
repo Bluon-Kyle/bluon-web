@@ -13,6 +13,7 @@
       color: $bluon-background-grey-3;
       font-size: 1.75rem;
       padding-bottom: 1.25rem;
+      padding-top:2rem; 
     }
 
     &-paragraph {
@@ -42,5 +43,37 @@
 
   &-ratings {
     width: 100%;
+  }
+  @media (min-width:768px){
+    &-header{
+      &-heading{
+        font-size: 3rem;
+      }
+      &-paragraph{
+        font-size: 2rem;
+      }
+    }
+    &-testimonial{
+      &-quote{
+        font-size: 2rem;
+      }
+      &-container{
+        &-name{
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+  }
+  @media (min-width:1028px){
+    &-ratings{
+      width:60%; 
+    }
+    &-ratings-wrapper{
+      display:flex; 
+      justify-content: center;
+      align-items: center;
+      //width:5rem;
+    }
   }
 }

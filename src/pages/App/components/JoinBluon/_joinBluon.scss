@@ -20,4 +20,18 @@
     display: flex;
     padding: 1rem;
   }
+  @media (min-width: 768px){
+    &-logo{
+      &-image{
+        width: 140%; 
+        //TODO: add desktop/tablet img
+      }
+    }
+    &-quote{
+      font-size: 1.7rem;
+    }
+    &-buttons{
+      justify-content: center;
+    }
+  }
 }

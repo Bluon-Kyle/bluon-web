@@ -4,6 +4,8 @@
   margin: 0 0 0 0;
   height: 18rem;
   max-height: 400px;
+  max-width:500px; 
+  //@include team-grid(1); 
   //color:blue;
   &-content {
     padding-top: 5rem;
@@ -36,5 +38,11 @@
         cursor: pointer;
       }
     }
+  }
+  @media(min-width:768px){
+    width: 30rem;
+  }
+  @media(min-width: 1028px){
+
   }
 }

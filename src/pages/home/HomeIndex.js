@@ -9,7 +9,8 @@ import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
 //import GameCard from '../../components/common/cards/gameCard/GameCard';
 //import PicCard from '../../components/common/cards/picCard/PicCard';
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
-
+import AppleReviews from "../App/components/AppleReviews/AppleReviews";
+import JoinBluon from "../App/components/JoinBluon/JoinBluon";
 import "./_home.scss";
 
 const HomeIndex = () => {
@@ -85,7 +86,9 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      <MostLovedApp className="home-mla"></MostLovedApp>
+      {/* <MostLovedApp className="home-mla"></MostLovedApp> */}
+      <AppleReviews/>
+      <JoinBluon/>
 
       <div className="home-button-cards">
         <ButtonCard
