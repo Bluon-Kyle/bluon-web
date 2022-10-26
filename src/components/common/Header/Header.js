@@ -11,7 +11,7 @@ import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import HamburgerSubMenu from "../HamburgerSubMenu/HamburgerSubMenu";
 import { useLocation } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
@@ -45,7 +45,9 @@ const Header = () => {
   return (
     <div className={`header ${isHeaderOpen()}`}>
       <div className="header-container">
-        <img src={getLogo()} alt="bluon-logo" />
+        <Link to={'/'}>
+          <img src={getLogo()} alt="bluon-logo" />
+        </Link>
         <HamburgerIcon
           open={open}
           setOpen={setOpen}
