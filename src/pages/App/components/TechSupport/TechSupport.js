@@ -1,9 +1,8 @@
 import React from "react";
 import techSupports from "../../../../assets/images/app/techs.png";
 import techlottie from '../../../../data/lottie/lottie-app-phone-wheel.json'
-import LottieLoop2 from "../../../../components/common/LottieLoop/LottieLoop2";
+import LottieLoop3 from "../../../../components/common/LottieLoop/LottieLoop3";
 import "./_techSupport.scss";
-import Lottie from "react-lottie-player";
 
 const TechSupport = () => {
   return (
@@ -19,7 +18,7 @@ const TechSupport = () => {
           here to help.
         </p>
 
-        <LottieLoop2 anii={techlottie}/>
+        <LottieLoop3 anii={techlottie}/>
 
         <img
           className="tech-support-image"
@@ -47,7 +46,7 @@ const TechSupport = () => {
             alt="tech-supports"
           />
           </div>
-        <LottieLoop2 anii={techlottie}/>
+        <LottieLoop3 anii={techlottie}/>
       </div>
     </div>
   );

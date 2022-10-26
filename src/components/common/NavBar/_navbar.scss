@@ -1,0 +1,91 @@
+@use '../../../assets/scss/colors' as c; 
+.nav{
+    &-menu{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        &-items{
+            position: relative;
+            font-size: 1.3rem;
+            a{
+                display: block;
+                font-size: 1.3rem;
+                color: inherit;
+                text-decoration: none;
+                text-align: left;
+                padding: 0.0rem 1rem;
+
+                &:hover{
+                    font-size: 1.4rem;
+                    color: c.$bluon-brand-blue; 
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                color: inherit;
+                font-size: 100%;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                width: 100%;
+                &:hover{
+                    font-size: 115%;
+                    color: c.$bluon-brand-blue; 
+                }
+            }
+        }
+        // @media(min-width:768px){
+        //     &-items{
+        //         //font-size: 1.5rem;
+        //     }
+        // }
+        &-white{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+            color:white;
+            &-items{
+                .special-link-class{
+                    :hover{
+                        color:limegreen;
+                    }
+                }
+                position: relative;
+                font-size: 1.3rem;
+                a{
+                    display: block;
+                    font-size: 1.3rem;
+                    //color: red;
+                    text-decoration: none;
+                    text-align: left;
+                    padding: 0.0rem 1rem;
+
+                    &:hover{
+                        font-size: 1.4rem;
+                        color: limegreen; 
+                    }
+                }
+                button{
+                    display: flex;
+                    align-items: center;
+                    color: inherit;
+                    font-size: 100%;
+                    border: none;
+                    
+                    background-color: transparent;
+                    cursor: pointer;
+                    width: 100%;
+                    &:hover{
+                        font-size: 115%;
+                        color: limegreen; 
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

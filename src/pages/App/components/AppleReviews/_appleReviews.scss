@@ -40,22 +40,31 @@
       }
     }
   }
+  &-desk-ratings{
+    display:none; 
+  }
 
   &-ratings {
     width: 100%;
   }
   @media (min-width:768px){
+    display:flex;
+    align-items: center;
+    //justify-content: center;
     &-header{
-      &-heading{
+      text-align: center;
+      h2{
+        padding-top: 6rem;
         font-size: 3rem;
       }
-      &-paragraph{
-        font-size: 2rem;
+      p{
+        font-size: 1.4rem;
       }
     }
     &-testimonial{
+      text-align: center;
       &-quote{
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       &-container{
         &-name{
@@ -63,17 +72,26 @@
         }
       }
     }
+    &-desk-ratings{
+      display:flex; 
+    }
+    &-ratings-wrapper{
+      display:none; 
+    }
 
   }
   @media (min-width:1028px){
+    &-header{
+      
+    }
     &-ratings{
       width:60%; 
+      &-desk{
+        img{
+          width:100%; 
+        }
+      }
     }
-    &-ratings-wrapper{
-      display:flex; 
-      justify-content: center;
-      align-items: center;
-      //width:5rem;
-    }
+    
   }
 }

@@ -18,6 +18,7 @@
 
   &-buttons {
     display: flex;
+    justify-content: center;
     padding: 1rem;
   }
   @media (min-width: 768px){
@@ -30,8 +31,6 @@
     &-quote{
       font-size: 1.7rem;
     }
-    &-buttons{
-      justify-content: center;
-    }
+
   }
 }

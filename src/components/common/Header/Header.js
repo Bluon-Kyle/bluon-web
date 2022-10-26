@@ -12,6 +12,8 @@ import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import HamburgerSubMenu from "../HamburgerSubMenu/HamburgerSubMenu";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import NavBar from '../NavBar/NavBar'
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
@@ -32,6 +34,9 @@ const Header = () => {
   const getLogo = () => {
     return isApp && !open ? bluonLogoSecondary : bluonLogo;
   };
+  const getColor = () => {
+    return isApp ? '-white' : '';
+  };
 
   const getHamburgerIcon = () => {
     return isApp && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
@@ -43,35 +48,52 @@ const Header = () => {
   };
 
   return (
-    <div className={`header ${isHeaderOpen()}`}>
-      <div className="header-container">
-        <Link to={'/'}>
-          <img src={getLogo()} alt="bluon-logo" />
-        </Link>
-        <HamburgerIcon
-          open={open}
-          setOpen={setOpen}
-          resetOpen={resetOpen}
-          src={getHamburgerIcon()}
-        />
+    <div className="head-wrapper">
+      <div className={`header ${isHeaderOpen()}`}>
+        <div className="header-container">
+          <Link to={'/'}>
+            <img src={getLogo()} alt="bluon-logo" />
+          </Link>
+          <HamburgerIcon
+            open={open}
+            setOpen={setOpen}
+            resetOpen={resetOpen}
+            src={getHamburgerIcon()}
+          />
+        </div>
+        <div className={`header-hamburger-menu ${isOpen}`}>
+          <HamburgerMenu
+            options={options}
+            subMenuButtonLabel={subMenuButtonLabel}
+            setSubMenuOpen={setSubMenuOpen}
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            setOpen = {setOpen}
+          />
+          <HamburgerSubMenu
+            subMenuOpen={subMenuOpen}
+            subMenuOptions={subMenuOptions}
+            setSubMenuOpen={setSubMenuOpen}
+            setMenuOpen={setMenuOpen}
+            subMenuButtonLabel={subMenuButtonLabel}
+            setOpen = {setOpen}
+          />
+        </div>
       </div>
-      <div className={`header-hamburger-menu ${isOpen}`}>
-        <HamburgerMenu
-          options={options}
-          subMenuButtonLabel={subMenuButtonLabel}
-          setSubMenuOpen={setSubMenuOpen}
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-          setOpen = {setOpen}
-        />
-        <HamburgerSubMenu
-          subMenuOpen={subMenuOpen}
-          subMenuOptions={subMenuOptions}
-          setSubMenuOpen={setSubMenuOpen}
-          setMenuOpen={setMenuOpen}
-          subMenuButtonLabel={subMenuButtonLabel}
-          setOpen = {setOpen}
-        />
+      <div className="desktop-header">
+          
+          <Link to={'/'}>
+            <img src={getLogo()} alt="bluon-logo" />
+          </Link>
+          <div className="desktop-header-nav-wrapper">
+            <div className="desktop-header-nav">
+              <NavBar primary={isApp}/>
+            </div>
+            <div className={`desktop-header-blive${getColor()}`}>
+                Looking for BluonLive? <a href="https://bluonlive.com/" className="nav-login">Login here</a>
+            </div>
+          </div>
+          
       </div>
     </div>
   );

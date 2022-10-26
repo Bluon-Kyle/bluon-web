@@ -5,7 +5,55 @@
     padding: 2.75rem;
   }
 }
+.desktop-header{
+  display:none; 
+}
 
 .header.open {
   background-color: white;
+}
+@media(min-width:768px){
+  .desktop-header{
+    &-nav{
+      padding-left:1rem; 
+    }
+  }
+}
+@media(min-width:1020px){
+  .header{
+    display:none; 
+  }
+  .desktop-header{
+    display:flex; 
+    align-items: center;
+  
+    padding-top: 2rem;
+    padding-left: 2rem;
+    &-nav{
+      padding-left:2rem;
+      &-wrapper{
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        width:100%; 
+      }
+    }
+    &-blive{
+      padding-right:2rem;
+      font-size: 1.2rem;
+      a{
+        color:blue; 
+        text-decoration: none;
+      }
+      &-white{
+        color:white !important; 
+        a{
+          color:inherit;
+          &:hover{
+            color:lime;
+          }
+        }
+      }
+    }
+  }
 }

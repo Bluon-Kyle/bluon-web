@@ -2,7 +2,7 @@ import React from 'react'
 import lottie from 'lottie-web';
 //import ani from '../../../data/lottie/lottiejson.json';
 import { useEffect } from 'react';
-import './_lottieloop.scss';
+import './_lottieloop3.scss';
 const LottieLoop2 = (props) => {
     const anii = props.anii; 
       let animationContainer = React.createRef(); 
@@ -25,7 +25,7 @@ const LottieLoop2 = (props) => {
   }, []);
 
   return (
-    <div className="lottie-loop">
+    <div className="lottie-loop3">
       
        <div className="animation-container" ref={animationContainer}>
          

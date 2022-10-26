@@ -81,6 +81,7 @@
         height: 45px;
       }
     }
+
     &-img {
       padding-top: 1.2rem;
       @include center-flex;
@@ -91,6 +92,7 @@
       }
     }
   }
+
   &-button-cards {
     padding-top: 0.5rem;
     @include m.team-grid(1);
@@ -105,6 +107,7 @@
     }
     &-app{
       display:flex; 
+      justify-content: center;
       &-text{
 
       }
@@ -121,6 +124,13 @@
   @media(min-width: 1028px){
     &-button-cards{
       @include m.team-grid(3); 
+    }
+    &-app{
+      &-img{
+        img{
+          width:65%; 
+        }
+      }
     }
   }
 

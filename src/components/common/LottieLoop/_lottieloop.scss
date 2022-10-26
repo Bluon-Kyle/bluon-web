@@ -1,3 +1,10 @@
 .lottie-loop{
-    height:500px; 
+   @media(min-width: 768px){
+        display:flex;
+        justify-content: center;
+        width:100%;
+        .animation-container{
+            width: 40%;
+        } 
+   }
 }

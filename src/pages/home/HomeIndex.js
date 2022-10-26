@@ -6,6 +6,7 @@ import ResponsiveCard from "../../components/common/cards/responsiveCardThree/Re
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";
+import MostLovedApp from '../../components/common/most-loved-app/MostLovedApp';
 import "./_home.scss";
 
 const HomeIndex = () => {
@@ -81,9 +82,11 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      {/* <MostLovedApp className="home-mla"></MostLovedApp> */}
-      <AppleReviews/>
-      <JoinBluon/>
+      
+      <div className="home-mla-mobile">
+        <AppleReviews/>
+        <JoinBluon/>
+      </div>
 
       <div className="home-button-cards">
         <ButtonCard

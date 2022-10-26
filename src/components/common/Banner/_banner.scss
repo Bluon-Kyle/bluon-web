@@ -1,9 +1,30 @@
 .banner {
-  &-image {
-    display: block;
-    width: 100vw;
+  &-content{
+
+    &-img{
+      .banner-image {
+        display: block;
+        width: 100vw;
+      }
+    }
   }
   @media(min-width:768px){
     display:flex; 
+    align-items: center;
+    width:100%; 
+    &-content{
+      width:50%; 
+      
+    }
+    &-content-img{
+      width:50%; 
+      .banner-image{
+        //width:40%; 
+        //height:50vw;
+        //width:min-content;
+        
+      }
+    }
+    
   }
 }
