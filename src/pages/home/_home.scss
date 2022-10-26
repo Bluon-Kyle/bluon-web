@@ -122,8 +122,20 @@
     }
   }
   @media(min-width: 1028px){
+    &-welcome-wrapper{
+      h1{
+        font-size: 4rem;
+      }
+      .home-video-container{
+        
+        video{
+          width:65%; 
+        }
+      }
+    }
     &-button-cards{
-      @include m.team-grid(3); 
+      //@include m.team-grid(3); 
+      justify-content: space-between;
     }
     &-app{
       &-img{

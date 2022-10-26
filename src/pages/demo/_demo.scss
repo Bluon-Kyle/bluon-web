@@ -14,26 +14,47 @@
         }
     }
     &-img{
+        display:none; 
         img{
             max-width: 100%;
         }
     }
     @media (min-width: 768px){
         display:flex; 
-        // &-text{
-            
-        // }
+        &-form{
+            &-text{
+                //padding-top:1vh;
+                padding-left:7.3vw;
+                width:90%;  
+            }
+        }
         &-img{
+            display: flex;
             width:60%;
             //height:3rem; 
+            img{
+                display: flex;
+            }
         }
     }
     @media (min-width:1028px)
     {
         display:flex; 
+        justify-content: space-between;
+        &-form{
+            &-text{
+                padding-top:5vh;
+                padding-left:7.3vw;
+                width:90%;  
+            }
+        }
         &-img{
-           height:100%; 
-           width:100%;  
+            width:40%; 
+            img{
+                display:flex; 
+                height:100%; 
+                max-width: 100%;
+            }
         }
     }
 }

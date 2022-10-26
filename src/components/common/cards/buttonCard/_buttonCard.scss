@@ -1,6 +1,8 @@
 @use "../../../../assets/scss/mixins" as *;
 
 .button-card {
+  background-size:cover;
+  background-repeat: no-repeat;
   margin: 0 0 0 0;
   height: 18rem;
   max-height: 400px;
@@ -8,15 +10,28 @@
   //@include team-grid(1); 
   //color:blue;
   &-content {
-    padding-top: 5rem;
+    //align-items: center;
+    //align-content: center;
+    // padding-top:5rem; 
+    height:100% ;
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
   }
   &-text {
     @include flex-and-center;
-    text-align: center;
+    //text-align: center;
+    align-items: center;
+
     h2 {
       font-size: 1rem;
       color: white;
     }
+    img{
+      height:2vw;
+    }
+    
   }
   &-link {
     @include flex-and-center;

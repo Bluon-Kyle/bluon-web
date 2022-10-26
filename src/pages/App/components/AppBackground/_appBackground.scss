@@ -3,13 +3,14 @@
   position: absolute;
   z-index: -9999;
   background-image: url("../../../../assets/images/app/bg-app-header.jpg");
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
+  background-repeat: no-repeat;
   // need to make variable for header height
   // variable should calculate transform needed to bg-img
   transform: translateY(calc(-6rem - 26px));
   @media (min-width:768px){
-    background-repeat: none;
-    height: 75vh;
+    //background-repeat: none;
+    //height: 75vh;
   }
 }
