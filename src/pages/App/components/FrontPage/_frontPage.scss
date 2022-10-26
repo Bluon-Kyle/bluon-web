@@ -34,4 +34,17 @@
       width: 170vw;
     }
   }
+  @media(min-width:768px){
+    &-button-stamp{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-phones{
+      //margin-top: 6rem;
+      img{
+        width:50%; 
+      }
+    }
+  }
 }

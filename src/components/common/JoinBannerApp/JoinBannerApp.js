@@ -12,16 +12,18 @@ import "./_joinBannerApp.scss";
 
 const JoinBannerApp = ({ title, subtitle }) => {
   return (
-    <Banner className={"join-banner-app-container"} image={joinMovementMobile}>
-      <div className="join-banner-app">
-        <h2 className="join-banner-app-title">{title}</h2>
-        <p className="join-banner-app-subtitle">{subtitle}</p>
-      </div>
-      <div className="join-banner-app-buttons">
-        <ButtonImage href={iPhoneHref} src={iPhoneImage} />
-        <ButtonImage href={androidHref} src={androidImage} />
-      </div>
-    </Banner>
+    <div className="join-banner-style-wrapper">
+      <Banner className={"join-banner-app-container"} image={joinMovementMobile}>
+        <div className="join-banner-app">
+          <h2 className="join-banner-app-title">{title}</h2>
+          <p className="join-banner-app-subtitle">{subtitle}</p>
+        </div>
+        <div className="join-banner-app-buttons">
+          <ButtonImage href={iPhoneHref} src={iPhoneImage} />
+          <ButtonImage href={androidHref} src={androidImage} />
+        </div>
+      </Banner>
+    </div>
   );
 };
 

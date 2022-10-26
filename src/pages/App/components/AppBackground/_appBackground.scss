@@ -8,4 +8,8 @@
   // need to make variable for header height
   // variable should calculate transform needed to bg-img
   transform: translateY(calc(-6rem - 26px));
+  @media (min-width:768px){
+    background-repeat: none;
+    height: 75vh;
+  }
 }

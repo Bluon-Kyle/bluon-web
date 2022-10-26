@@ -14,4 +14,18 @@
     position: relative;
     width: 100%;
   }
+  @media(min-width: 768px){
+    
+    &-youtube-video{
+      display: flex;
+      justify-content: center;
+      &-1{
+        width:90%;
+        
+      }
+      &-2{
+        width:90%; 
+      }
+    }
+  }
 }

@@ -1,6 +1,9 @@
 @use "../../../../assets/scss/colors" as *;
 
 .tech-support {
+  &-desktop{
+    display:none; 
+  }
   background-color: $bluon-background-grey-2;
   padding: 2.25rem;
 
@@ -24,5 +27,18 @@
   &-image {
     height: 100%;
     width: 100%;
+  }
+  @media(min-width: 768px){
+    &-mobile{
+      display:none; 
+    }
+    &-desktop{
+      display:flex; 
+
+    }
+    &-image{
+      width:639px;
+      height:846px;
+    }
   }
 }

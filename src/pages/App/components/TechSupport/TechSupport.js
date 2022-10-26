@@ -8,22 +8,47 @@ import Lottie from "react-lottie-player";
 const TechSupport = () => {
   return (
     <div className="tech-support">
-      <h2 className="tech-support-header">
-        Real Support <br /> From Real Techs
-      </h2>
-      <h2 className="tech-support-header-two">Really F'n Fast</h2>
-      <p className="tech-support-paragraph">
-        Our team has pretty much seen it all. From mini-splits to chillers weare
-        here to help.
-      </p>
+      <div className="tech-support-mobile">
 
-      <LottieLoop2 anii={techlottie}/>
+        <h2 className="tech-support-header">
+          Real Support <br /> From Real Techs
+        </h2>
+        <h2 className="tech-support-header-two">Really F'n Fast</h2>
+        <p className="tech-support-paragraph">
+          Our team has pretty much seen it all. From mini-splits to chillers weare
+          here to help.
+        </p>
 
-      <img
-        className="tech-support-image"
-        src={techSupports}
-        alt="tech-supports"
-      />
+        <LottieLoop2 anii={techlottie}/>
+
+        <img
+          className="tech-support-image"
+          src={techSupports}
+          alt="tech-supports"
+        />
+      </div>
+      
+      <div className="tech-support-desktop">
+        <div className="tech-support-img-text">
+          <h2 className="tech-support-header">
+            Real Support <br /> From Real Techs
+          </h2>
+          <h2 className="tech-support-header-two">Really F'n Fast</h2>
+          <p className="tech-support-paragraph">
+            Our team has pretty much seen it all. From mini-splits to chillers weare
+            here to help.
+          </p>
+    
+          
+    
+          <img
+            className="tech-support-image"
+            src={techSupports}
+            alt="tech-supports"
+          />
+          </div>
+        <LottieLoop2 anii={techlottie}/>
+      </div>
     </div>
   );
 };

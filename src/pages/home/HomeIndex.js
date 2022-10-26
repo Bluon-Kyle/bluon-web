@@ -2,12 +2,7 @@ import React from "react";
 import video1 from "../../assets/video/BluonAnimation.mp4";
 import { Link } from "react-router-dom";
 import appImg from "./phone-one-app.png";
-//import Card from '../../components/common/Card';
 import ResponsiveCard from "../../components/common/cards/responsiveCardThree/ResponsiveCard";
-import MostLovedApp from "../../components/common/most-loved-app/MostLovedApp";
-//testing:
-//import GameCard from '../../components/common/cards/gameCard/GameCard';
-//import PicCard from '../../components/common/cards/picCard/PicCard';
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";

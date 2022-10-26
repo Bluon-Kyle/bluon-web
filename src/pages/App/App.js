@@ -19,20 +19,26 @@ const App = () => {
       <TechSupport />
 
       {/* Video */}
-      <iframe
-        className="app-youtube-video-1"
-        src={"https://www.youtube.com/embed/lKmUx_tqr9o"}
-        title="The HVAC App That Will Change Your Life"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
+      <div className="app-youtube-video">
+        <iframe
+          className="app-youtube-video-1"
+          src={"https://www.youtube.com/embed/lKmUx_tqr9o"}
+          title="The HVAC App That Will Change Your Life"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+      
       <AppleReviews />
       <JoinBluon />
 
       {/* Video */}
-      <video className="app-youtube-video-2" autoPlay muted loop>
-        <source src={bluonVideo} type="video/mp4" />
-      </video>
+      <div className="app-youtube-video">
+        <video className="app-youtube-video-2" autoPlay muted loop>
+          <source src={bluonVideo} type="video/mp4" />
+        </video>
+      </div>
+      
 
       <JoinBannerApp
         title={"Join the Bluon Community"}

@@ -21,15 +21,17 @@ const FrontPage = () => {
           HVAC Techs Actually Use
         </h2>
       </div>
+      <div className="front-page-button-stamp">
+        <div className="front-page-buttons">
+          <ButtonImage href={iPhoneHref} src={iPhoneImage} />
+          <ButtonImage href={androidHref} src={androidImage} />
+        </div>
 
-      <div className="front-page-buttons">
-        <ButtonImage href={iPhoneHref} src={iPhoneImage} />
-        <ButtonImage href={androidHref} src={androidImage} />
+        <div className="front-page-stamp">
+          <img src={stamp} alt="stamp" />
+        </div>
       </div>
-
-      <div className="front-page-stamp">
-        <img src={stamp} alt="stamp" />
-      </div>
+      
 
       <div className="front-page-phones">
         <img src={phones} alt="phone" />
