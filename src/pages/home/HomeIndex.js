@@ -8,7 +8,8 @@ import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";
 import MostLovedApp from '../../components/common/most-loved-app/MostLovedApp';
 import "./_home.scss";
-
+import LottieLoop3 from '../../components/common/LottieLoop/LottieLoop3'
+import map from '../../data/lottie/map-new.json'
 const HomeIndex = () => {
   return (
     <div className="home">
@@ -34,8 +35,7 @@ const HomeIndex = () => {
 
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
-          <span className="home-impact-map"></span>
-          <span className="home-impact-card"></span>
+          <LottieLoop3 anii={map}/>
         </div>
       </div>
 
