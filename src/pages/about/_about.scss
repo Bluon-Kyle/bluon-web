@@ -68,4 +68,21 @@
       background-color: $bluon-background-grey-2;
     }
   }
+  @media(min-width: 768px){
+    &-values{
+      &-carousel{
+        display:none; 
+      }
+      &-team-img{
+        display:flex;
+        justify-content: center;
+        img{
+          width:100%; 
+        }
+      }
+    }
+  }
+  @media(min-width: 1028px){
+    
+  }
 }

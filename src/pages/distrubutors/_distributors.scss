@@ -15,15 +15,17 @@
 
     &-text {
       padding-top: 2.5rem;
-      padding-left: 2.6rem;
+      //padding-left: 2.6rem;
       padding-bottom: 2.5rem;
-      width: 80%;
+      //width: 80%;
+      text-align: center;
       h2 {
         font-size: 2rem;
       }
       p {
-        font-size: 1.28rem;
-        width: 90%;
+        font-size: 1.8vh;
+        //width: 90%;
+        //padding-left: 1rem;
       }
     }
     &-video {
@@ -47,6 +49,7 @@
       text-align: center;
       h2 {
         padding-bottom: 2rem;
+        font-size: 4vh;
       }
     }
     &-logos {
@@ -56,12 +59,15 @@
   &-bluon-live{
     @include padding-side(2rem);
     h2{
-      font-size: 1.4rem; 
+      font-size: 2.5vh; 
     }
     ul{
       @include padding-side(1.5rem);
       list-style-type:circle;
       li{
+        @media(min-width: 768px){
+          font-size: 1.8vh;
+        }
         
         padding-bottom: 1rem;
         padding-top: .8rem;
@@ -127,5 +133,26 @@
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
+  }
+  @media(min-width: 768px){
+    &-bluon-live{
+      &-demo{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        img{
+          max-width: 200px;
+        }
+        &-search{
+          img{
+            max-width: 200px;
+          }
+        }
+      }
+    }
+    &-bottom-video-vid-wrapper{
+      
+    }
+
   }
 }

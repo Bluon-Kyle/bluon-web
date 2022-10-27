@@ -8,6 +8,7 @@ import blive from '../../assets/images/distributors/BluonLive-Logo.svg'
 import bsearch from '../../assets/images/distributors/BluonSearch-Logo.svg'
 //lotties
 import LottieLoop2 from "../../components/common/LottieLoop/LottieLoop2";
+import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
 import anim1 from '../../data/lottie/lottie-bluon-live.json'
 import anim2 from '../../data/lottie/lottie-bluon-search.json'
 import "./_distributors.scss";
@@ -66,7 +67,7 @@ const Distrubutors = (props) => {
             <li key='1'>See model, parts and cross references.</li>
             <li key='2'>Save hours of research and headache.</li>
           </ul>
-          <LottieLoop2 anii={anim1}/>
+          <LottieLoop3 anii={anim1}/>
           <div className='demo-button'>
             
             {signup ? 
@@ -90,7 +91,7 @@ const Distrubutors = (props) => {
             <li key='2'>See parts w/ specs & manuals for 300k model</li>
             <li key='3'>Unlimited access for all BluonLive distributors</li>
           </ul>
-          <LottieLoop2 anii={anim2}/>
+          <LottieLoop3 anii={anim2}/>
           <div className='demo-button'>
 
             {signup ? 
@@ -137,7 +138,7 @@ const Distrubutors = (props) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
             width="100%"
-            height="230vw"
+            height="330vw"
           />
         </div>
         <div className="distributors-bottom-video-demo-button">
@@ -146,7 +147,7 @@ const Distrubutors = (props) => {
               <ButtonNav to='/RequestSignUp' color='primary'>
                 Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav> :
-              <ButtonNav to="RequestDemo" color="primary">
+              <ButtonNav to="/RequestDemo" color="primary">
               Get a Demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
             </ButtonNav>
           }

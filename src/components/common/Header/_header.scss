@@ -17,6 +17,9 @@
     &-nav{
       padding-left:1rem; 
     }
+    &-blive, &-blive-white{
+      padding-right:2rem; 
+    }
   }
 }
 @media(min-width:1020px){
@@ -38,9 +41,9 @@
         width:100%; 
       }
     }
-    &-blive{
+    &-blive, &-blive-white{
       padding-right:2rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       a{
         color:blue; 
         text-decoration: none;
@@ -50,7 +53,7 @@
         a{
           color:inherit;
           &:hover{
-            color:lime;
+            color:limegreen;
           }
         }
       }

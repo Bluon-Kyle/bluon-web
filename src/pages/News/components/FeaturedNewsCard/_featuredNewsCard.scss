@@ -33,4 +33,19 @@
       margin-right: 0.5rem;
     }
   }
+  @media(min-width: 768px){
+    display:flex; 
+    
+    &-img{
+      padding-right:1rem; 
+      width:50%; 
+      
+    }
+    &-desktop{
+      
+    }
+  }
+  @media(min-width: 1028px){
+
+  }
 }

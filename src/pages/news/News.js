@@ -2,6 +2,7 @@ import React from "react";
 import FeaturedNewsCard from "./components/FeaturedNewsCard/FeaturedNewsCard";
 import NewsCard from "./components/NewsCard/NewsCard";
 import { news } from "../../data/news/news";
+import './_news.scss'
 
 const News = () => {
   const featuredNews = news[0];
@@ -14,7 +15,9 @@ const News = () => {
   return (
     <div>
       <FeaturedNewsCard {...featuredNews} />
-      {renderNews()}
+      <div className="news">
+        {renderNews()}
+      </div>
     </div>
   );
 };

@@ -14,3 +14,57 @@
 .join-banner-container {
   background-color: $bluon-brand-blue;
 }
+.join-banner-desktop{
+  display:none; 
+}
+.banner{
+  @media(min-width:768px){
+    display:flex; 
+    //align-items: center;
+    width:100%; 
+    min-height: 350px;
+    &-content{
+      width:50%; 
+      flex: 1 1 50vw;
+      padding:0; 
+      padding-left: 2rem;
+    }
+    &-content-img{
+      //width:50%; 
+      flex: 1 1 50vw;
+      
+      position: relative;
+      .banner-image{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        //height:50vw;
+        //width:min-content;
+
+        
+      }
+    }
+    
+  }
+  
+  @media(min-width:1028px){
+    min-height: 420px;
+    &-content{
+      .join-banner{
+        width:90%;
+        padding-left: 4rem; 
+      } 
+    }
+    &-content-img{
+      width: 58.3%;
+    }
+  }
+}
+@media(min-width:768px){
+  .join-banner-mobile{
+    display:none; 
+  }
+  .join-banner-desktop{
+    display: flex;
+  }
+}

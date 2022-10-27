@@ -8,7 +8,7 @@ const Logos = () => {
         <div className='dist-logos'>
             {logoList.map((logos, i) => {
                 return (
-                    <LogoRender logos={logos} index={i}/>    
+                    <LogoRender logos={logos} index={i} key={i}/>    
                 )
             })}
         </div>

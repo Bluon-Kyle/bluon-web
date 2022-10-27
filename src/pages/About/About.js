@@ -5,7 +5,7 @@ import { carouselCards } from "../../data/about/carouselCards";
 import TeamGrid from "./components/TeamGrid/TeamGrid";
 import { teamGridList } from "../../data/about/teamGridList";
 import bluonTeamImage from "../../assets/images/about/bluon-team.jpg";
-
+import desktopimg from '../../assets/images/about/values.jpg'
 import "./_about.scss";
 
 const About = () => {
@@ -22,7 +22,13 @@ const About = () => {
           <p>About Us</p>
           <h1>Our Values</h1>
         </div>
-        <Carousel srcList={carouselCards} />
+        <div className="about-values-carousel">
+          <Carousel srcList={carouselCards} />
+        </div>
+        <div className="about-values-team-img">
+          <img src={desktopimg} alt='the bluon team!'/>
+        </div>
+        
         <div className="about-values-img2">
           <img className="team-img" alt="our team" src={bluonTeamImage} />
         </div>

@@ -32,4 +32,10 @@
   grid-template-columns: repeat(2, 1fr);
   padding-left: 5%;
   padding-right: 5%;
+  @media(min-width: 768px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media(min-width: 1028px){
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -1,7 +1,7 @@
 
 const LogoRender = ({logos, index}) => {
   return (
-    <div className="dist-logos-inner">
+    <div className="dist-logos-inner" key={index}>
       <img src={logos.url} alt={`logo-${index}`}/>
     </div>
   )

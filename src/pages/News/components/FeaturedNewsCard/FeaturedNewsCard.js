@@ -11,18 +11,21 @@ const FeaturedNewsCard = ({ src, date, title, description, link }) => {
         src={src}
         alt={"featured-news-card"}
       />
-      <p className="featured-news-card-date">{date}</p>
-      <h3 className="featured-news-card-title">{title}</h3>
-      <p className="featured-news-card-description">{description}</p>
-      <a
-        className="featured-news-card-link"
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="featured-news-card-link-text">Read More</span>
-        <img src={arrowRight} alt={"blue right-arrow"} />
-      </a>
+      <div className="featured-news-card-desktop">
+        <p className="featured-news-card-date">{date}</p>
+        <h3 className="featured-news-card-title">{title}</h3>
+        <p className="featured-news-card-description">{description}</p>
+        <a
+          className="featured-news-card-link"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="featured-news-card-link-text">Read More</span>
+          <img src={arrowRight} alt={"blue right-arrow"} />
+        </a>
+      </div>
+      
     </div>
   );
 };

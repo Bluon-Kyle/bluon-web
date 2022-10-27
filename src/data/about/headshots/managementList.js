@@ -22,7 +22,7 @@ export const managementList = [
   {
     picSrc: require("../../../assets/images/about/headshots/matt-case.png"),
     picAlt: "null",
-    name: "Peter Capuciati",
+    name: "Matt Case",
     position: "SVP Growth",
     bio: "Human Navigator",
     contact: false,
@@ -52,9 +52,9 @@ export const managementList = [
   {
     picSrc: require("../../../assets/images/about/headshots/nick-jaros.png"),
     picAlt: "null",
-    name: "Peter Capuciati",
+    name: "Nick Jaros",
     position: "Chief Executive Officer",
-    bio: "Physicist, Columbia University",
+    bio: "Marketplace Expert",
     contact: false,
     tel: null,
     email: null,
