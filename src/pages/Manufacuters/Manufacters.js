@@ -1,7 +1,8 @@
 import React from "react";
 import "./_manufacturers.scss";
 import manufacturersWide from "../../assets/images/manufacturer-wide.jpg";
-import ButtonLink from "../../components/common/ButtonLink/ButtonLink";
+import manuDesk from "../../assets/images/manufacturer-wider.jpg";
+import ButtonNav from "../../components/common/ButtonNav/ButtonNav";
 const Manufacturers = () => {
   return (
     <div className="manufacturer">
@@ -11,11 +12,14 @@ const Manufacturers = () => {
           To learn more about how to get your equipment and/or parts onto the
           Bluon platform contact us below.
         </h4>
-        <ButtonLink color="primary">Contact Us</ButtonLink>
+        <ButtonNav to='/Contact' color="primary">Contact Us</ButtonNav>
       </div>
 
       <div className="manufacturer-img">
         <img src={manufacturersWide} alt="parts" />
+      </div>
+      <div className="manufacturer-img-desk">
+        <img src={manuDesk} alt="parts large" />
       </div>
     </div>
   );

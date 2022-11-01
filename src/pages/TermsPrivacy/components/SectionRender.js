@@ -90,7 +90,7 @@ const SectionRender = ({page,
         </div>
     )
   }
-  else if(page==="Terms"){
+  else if(page==="terms"){
     return (
         <div className='section-content'>
             
