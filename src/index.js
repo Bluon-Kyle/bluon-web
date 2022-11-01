@@ -19,7 +19,7 @@ import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 import SignUp from "./pages/SignUp/SignUp";
-import AdLanding from "./pages/AdLanding/AdLanding";
+//import AdLanding from "./pages/AdLanding/AdLanding";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
 //vitals
