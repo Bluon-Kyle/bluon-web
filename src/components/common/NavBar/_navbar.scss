@@ -47,10 +47,11 @@
             flex-wrap: wrap;
             list-style: none;
             color:white;
-            &-items{
+            .nav-menu-items{
                 .special-link-class{
-                    :hover{
-                        color:limegreen;
+                    &:hover{
+                        //box-shadow: 50px black;
+                        color:lightgrey;
                     }
                 }
                 position: relative;
@@ -65,7 +66,7 @@
 
                     &:hover{
                         font-size: 1.4rem;
-                        color: limegreen; 
+                        color: lightgrey; 
                     }
                 }
                 button{
@@ -80,7 +81,9 @@
                     width: 100%;
                     &:hover{
                         font-size: 115%;
-                        color: limegreen; 
+                        color: lightgray; 
+                       // background-color: black;
+                        //border-radius: 50px;
                     }
                 }
             }

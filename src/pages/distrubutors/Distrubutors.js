@@ -7,7 +7,7 @@ import divider from '../../assets/images/distributors/Lineart-Blue.png'
 import blive from '../../assets/images/distributors/BluonLive-Logo.svg'
 import bsearch from '../../assets/images/distributors/BluonSearch-Logo.svg'
 //lotties
-import LottieLoop2 from "../../components/common/LottieLoop/LottieLoop2";
+//import LottieLoop2 from "../../components/common/LottieLoop/LottieLoop2";
 import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
 import anim1 from '../../data/lottie/lottie-bluon-live.json'
 import anim2 from '../../data/lottie/lottie-bluon-search.json'
@@ -76,7 +76,7 @@ const Distrubutors = (props) => {
                   Sign up for BluonLive <img alt="arrow" src={arrow} />
                 </div>
               </ButtonNav> :
-              <ButtonNav to="/BluonLiveStores" color="primary">
+              <ButtonNav to="/RequestDemo" color="primary">
                 Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav>
           }
@@ -98,7 +98,7 @@ const Distrubutors = (props) => {
               <ButtonNav to='/RequestSignUp' color='primary'>
                 Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav> :
-              <ButtonNav to="/BluonLiveStores" color="primary">
+              <ButtonNav to="/RequestDemo" color="primary">
                 Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav>
             }
@@ -137,8 +137,8 @@ const Distrubutors = (props) => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen={true}
-            width="100%"
-            height="330vw"
+            //width="60%"
+            height="380vw"
           />
         </div>
         <div className="distributors-bottom-video-demo-button">
