@@ -7,14 +7,16 @@ import './_navbar.scss'
 //import { Route } from 'react-router-dom';
 const NavBar = (primary) => {
   const [isApp, setIsApp] = useState(false);
+  const [isAds, setIsAds] = useState(false); 
   const location = useLocation();
 
 
   useEffect(() => {
     setIsApp(location.pathname === "/App");
+    setIsAds(location.pathname === "/HVAC-APP-LP3");
   }, [location]);
   const getColor = () => {
-    return isApp ? '-white' : '';
+    return (isApp || isAds) ? '-white' : '';
   };
   return (
     <nav>

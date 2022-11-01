@@ -22,16 +22,16 @@ const Distrubutors = (props) => {
         <div className="distributors-top-text">
           <h2>Ultimate Tool for Counter Staff</h2>
           <p>Unleash new-found productivity for your team</p>
-
+            <div className="distributors-top-signup">
+              {signup ? 
+                  <ButtonNav to='/BluonLive-SignUp' color='primary'>
+                    Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+                  </ButtonNav> :
+                  <></>
+              }
+            </div>
         </div>
-        <div className="distributors-top-signup">
-          {signup ? 
-              <ButtonNav to='/RequestSignUp' color='primary'>
-                Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
-              </ButtonNav> :
-              <></>
-          }
-        </div>
+        
         
         <div className="distributors-top-video">
           <video
@@ -71,7 +71,7 @@ const Distrubutors = (props) => {
           <div className='demo-button'>
             
             {signup ? 
-              <ButtonNav to='/RequestSignUp' color='primary'>
+              <ButtonNav to='/BluonLive-SignUp' color='primary'>
                 <div className="button-arrow">
                   Sign up for BluonLive <img alt="arrow" src={arrow} />
                 </div>
@@ -95,7 +95,7 @@ const Distrubutors = (props) => {
           <div className='demo-button'>
 
             {signup ? 
-              <ButtonNav to='/RequestSignUp' color='primary'>
+              <ButtonNav to='/BluonLive-SignUp' color='primary'>
                 Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav> :
               <ButtonNav to="/RequestDemo" color="primary">
@@ -144,7 +144,7 @@ const Distrubutors = (props) => {
         <div className="distributors-bottom-video-demo-button">
           
           {signup ? 
-              <ButtonNav to='/RequestSignUp' color='primary'>
+              <ButtonNav to='/BluonLive-SignUp' color='primary'>
                 Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
               </ButtonNav> :
               <ButtonNav to="/RequestDemo" color="primary">

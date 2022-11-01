@@ -51,7 +51,7 @@
                 .special-link-class{
                     &:hover{
                         //box-shadow: 50px black;
-                        color:lightgrey;
+                        color: lightblue; 
                     }
                 }
                 position: relative;
@@ -66,7 +66,7 @@
 
                     &:hover{
                         font-size: 1.4rem;
-                        color: lightgrey; 
+                        color: blue; 
                     }
                 }
                 button{
@@ -81,7 +81,7 @@
                     width: 100%;
                     &:hover{
                         font-size: 115%;
-                        color: lightgray; 
+                        color: lightblue; 
                        // background-color: black;
                         //border-radius: 50px;
                     }

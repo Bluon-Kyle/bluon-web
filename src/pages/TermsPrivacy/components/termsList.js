@@ -181,7 +181,9 @@ export const sectionList = [
         loudtitle:'Bluon, Inc',
         content:[
             `When signing up for the App you choose your preferred contact method and authorize Bluon to contact you via email, text, and/or call. You may change your preferences in the User settings. Standard message and data rates apply. You can opt-out at any time by texting “STOP” or by contacting Bluon at (855) 425-8686 or terms@bluon.com.`
-        ]
+        ],
+        content2: <p>When signing up for the App you choose your preferred contact method and authorize Bluon to contact you via email, text, and/or call. You may change your preferences in the User settings. Standard message and data rates apply. You can opt-out at any time by texting “STOP” or by contacting Bluon at <a className='terms-link' href='tel:(855) 425-8686'>(855) 425-8686</a> or <a className="terms-link" href='terms@bluon.com'>terms@bluon.com</a>.</p>
+
     },
     {
         bigtitle: 'Copyright Policy',

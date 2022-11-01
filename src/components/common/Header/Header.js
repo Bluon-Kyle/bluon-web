@@ -19,12 +19,14 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(true);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const [isApp, setIsApp] = useState(false);
+  const [isAds, setIsAds] = useState(false); 
   const location = useLocation();
   const isOpen = open ? "" : "displayNone";
   const subMenuButtonLabel = "More";
 
   useEffect(() => {
     setIsApp(location.pathname === "/App");
+    setIsAds(location.pathname === '/HVAC-APP-LP3');
   }, [location]);
 
   const isHeaderOpen = () => {
@@ -32,14 +34,14 @@ const Header = () => {
   };
 
   const getLogo = () => {
-    return isApp && !open ? bluonLogoSecondary : bluonLogo;
+    return (isApp || isAds) && !open ? bluonLogoSecondary : bluonLogo;
   };
   const getColor = () => {
-    return isApp ? '-white' : '';
+    return isApp || isAds ? '-white' : '';
   };
 
   const getHamburgerIcon = () => {
-    return isApp && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
+    return (isApp || isAds) && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
   };
 
   const resetOpen = () => {

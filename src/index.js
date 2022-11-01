@@ -19,6 +19,7 @@ import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 import SignUp from "./pages/SignUp/SignUp";
+import AdLanding from "./pages/AdLanding/AdLanding";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
 //vitals
@@ -36,6 +37,7 @@ root.render(
       <Routes>
         <Route path="/" element={<HomeIndex />} />
         <Route path="/App" element={<App />} />
+        <Route path='/HVAC-APP-LP3' element={<App/>}/>
         <Route path="/Distributors" element={<Distributors />} />
         <Route path="/Manufacturers" element={<Manufacturers />} />
         <Route path="/Contact" element={<Contact />} />
@@ -73,6 +75,17 @@ root.render(
               />
           }
         />
+        <Route 
+          path='/BluonLive-SignUp'
+          element={
+            <Demo 
+              formId='bff42b73-2371-4b50-b95a-324b1fea5746'
+              title='Sign up for Bluon Live!'
+              desc='Submit the form and a Bluon professional will contact you ASAP!'
+            />
+          }
+        />
+
         <Route path="/ThankYou" element={<ThankYou />} />
         {/* <Route path="TestPage" element={<LottieTest />} /> */}
         <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>

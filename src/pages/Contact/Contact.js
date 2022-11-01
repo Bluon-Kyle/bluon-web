@@ -84,12 +84,15 @@ const ContactUs = () => {
           </li>
         </ul>
       </div>
-      <HubspotForm
-        portalId={"6885872"}
-        formId={"1dc300d2-84df-4e26-8ff5-3f2918f17468"}
-        navigateTo={"/ThankYou"}
-        className="mobile"
-      />
+      <div className="hubspot-wrapper">
+        <HubspotForm
+          portalId={"6885872"}
+          formId={"1dc300d2-84df-4e26-8ff5-3f2918f17468"}
+          navigateTo={"/ThankYou"}
+          className="mobile"
+        />
+      </div>
+      
     </div>
   );
 };

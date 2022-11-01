@@ -65,6 +65,15 @@
                 @include ptext;
                 .inner-content{
                     padding-bottom: 2rem;
+                    
+                }
+                .terms-link{
+                    color:blue;
+                    text-decoration: underline;
+                    &:hover{
+                        color:purple;
+                        font-size: 1.1rem;
+                    } 
                 }
             }
             ul{

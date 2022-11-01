@@ -2,6 +2,18 @@
 
 .contact-page {
   background-color: $bluon-brand-blue;
+  @media(min-width:768px){
+    .hubspot-wrapper{
+      display:flex; 
+      justify-content: space-around;
+      align-content: center;
+      max-width: 100%;
+      .hubspot{
+        max-width: 80%;
+      }
+    }
+  }
+  
 }
 
 .contact {
@@ -35,5 +47,11 @@
     li {
       margin-right: 1rem;
     }
+  }
+  @media(min-width:768px){
+   text-align: center;
+   &-social-media-list{
+    justify-content: center;
+   }
   }
 }

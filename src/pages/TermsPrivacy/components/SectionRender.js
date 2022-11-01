@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionRender = ({page, 
     items:{title, content, list, content_bottom,bigtitle, loudtitle, numberedList,
-    list1, list2, list3, inner1, inner2, inner3, bottom_content}}) => {
+    list1, list2, list3, inner1, inner2, inner3, bottom_content, content2}}) => {
 
   if(page=== "privacy"){
     return(
@@ -100,7 +100,7 @@ const SectionRender = ({page,
             {loudtitle ? <strong><h2>{loudtitle}</h2></strong>:<></>}
             </div>
             <div className='section-content-p'>
-            {content ?
+            {content && !content2 ?
                 <>{content.map((p, index)=> {
                     return(
                         <p className='inner-content' key={`inner-content${index}`}>
@@ -109,6 +109,7 @@ const SectionRender = ({page,
                     )
                 })}</>:
                 <br></br>}
+                <div>{content2} </div>
             </div>
             {list ?
                 <ul>
