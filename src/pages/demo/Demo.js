@@ -6,7 +6,7 @@ const Demo = (props) => {
   const title = props.title;
   const desc = props.desc;
   const formId = props.formId;
-  const classname = props.classN; 
+  // const classname = props.classN; 
   const portalId = '6885872';
   return (
     <div className="demo">
@@ -16,7 +16,7 @@ const Demo = (props) => {
           <p>{desc}</p>
         </div>
 
-       <HubspotForm portalId={portalId} formId={'85050616-88e4-4c49-82e3-62df96cf221a'} navigateTo='/ThankYou' />
+       <HubspotForm portalId={portalId} formId={formId} navigateTo='/ThankYou' />
       </div>
       <div className="demo-img">
         <img src={require("./request-demo-bg-big.jpg")} alt="demo img" />

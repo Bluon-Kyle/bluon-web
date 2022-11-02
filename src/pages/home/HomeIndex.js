@@ -6,7 +6,6 @@ import ResponsiveCard from "../../components/common/cards/responsiveCardThree/Re
 import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";
-import MostLovedApp from '../../components/common/most-loved-app/MostLovedApp';
 import "./_home.scss";
 import LottieLoop3 from '../../components/common/LottieLoop/LottieLoop3'
 import map from '../../data/lottie/map-new.json'

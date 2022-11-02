@@ -10,7 +10,7 @@ const Dropdown = ({submenus, dropdown}) => {
 
   useEffect(() => {
     setIsApp(location.pathname === "/App");
-    setIsAds(location.pathname == '/HVAC-APP-LP3');
+    setIsAds(location.pathname === '/HVAC-APP-LP3');
   }, [location]);
   const getColor = () => {
     return isApp || isAds ? '-white' : '';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+//import React, { useState, useEffect } from "react";
 import arrowDownCollapsible from "../../../../../../assets/icons/arrow-down-collapsible.svg";
 import "./_collapsible.scss";
 import LottieLoop2 from "../../../../../../components/common/LottieLoop/LottieLoop2";
