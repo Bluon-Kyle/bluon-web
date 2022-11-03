@@ -42,7 +42,7 @@ const App = () => {
 
       <JoinBannerApp
         title={"Join the Bluon Community"}
-        subtitle={"Dedicated to making the livse of HVAC techs better."}
+        subtitle={"Dedicated to making the lives of HVAC techs better."}
       />
     </div>
   );

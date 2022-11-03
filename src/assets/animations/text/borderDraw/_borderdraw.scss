@@ -1,0 +1,36 @@
+
+//@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+.text-border-draw{
+    .patterns {
+        //display:none; 
+        width: 100%;
+      }
+      svg text {
+        //font-family: Lora;
+        letter-spacing: 10px;
+        stroke: #151bca;
+        font-size: 100%;
+        font-weight: 700;
+        stroke-width: 3;
+       
+        animation: textAnimate 5s infinite alternate;
+        
+      }
+      
+      @keyframes textAnimate {
+        0% {
+          stroke-dasharray: 0 50%;
+          stroke-dashoffset:  20%;
+          fill:hsl(252, 79%, 38%)
+      
+        }
+        
+        100% {
+          stroke-dasharray: 50% 0;
+          stroke-dashoffstet: -20%;
+          fill: hsla(189, 68%, 75%,0%)
+        }
+        
+      }
+      
+}

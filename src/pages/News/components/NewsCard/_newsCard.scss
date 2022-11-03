@@ -1,18 +1,41 @@
 @use "../../../../assets/scss/colors" as *;
+@mixin side-p($size) {
+  padding-left: $size;
+  padding-right: $size;
+  padding-top: $size;
 
+}
 .news-card:first-child {
   border-top: 1px solid $bluon-background-grey-5;
 }
 
 .news-card {
-  padding: 3.75rem 2.25rem;
+  @include side-p(6vw);
+  width:100%; 
+  //justify-content: baseli;
+  display: block;
+  justify-content: baseline;
+  //block-size: auto;
   &-img {
-    height:290px;
+    box-shadow: rgb(42, 82, 124) 2px 20px 20px -10px;
+
+    //max-height:30vh;
+    height:26vh; 
+    @media(min-width:332px ){
+      height:32vh;
+    }
     width:100%; 
+    max-width:345px;
     // @media(min-width: 1400px){
     //   height:400px; 
     // }
   }
+  &-img-wrapper{
+    display: flex;
+    justify-content: center;
+    //align-items: baseline;
+  }
+
 
   &-date {
     font-size: 0.875rem;
@@ -38,6 +61,22 @@
 
     &-text {
       margin-right: 0.5rem;
+    }
+  }
+  @media(min-width: 768px){
+
+  }
+  @media(min-width: 1020px){
+    height:62vh; 
+    &-img{
+      height:23vh;  
+    }
+  }
+  @media(min-width: 1300px){
+    width:100%; 
+    &-img{
+      //width:300px; 
+      height:33vh; 
     }
   }
 }

@@ -3,11 +3,13 @@ import "./_manufacturers.scss";
 import manufacturersWide from "../../assets/images/manufacturer-wide.jpg";
 import manuDesk from "../../assets/images/manufacturer-wider.jpg";
 import ButtonNav from "../../components/common/ButtonNav/ButtonNav";
+import BorderDraw from "../../assets/animations/text/borderDraw/BorderDraw";
 const Manufacturers = () => {
   return (
     <div className="manufacturer">
+    <metadata title='hvac manufacturers'/>
       <div className="manufacturer-banner">
-        <h2>Manufacturers</h2>
+        <h2><BorderDraw text='Manufacturers'/></h2>
         <h4>
           To learn more about how to get your equipment and/or parts onto the
           Bluon platform contact us below.

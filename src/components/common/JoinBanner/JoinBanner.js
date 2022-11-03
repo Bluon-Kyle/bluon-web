@@ -5,7 +5,7 @@ import ButtonLink from "../ButtonLink/ButtonLink";
 import joinMovement from '../../../assets/images/join-movement-img.jpg'
 import "./_joinBanner.scss";
 
-const JoinBanner = ({ title }) => {
+const JoinBanner = ({ title, link}) => {
 
   // const width = false ; 
   // if(width)
@@ -16,7 +16,7 @@ const JoinBanner = ({ title }) => {
       <Banner className={"join-banner-container"} image={joinMovementMobile}>
         <div className="join-banner">
           <h2 className="join-banner-title">{title}</h2>
-          <ButtonLink color="secondary" href={"https://bluon.com/bluon-live.php"}>
+          <ButtonLink color="secondary" href={link}>
             {"We're Hiring!"}
           </ButtonLink>
         </div>
@@ -28,7 +28,7 @@ const JoinBanner = ({ title }) => {
       <Banner className={"join-banner-container"} image={joinMovement}>
         <div className="join-banner">
           <h2 className="join-banner-title">{title}</h2>
-          <ButtonLink color="secondary" href={"https://bluon.com/bluon-live.php"}>
+          <ButtonLink color="secondary" href={link}>
             {"We're Hiring!"}
           </ButtonLink>
         </div>

@@ -6,7 +6,7 @@ import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeIndex from "./pages/Home/HomeIndex";
+import HomeIndex from "./pages/Home/HomeIndex.js";
 import App from "./pages/App/App";
 import Distributors from "./pages/Distrubutors/Distrubutors";
 import Manufacturers from "./pages/Manufacuters/Manufacters";

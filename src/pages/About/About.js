@@ -41,7 +41,7 @@ const About = () => {
         </div>
         {renderTeamGrids()}
       </div>
-      <JoinBanner title={"Join the Bluon Team"} />
+      <JoinBanner title={"Join the Bluon Team"} link={'https://bluon.pinpointhq.com'}/>
     </div>
   );
 };
