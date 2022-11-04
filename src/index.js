@@ -20,6 +20,7 @@ import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 import SignUp from "./pages/SignUp/SignUp";
 import NotFoundPage from "./pages/404/NotFoundPage";
+import MobileTerms from "./pages/TermsPrivacy/MobileTerms/MobileTerms";
 //import AdLanding from "./pages/AdLanding/AdLanding";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
@@ -89,8 +90,9 @@ root.render(
 
         <Route path="/ThankYou" element={<ThankYou />} />
         {/* <Route path="TestPage" element={<LottieTest />} /> */}
-        <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
-        <Route path='SignUp' element={<SignUp/>}/>
+        <Route path='/BluonLiveStores' element={<BluonLiveStores/>}/>
+        <Route path='/SignUp' element={<SignUp/>}/>
+        <Route path='/Mobile-Terms-Conditions' element={<MobileTerms/>}/>
         <Route path='*' element={<Navigate to='/404'/>}/>
         <Route path="/404" element={<NotFoundPage/>} />
       </Routes>

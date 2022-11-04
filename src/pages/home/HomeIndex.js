@@ -9,6 +9,7 @@ import JoinBluon from "../App/components/JoinBluon/JoinBluon";
 import "./_home.scss";
 import LottieLoop3 from '../../components/common/LottieLoop/LottieLoop3'
 import map from '../../data/lottie/map-new.json'
+import video from '../../assets/video/BluonTechPortal.mp4'
 const HomeIndex = () => {
   return (
     <div className="home">
@@ -85,6 +86,16 @@ const HomeIndex = () => {
       <div className="home-mla-mobile">
         <AppleReviews/>
         <JoinBluon/>
+        <div className="mla-video">
+          <video
+            className="video"
+            autoPlay
+            playsInline
+            muted
+            loop
+            src={video}
+          ></video>
+        </div>
       </div>
 
       <div className="home-button-cards">

@@ -92,6 +92,20 @@
       }
     }
   }
+  &-mla-mobile{
+    .mla-video{
+      display:flex; 
+      justify-content: center;
+      //align-items: baseline;
+      
+      width:100%; 
+      video{
+        max-width: 100%;
+      }
+
+    }
+
+  }
 
   &-button-cards {
     padding-top: 0.5rem;
