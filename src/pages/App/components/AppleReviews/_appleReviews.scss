@@ -5,13 +5,13 @@
   &-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 
     &-heading {
       font-family: "Inter", sans-serif;
       color: $bluon-background-grey-3;
-      font-size: 1.75rem;
+      font-size: 8.5vw;
       padding-bottom: 1.25rem;
       padding-top:2rem; 
     }
@@ -23,11 +23,11 @@
   }
 
   &-testimonial {
-    padding: 0 2.25rem;
+    //padding: 0 2.25rem;
     &-quote {
       font-family: "Inter", sans-serif;
       font-feature-settings: "pnum" on, "lnum" on;
-      font-size: 1.875rem;
+      font-size: 6vw;
       font-weight: 300;
       padding-bottom: 1rem;
     }
@@ -53,17 +53,18 @@
     padding-right:5vw; 
     //justify-content: center;
     &-header{
-      text-align: center;
+      text-align: left;
       h2{
         padding-top: 6rem;
         font-size: 3rem;
       }
       p{
+        text-align: left;
         font-size: 1.4rem;
       }
     }
     &-testimonial{
-      text-align: center;
+      text-align: left;
       &-quote{
         font-size: 1.5rem;
       }
