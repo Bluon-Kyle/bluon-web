@@ -15,4 +15,12 @@
             color:purple; 
         }
     }
+    &-home{
+        //width:50%;
+        display:flex; 
+        justify-content: center;
+        h3{
+            font-size: 2vw;
+        }
+    }
 }

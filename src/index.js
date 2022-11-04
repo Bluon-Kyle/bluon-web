@@ -5,7 +5,7 @@ import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
-import { BrowserRouter, Route, Routes, redirect } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex.js";
 import App from "./pages/App/App";
 import Distributors from "./pages/Distrubutors/Distrubutors";
@@ -91,7 +91,8 @@ root.render(
         {/* <Route path="TestPage" element={<LottieTest />} /> */}
         <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
         <Route path='SignUp' element={<SignUp/>}/>
-        <Route path="*" element={<NotFoundPage/>} />
+        <Route path='*' element={<Navigate to='/404'/>}/>
+        <Route path="/404" element={<NotFoundPage/>} />
       </Routes>
     </ScrollToTop>
     <Footer />

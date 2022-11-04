@@ -4,9 +4,9 @@ const BorderDraw = (props) => {
     const text = props.text; 
   return (
     <div className='text-border-draw'>
-        <div class="patterns">
+        <div className="patterns">
             <svg width="100%" height="100%">
-                <defs>
+                {/* <defs> */}
                 {/* <pattern 
                     id="polka-dots" 
                     x="0" y="0" 
@@ -16,13 +16,13 @@ const BorderDraw = (props) => {
                 </pattern>   */}
                     {/* <style></style> */}
                 
-                </defs>
+                {/* </defs> */}
                         
-                <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+                {/* <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect> */}
                 
                 
             
-            <text x="50%" y="100%"  text-anchor="middle"  >
+            <text x="50%" y="100%"  textAnchor="middle"  >
             {text}
             </text>
             </svg>

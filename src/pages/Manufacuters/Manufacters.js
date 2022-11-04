@@ -7,14 +7,17 @@ import BorderDraw from "../../assets/animations/text/borderDraw/BorderDraw";
 const Manufacturers = () => {
   return (
     <div className="manufacturer">
-    <metadata title='hvac manufacturers'/>
+    {/* <metadata title='hvac manufacturers'/> */}
       <div className="manufacturer-banner">
         <h2><BorderDraw text='Manufacturers'/></h2>
         <h4>
           To learn more about how to get your equipment and/or parts onto the
           Bluon platform contact us below.
         </h4>
-        <ButtonNav to='/Contact' color="primary">Contact Us</ButtonNav>
+        <div className="manufacturer-banner-button">
+          <ButtonNav to='/Contact' color="primary">Contact Us</ButtonNav>
+        </div>
+        
       </div>
 
       <div className="manufacturer-img">
