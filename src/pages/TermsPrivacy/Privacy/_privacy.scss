@@ -53,8 +53,8 @@
                 line-height: 22px;
                 letter-spacing: -0.02em;
                 font-feature-settings: 'pnum' on, 'lnum' on;
-                padding-bottom: 1.5rem;
-                padding-top:1rem;
+                //padding-bottom: 1.5rem;
+                //padding-top:1rem;
 
                 h2{
                     @include title-small;
@@ -64,14 +64,14 @@
                 @include ptext;
                 .inner-content{
                     //padding-bottom: 2rem;
-                    padding-top:2rem; 
+                    //padding-top:2rem; 
                 }
             }
             ul{
                 list-style-type: circle;
                 padding-left:3.8rem;
                 padding-right:2rem;
-                padding-top: 2rem;
+                //padding-top: 2rem;
                 line-height: 1.5rem;
             }
         }
