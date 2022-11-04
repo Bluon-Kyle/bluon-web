@@ -24,6 +24,11 @@ const JoinBluon = () => {
       <h3 className="join-bluon-quote">Join the Bluon Community</h3>
       <div className="join-bluon-buttons">
         <ButtonImage href={iPhoneHref} src={iPhoneImage} />
+        <img
+          className="join-bluon-logo-image-desktop"
+          src={bluonAppLogo}
+          alt="bluon-app-logo-desktop"
+        />
         <ButtonImage href={androidHref} src={androidImage} />
       </div>
     </div>

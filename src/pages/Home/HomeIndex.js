@@ -64,7 +64,10 @@ const HomeIndex = () => {
 
       <div className="home-app">
         <div className="home-app-text">
-          <h1 className="outer">One App for Every Job</h1>
+          
+          <div className="outer">
+            <h1 className="outer-title">One App for Every Job</h1>
+          </div>
           <ul className="inner">
             <li>Database of 300k HVAC units with manuals</li>
             <li>Includes part #s and specs for most models</li>

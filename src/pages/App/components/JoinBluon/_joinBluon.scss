@@ -7,6 +7,9 @@
     &-image {
       width: 72px;
       height: 72px;
+      &-desktop{
+        display:none; 
+      }
     }
   }
 
@@ -24,8 +27,15 @@
   @media (min-width: 768px){
     &-logo{
       &-image{
-        width: 140%; 
-        //TODO: add desktop/tablet img
+        //width: 140%; 
+        display:none; 
+      }
+      &-image-desktop{
+        display:flex; 
+        justify-content: baseline;
+        align-items: center;
+        width: 72px;
+        height: 72px;
       }
     }
     &-quote{

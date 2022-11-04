@@ -59,8 +59,12 @@
       @include padding(2rem);
       .outer {
         padding-top: 4rem;
-        width: 80%;
+        width: 90%;
         padding-bottom: 2rem;
+        &-title{
+          border-left: 3px solid #4d98ff;
+          padding-left: 1rem;
+        }
       }
       ul {
         padding-left: 2rem;

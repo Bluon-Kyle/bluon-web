@@ -50,6 +50,7 @@
   @media (min-width:768px){
     display:flex;
     align-items: center;
+    padding-right:5vw; 
     //justify-content: center;
     &-header{
       text-align: center;
@@ -81,6 +82,8 @@
 
   }
   @media (min-width:1028px){
+    padding-right:10vw;
+    justify-content: space-between; 
     &-header{
       
     }
