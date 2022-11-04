@@ -1,0 +1,18 @@
+@mixin padding-y($size) {
+    padding-top: $size;
+    padding-bottom: $size;
+}
+.not-found{
+    text-align: center;
+    @include padding-y(10vh);
+    h3{
+        font-size: 5vw;
+    }
+    &-link{ 
+        text-decoration: underline;
+        color:blue;
+        &:hover{
+            color:purple; 
+        }
+    }
+}

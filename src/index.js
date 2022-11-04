@@ -5,7 +5,7 @@ import Header from "./components/common/Header/Header";
 import Footer from "./components/common/Footer/Footer";
 import ScrollToTop from "./components/common/scroll/ScrollToTop";
 //routes:
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, redirect } from "react-router-dom";
 import HomeIndex from "./pages/Home/HomeIndex.js";
 import App from "./pages/App/App";
 import Distributors from "./pages/Distrubutors/Distrubutors";
@@ -19,6 +19,7 @@ import News from "./pages/News/News";
 import ThankYou from "./pages/ThankYou/ThankYou";
 import BluonLiveStores from "./pages/Maps/BluonLiveStores/BluonLiveStores";
 import SignUp from "./pages/SignUp/SignUp";
+import NotFoundPage from "./pages/404/NotFoundPage";
 //import AdLanding from "./pages/AdLanding/AdLanding";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
@@ -90,6 +91,7 @@ root.render(
         {/* <Route path="TestPage" element={<LottieTest />} /> */}
         <Route path='BluonLiveStores' element={<BluonLiveStores/>}/>
         <Route path='SignUp' element={<SignUp/>}/>
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </ScrollToTop>
     <Footer />

@@ -2,14 +2,32 @@
 
 .contact-page {
   background-color: $bluon-brand-blue;
+  .hubspot-wrapper{
+    display:flex;
+    width:100%; 
+    justify-content: center;
+    .hubspot{
+      max-width:490px; 
+    }
+  }
   @media(min-width:768px){
+    display:flex; 
+    justify-content: space-around;
     .hubspot-wrapper{
       display:flex; 
       justify-content: space-around;
-      align-content: center;
+      padding-top:7vh;
+      //align-content: center;
       max-width: 100%;
       .hubspot{
         max-width: 80%;
+      }
+    }
+  }
+  @media(min-width:1020px){
+    .hubspot-wrapper{
+      .hubspot{
+        max-width: 100%;
       }
     }
   }
@@ -19,7 +37,8 @@
 .contact {
   color: $bluon-brand-white;
   padding: 4rem 3rem 3rem 3rem;
-
+  width:100%;
+  //position: relative;
   &-title {
     font-family: "Inter", sans-serif;
     font-weight: 700;
@@ -48,10 +67,17 @@
       margin-right: 1rem;
     }
   }
-  @media(min-width:768px){
-   text-align: center;
-   &-social-media-list{
+  @media(min-width: 670px){
+    padding-left: 25vw; 
+    display: flex;
     justify-content: center;
-   }
+    align-items: baseline;
+    flex-direction: column;
+  }
+  @media(min-width:768px){
+    padding-left: 7vw; 
+  }
+  @media(min-width:1020px){
+    padding: 15vw;
   }
 }
