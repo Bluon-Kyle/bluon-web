@@ -1,7 +1,6 @@
 @use "../../../assets/scss/colors" as *;
 
 .footer {
-  background-color: $bluon-brand-blue-2;
   width: 100%;
   padding: 3rem 2.5rem;
   color: $bluon-background-grey-7;
@@ -68,4 +67,12 @@
       }
     }
   }
+}
+
+.darkBlue {
+  background-color: $bluon-brand-blue-2;
+}
+
+.lightBlue {
+  background-color: $bluon-brand-blue;
 }
