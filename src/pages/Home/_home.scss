@@ -112,9 +112,16 @@
   }
 
   &-button-cards {
-    padding-top: 0.5rem;
-    @include m.team-grid(1);
+    //padding-top: 0.5rem;
+    @include m.full-grid(1);
+    width:100%; 
+    //justify-content: center;
+  }
+  &-button-cards-wrapper{
+    width:100%; 
+    display:flex; 
     justify-content: center;
+    align-items: center;
   }
 
   @media (min-width:786px){
@@ -162,7 +169,7 @@
     }
     &-button-cards{
       //@include m.team-grid(3); 
-      justify-content: space-between;
+      //justify-content: space-between;
     }
     &-app{
       &-img{
