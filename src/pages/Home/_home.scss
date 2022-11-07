@@ -35,6 +35,7 @@
   &-impact {
     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
     background-position: right;
+    background-size: cover;
     //height: 400px;
     @include padding(2.2rem);
     h1 {
@@ -47,6 +48,9 @@
       font-size: 6vw;
       //width:70%;
     }
+    // .lottie-loop3{
+    //   height:100%; 
+    // }
   }
   &-cards {
     @include center-flex;
