@@ -17,17 +17,22 @@
       display:flex; 
       justify-content: space-around;
       padding-top:7vh;
-      //align-content: center;
+      padding-bottom: 7vh; 
+      height: 60%;
       max-width: 100%;
       .hubspot{
         max-width: 80%;
+        height:6%; 
       }
     }
   }
   @media(min-width:1020px){
     .hubspot-wrapper{
+      height:100%; 
+      //height:400px; 
       .hubspot{
         max-width: 100%;
+        //height:500px;  
       }
     }
   }
@@ -37,7 +42,7 @@
 .contact {
   color: $bluon-brand-white;
   padding: 4rem 3rem 3rem 3rem;
-  width:100%;
+  width:50%;
   //position: relative;
   &-title {
     font-family: "Inter", sans-serif;
@@ -68,16 +73,16 @@
     }
   }
   @media(min-width: 670px){
-    padding-left: 25vw; 
+    //padding-left: 25vw; 
     display: flex;
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
   }
   @media(min-width:768px){
-    padding-left: 7vw; 
+    //padding-left: 7vw; 
   }
   @media(min-width:1020px){
-    padding: 15vw;
+    //padding: 15vw;
   }
 }
