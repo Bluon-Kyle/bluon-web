@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import bluonLogoSecondary from "../../../assets/logo/bluon-logo-secondary.svg";
 import phoneIcon from "../../../assets/icons/phone.svg";
 import emailIcon from "../../../assets/icons/email.svg";
@@ -8,8 +8,20 @@ import IconInformation from "../IconInformation/IconInformation";
 import "./_footer.scss";
 
 const Footer = () => {
+  // contact and app is dark blue
+  // rest is light blue
+  const [darkBlue, setDarkBlue] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setDarkBlue(
+      location.pathname === "/App" || location.pathname === "/Contact"
+    );
+  }, [location]);
+
   return (
-    <div className="footer">
+    <div className={`footer ${darkBlue ? "darkBlue" : "lightBlue"}`}>
       {/* Logo */}
       <Link className="footer-logo" to="/">
         <img alt="logo" src={bluonLogoSecondary} />
