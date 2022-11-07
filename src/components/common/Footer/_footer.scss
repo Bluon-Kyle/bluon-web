@@ -1,4 +1,8 @@
 @use "../../../assets/scss/colors" as *;
+@use "../../../assets/scss/breakpoints" as *;
+
+.footer-background {
+}
 
 .footer {
   width: 100%;
@@ -60,6 +64,7 @@
 
       &-terms {
         padding-right: 1rem;
+        border-right: 1px solid $bluon-background-grey-7;
       }
 
       &-privacy {
@@ -69,10 +74,54 @@
   }
 }
 
+// utility
 .darkBlue {
   background-color: $bluon-brand-blue-2;
 }
 
 .lightBlue {
   background-color: $bluon-brand-blue;
+}
+
+// tablet
+@media (min-width: $tablet-768px) {
+  .footer-link-contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer {
+    width: 70vw;
+    margin: 0 auto;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      height: auto;
+
+      &-item {
+        padding-right: 2rem;
+      }
+    }
+
+    &-contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+
+      &-phone {
+        padding-right: 2rem;
+      }
+    }
+
+    &-terms-and-privacy {
+      display: flex;
+
+      &-container {
+        margin-top: 0;
+        padding-left: 2rem;
+      }
+    }
+  }
 }
