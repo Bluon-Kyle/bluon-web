@@ -6,6 +6,8 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 import { teamGridList } from "../../data/about/teamGridList";
 import bluonTeamImage from "../../assets/images/about/bluon-team.jpg";
 import desktopimg from '../../assets/images/about/values.jpg'
+import PageLink from "./components/PageLinks/PageLink";
+import TeamDropdown from "./components/Dropdown/TeamDropdown";
 //import { Link } from "react-router-dom";
 import "./_about.scss";
 
@@ -41,7 +43,8 @@ const About = () => {
           <h1>The Core Of Bluon</h1>
         </div>
         <div className="about-core-nav">
-          {/* nav items go here */}
+          <TeamDropdown/>
+          <PageLink/>
 
         </div>
         {renderTeamGrids()}

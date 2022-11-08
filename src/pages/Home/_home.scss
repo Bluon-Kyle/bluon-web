@@ -29,6 +29,11 @@
   }
   &-video-container {
     @include center-flex;
+    background-image: url('../../assets/images/home/HVAC-system-graphic.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 3vh;
     .home-video {
       width: 100%;
     }
@@ -129,11 +134,15 @@
     justify-content: center;
     align-items: center;
   }
-
+  //home- (tablet sizing)
   @media (min-width:786px){
     &-welcome-wrapper{
       h1{
         font-size: 3rem;
+      }
+      .home-video-container{
+        padding-bottom: 5vh;
+
       }
     }
     &-impact{
@@ -163,6 +172,7 @@
       @include m.full-grid(3);
     }
   }
+  //home- (desktop sizing) 
   @media(min-width: 1028px){
     &-welcome-wrapper{
       h1{

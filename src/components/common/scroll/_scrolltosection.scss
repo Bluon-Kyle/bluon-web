@@ -1,0 +1,29 @@
+div.scroller-comp{
+    display:flex;
+    justify-content: center;
+    color:gray;
+    //background-color: lightgray;
+    //width:200px
+    //align-items:flex-start;
+    &:hover{
+        cursor: pointer;
+        color:#0000ff; 
+    }
+    h3{
+        //width:200px; 
+        //background-color: lightblue;
+        //border-radius: 25px;
+        font-size: 1.6vw;
+        padding-right:1.3vw; 
+    }
+}
+@media (min-width:768px){
+    div.scroller-comp{
+        //display:none; 
+        color:grey; 
+        h3{
+            font-size: 1.8vw;
+        }
+        
+    }
+}

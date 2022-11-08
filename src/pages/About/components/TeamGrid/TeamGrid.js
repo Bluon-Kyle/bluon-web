@@ -9,13 +9,14 @@ const TeamGrid = ({ title, description, headshots, columns }) => {
       return <HeadshotBio key={i} {...headshots} />;
     });
   };
+  const scrollid = title.replaceAll(' ', '');
   let size = ''; 
   if(title === 'Board of Directors'){
     size= '-5'
   }
   return (
     <div className="team-grid">
-      <div className="team-grid-header">
+      <div className="team-grid-header" id={`team-id-${scrollid}`}>
         <h2 className="team-grid-header-title">{title}</h2>
         <p className="team-grid-header-description">{description}</p>
       </div>
