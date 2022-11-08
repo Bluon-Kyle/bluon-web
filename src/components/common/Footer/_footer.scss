@@ -81,7 +81,7 @@
 }
 
 // tablet
-@media (min-width: $tablet-768px) {
+@media (min-width: $tablet-breakpoint) {
   .footer-link-contact-wrapper {
     display: flex;
     justify-content: space-between;
