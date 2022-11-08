@@ -14,7 +14,7 @@ const TechSupport = () => {
         </h2>
         <h2 className="tech-support-header-two">Really F'n Fast</h2>
         <p className="tech-support-paragraph">
-          Our team has pretty much seen it all. From mini-splits to chillers weare
+          Our team has pretty much seen it all. From mini-splits to chillers we are
           here to help.
         </p>
 

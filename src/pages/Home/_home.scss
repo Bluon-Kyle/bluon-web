@@ -11,6 +11,7 @@
 }
 @mixin grid($rowCount, $spacing) {
   display: grid;
+  //justify-content: space-around;
   grid-template-columns: repeat($rowCount, 1fr);
   grid-gap: $spacing;
   width: 100%;
@@ -35,6 +36,7 @@
   &-impact {
     background: url("../../assets/images/ellipse-circle.png") no-repeat #f8f8f8;
     background-position: right;
+    background-size: cover;
     //height: 400px;
     @include padding(2.2rem);
     h1 {
@@ -47,9 +49,13 @@
       font-size: 6vw;
       //width:70%;
     }
+    // .lottie-loop3{
+    //   height:100%; 
+    // }
   }
   &-cards {
-    @include center-flex;
+    //@include center-flex;
+    //@include grid(1,1vw );
   }
   &-app {
     background-color: $bluon-brand-blue;
@@ -112,9 +118,16 @@
   }
 
   &-button-cards {
-    padding-top: 0.5rem;
-    @include m.team-grid(1);
+    //padding-top: 0.5rem;
+    @include m.full-grid(1);
+    width:100%; 
+    //justify-content: center;
+  }
+  &-button-cards-wrapper{
+    width:100%; 
+    display:flex; 
     justify-content: center;
+    align-items: center;
   }
 
   @media (min-width:786px){
@@ -145,7 +158,9 @@
       }
     }
     &-button-cards{
-      @include center-flex(); 
+      //@include center-flex();
+      width:100%;  
+      @include m.full-grid(3);
     }
   }
   @media(min-width: 1028px){
@@ -162,7 +177,7 @@
     }
     &-button-cards{
       //@include m.team-grid(3); 
-      justify-content: space-between;
+      //justify-content: space-between;
     }
     &-app{
       &-img{

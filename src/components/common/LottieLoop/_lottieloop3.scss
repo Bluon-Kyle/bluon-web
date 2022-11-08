@@ -2,7 +2,8 @@
    @media(min-width: 768px){
         display:flex;
         justify-content: center;
-        width:100%;
+        width:95%;
+        max-height:100%; 
         padding-top:3rem;
         .animation-container{
             width: 90%;

@@ -100,36 +100,38 @@ const HomeIndex = () => {
           ></video>
         </div>
       </div>
-
-      <div className="home-button-cards">
-        <ButtonCard
-          title="Distributors"
-          img="dist"
-          imgalt="Distributors"
-          hover_title="Distributors"
-          content="Bluon brings more buisness to distributors, fill out our form to learn more!"
-          button_text="Get a demo"
-          button_link="RequestDemo"
-        ></ButtonCard>
-        <ButtonCard
-          title="Contractors"
-          img="contr"
-          imgalt="Contractors"
-          hover_title="Contractors"
-          content="Submit a form to learn more about Bluon for contractors"
-          button_text="Learn More!"
-          button_link="TechDemo"
-        ></ButtonCard>
-        <ButtonCard
-          title="Technicians"
-          img="tech"
-          imgalt="Technicians"
-          hover_title="Technicians"
-          content="Check out the FREE Bluon app!"
-          button_text="Get the Bluon App"
-          button_link="App"
-        ></ButtonCard>
+      <div className="button-cards-wrapper">
+        <div className="home-button-cards">
+          <ButtonCard
+            title="Distributors"
+            img="dist"
+            imgalt="Distributors"
+            hover_title="Distributors"
+            content="Bluon brings more buisness to distributors, fill out our form to learn more!"
+            button_text="Get a demo"
+            button_link="RequestDemo"
+          ></ButtonCard>
+          <ButtonCard
+            title="Contractors"
+            img="contr"
+            imgalt="Contractors"
+            hover_title="Contractors"
+            content="Submit a form to learn more about Bluon for contractors"
+            button_text="Learn More!"
+            button_link="TechDemo"
+          ></ButtonCard>
+          <ButtonCard
+            title="Technicians"
+            img="tech"
+            imgalt="Technicians"
+            hover_title="Technicians"
+            content="Check out the FREE Bluon app!"
+            button_text="Get the Bluon App"
+            button_link="App"
+          ></ButtonCard>
+        </div>
       </div>
+
     </div>
   );
 };
