@@ -14,7 +14,7 @@ export const dropdownList = [
   {
     title: "Parts Lists",
     description:
-      "Game changer! For the first time, techs get access to the parts associated with each model, including part #s and specs when available",
+      "Game changer! For the first time, techs get access to the parts associated with each model, including part #s and specs when available.",
     lottiePlayerJson: require('../lottie/lottie-app-parts-list.json'),
   },
   {

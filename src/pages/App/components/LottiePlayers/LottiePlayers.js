@@ -30,7 +30,7 @@ const LottiePlayers = () => {
         </h2>
         <p className="lottie-players-header-paragraph">
           We created the Bluon App specifically for HVAC technicians to make
-          day-to-day life easier and to connect with local suppliers.
+          day-to-day life easier, and to connect with local suppliers.
         </p>
       </div>
 
