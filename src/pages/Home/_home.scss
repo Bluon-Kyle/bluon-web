@@ -11,6 +11,7 @@
 }
 @mixin grid($rowCount, $spacing) {
   display: grid;
+  //justify-content: space-around;
   grid-template-columns: repeat($rowCount, 1fr);
   grid-gap: $spacing;
   width: 100%;
@@ -53,7 +54,8 @@
     // }
   }
   &-cards {
-    @include center-flex;
+    //@include center-flex;
+    //@include grid(1,1vw );
   }
   &-app {
     background-color: $bluon-brand-blue;
@@ -156,7 +158,7 @@
       }
     }
     &-button-cards{
-      @include center-flex(); 
+      //@include center-flex(); 
     }
   }
   @media(min-width: 1028px){
