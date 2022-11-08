@@ -9,7 +9,10 @@ const TeamGrid = ({ title, description, headshots, columns }) => {
       return <HeadshotBio key={i} {...headshots} />;
     });
   };
-
+  let size = ''; 
+  if(title === 'Board of Directors'){
+    size= '-5'
+  }
   return (
     <div className="team-grid">
       <div className="team-grid-header">
@@ -17,7 +20,7 @@ const TeamGrid = ({ title, description, headshots, columns }) => {
         <p className="team-grid-header-description">{description}</p>
       </div>
 
-      <div className={`team-grid-columns-${columns}`}>{renderHeadShots()}</div>
+      <div className={`team-grid-columns-${columns}${size}`}>{renderHeadShots()}</div>
     </div>
   );
 };
