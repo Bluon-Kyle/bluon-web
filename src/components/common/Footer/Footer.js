@@ -87,6 +87,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6885872.js"></script>
     </div>
   );
 };
