@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import AppleReviewsCard from "../AppleReviewsCard/AppleReviewsCard";
 import AppleReviewsIndicator from "../AppleReviewsIndicator/AppleReviewsIndicator";
 
 import "./_appleReviewsSlide.scss";
 const AppleReviewsSlide = ({ reviews, cardsPerSlide }) => {
   const [index, setIndex] = useState(0);
+  const [slideWidth, setSlideWidth] = useState(0);
+
+  const slideRef = useCallback((element) => {
+    if (!element) {
+      return;
+    }
+    const elementStyle = window.getComputedStyle(element);
+    const baseTen = 10;
+    const marginRight = parseInt(elementStyle.marginRight, baseTen);
+
+    setSlideWidth(element.offsetWidth + marginRight);
+  }, []);
   const numSlides = Math.floor(reviews.length / cardsPerSlide);
 
   const renderReviews = () => {
@@ -28,7 +40,7 @@ const AppleReviewsSlide = ({ reviews, cardsPerSlide }) => {
     let cardSlide = [];
     for (let i = 0; i < numSlides; i++) {
       const slide = (
-        <div className="apple-review-slider-slide" key={i}>
+        <div className="apple-review-slider-slide" key={i} ref={slideRef}>
           {renderCards()}
         </div>
       );
@@ -55,7 +67,8 @@ const AppleReviewsSlide = ({ reviews, cardsPerSlide }) => {
   };
 
   const sliderStyle = {
-    transform: `translateX(${-index * 100}vw)`,
+    // width of slide + margin
+    transform: `translateX(${-index * slideWidth}px)`,
   };
 
   return (

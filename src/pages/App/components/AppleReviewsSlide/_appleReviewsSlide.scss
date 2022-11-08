@@ -1,21 +1,45 @@
+@use "../../../../assets/scss/breakpoints" as *;
+
 .apple-review-slider-container {
   overflow: hidden;
+  margin-top: 3rem;
 
   .apple-review-slider {
     display: flex;
+    margin-bottom: 2rem;
 
     &-slide {
       display: grid;
-      // use media queries to change number of columns
-      // in mobile there should only be 1 column
       grid-template-columns: repeat(1, 1fr);
       min-width: 100%;
-      margin-right: 1.5rem;
+      margin-right: 1rem;
+      gap: 1rem;
     }
   }
 
   .apple-review-indicator {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .apple-review-slider-container {
+    .apple-review-slider {
+      &-slide {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .apple-review-slider-container {
+    .apple-review-slider {
+      &-slide {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
   }
 }

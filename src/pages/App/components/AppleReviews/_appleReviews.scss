@@ -1,19 +1,18 @@
 @use "../../../../assets/scss/colors" as *;
 
 .apple-reviews {
-  padding: 0 0.75rem;
+  padding: 0 1.25rem;
   &-header {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    text-align: center;
 
     &-heading {
       font-family: "Inter", sans-serif;
       color: $bluon-background-grey-3;
       font-size: 8.5vw;
       padding-bottom: 1.25rem;
-      padding-top:2rem; 
+      padding-top: 2rem;
     }
 
     &-paragraph {
@@ -23,7 +22,7 @@
   }
 
   &-testimonial {
-    //padding: 0 2.25rem;
+    padding: 0 2.25rem;
     &-quote {
       font-family: "Inter", sans-serif;
       font-feature-settings: "pnum" on, "lnum" on;
@@ -40,62 +39,77 @@
       }
     }
   }
-  &-desk-ratings{
-    display:none; 
+  &-desk-ratings {
+    display: none;
   }
 
   &-ratings {
     width: 100%;
   }
-  @media (min-width:768px){
-    display:flex;
-    align-items: center;
-    padding-right:5vw; 
-    //justify-content: center;
-    &-header{
-      text-align: left;
-      h2{
+
+  @media (min-width: 768px) {
+    &-section {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &-header {
+      text-align: center;
+      h2 {
         padding-top: 6rem;
         font-size: 3rem;
       }
-      p{
-        text-align: left;
+      p {
         font-size: 1.4rem;
       }
     }
-    &-testimonial{
-      text-align: left;
-      &-quote{
-        font-size: 1.5rem;
+
+    &-testimonial {
+      width: 85vw;
+      margin: 0 auto;
+      &-quote {
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: Inter, sans-serif;
       }
-      &-container{
-        &-name{
+      &-container {
+        &-name {
           font-size: 1.5rem;
         }
       }
     }
-    &-desk-ratings{
-      display:flex; 
+    &-desk-ratings {
+      display: flex;
     }
-    &-ratings-wrapper{
-      display:none; 
+  }
+  @media (min-width: 1028px) {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+
+    &-section {
+      display: flex;
+      flex-direction: row-reverse;
     }
 
-  }
-  @media (min-width:1028px){
-    padding-right:10vw;
-    justify-content: space-between; 
-    &-header{
-      
+    &-desk-wrapper,
+    &-ratings-wrapper {
+      flex: 1 1 50%;
     }
-    &-ratings{
-      width:60%; 
-      &-desk{
-        img{
-          width:100%; 
+
+    &-desk-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5rem;
+    }
+
+    &-ratings {
+      &-desk {
+        img {
+          width: 100%;
         }
       }
     }
-    
   }
 }
