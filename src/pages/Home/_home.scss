@@ -158,7 +158,9 @@
       }
     }
     &-button-cards{
-      //@include center-flex(); 
+      //@include center-flex();
+      width:100%;  
+      @include m.full-grid(3);
     }
   }
   @media(min-width: 1028px){
