@@ -1,25 +1,8 @@
+
 .page-link{
     &-desktop{
-        display:none; 
-    }
-
-}
-
-@media (min-width:768px){
-    .page-link{
-        &-mobile{
-            display:none;
-        }
-        &-desktop{
-            display:flex;
-            align-content: center;
-            justify-content: center;
-        }
-    }
-}
-
-@media (min-width:1020px){
-    .page-link{
-        
+        display:flex;
+        align-content: center;
+        justify-content: center;
     }
 }
