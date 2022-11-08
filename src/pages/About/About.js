@@ -6,6 +6,7 @@ import TeamGrid from "./components/TeamGrid/TeamGrid";
 import { teamGridList } from "../../data/about/teamGridList";
 import bluonTeamImage from "../../assets/images/about/bluon-team.jpg";
 import desktopimg from '../../assets/images/about/values.jpg'
+//import { Link } from "react-router-dom";
 import "./_about.scss";
 
 const About = () => {
@@ -38,6 +39,10 @@ const About = () => {
         <div className="about-core-text">
           <p>Our Team</p>
           <h1>The Core Of Bluon</h1>
+        </div>
+        <div className="about-core-nav">
+          {/* nav items go here */}
+
         </div>
         {renderTeamGrids()}
       </div>

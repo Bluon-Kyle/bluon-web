@@ -4,7 +4,7 @@ import ratings from "../../../../assets/images/app/ratings.png";
 import axios from "axios";
 
 import "./_appleReviews.scss";
-import AppleReviewsCard from "../AppleReviewsCard/AppleReviewsCard";
+//import AppleReviewsCard from "../AppleReviewsCard/AppleReviewsCard";
 import AppleReviewsSlide from "../AppleReviewsSlide/AppleReviewsSlide";
 
 const AppleReviews = () => {
