@@ -64,6 +64,7 @@ const Footer = () => {
               alt="email-icon"
               information="info@bluon.com"
             />
+            <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6885872.js"></script>
           </div>
         </div>
 

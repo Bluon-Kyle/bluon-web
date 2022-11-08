@@ -20,4 +20,13 @@
       line-height: 20px;
     }
   }
+  &-contact{
+    //display:flex; 
+    //justify-content: space-around;
+    
+    //justify-content: space-between;
+    &-tel{
+      padding-right: 1vw; 
+    }
+  }
 }
