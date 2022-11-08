@@ -82,26 +82,35 @@
       display: flex;
     }
   }
+
   @media (min-width: 1028px) {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0;
 
     &-section {
-      display: flex;
-      flex-direction: row-reverse;
+      // display: flex;
+      // flex-direction: row-reverse;
     }
 
     &-desk-wrapper,
     &-ratings-wrapper {
       flex: 1 1 50%;
+      width: 50%;
     }
 
     &-desk-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 5rem;
+    }
+
+    &-header {
+      text-align: left;
+    }
+    &-testimonial {
+      width: auto;
+      padding: 0;
     }
 
     &-ratings {
