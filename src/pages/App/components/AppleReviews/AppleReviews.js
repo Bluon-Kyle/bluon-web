@@ -13,13 +13,23 @@ import {
 
 const AppleReviews = () => {
   const { height, width } = useWindowDimensions();
+  const [limit, setLimit] = useState(0);
   const [cardsPerSlide, setCardsPerSlide] = useState(2);
   const [appleReviews, setAppleReviews] = useState();
 
   const getAppleReviews = async () => {
-    const result = await axios.get(
-      "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-f0ae7bb3-5257-453f-bec3-5330ad4533fc/bluoncom/getAppleReviews"
-    );
+    if (!limit) {
+      return;
+    }
+
+    const url =
+      "https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-f0ae7bb3-5257-453f-bec3-5330ad4533fc/bluoncom/getAppleReviews";
+    const config = {
+      params: {
+        limit,
+      },
+    };
+    const result = await axios.get(url, config);
 
     return result.data;
   };
@@ -30,18 +40,21 @@ const AppleReviews = () => {
       setAppleReviews(reviews.data);
     };
     retrieveAppleReviews();
-  }, []);
+  }, [limit]);
 
   useEffect(() => {
     switch (true) {
       case width > DESKTOP_BREAKPOINT:
         setCardsPerSlide(8);
+        setLimit(100);
         break;
       case width > TABLET_BREAKPOINT:
         setCardsPerSlide(4);
+        setLimit(20);
         break;
       default:
         setCardsPerSlide(2);
+        setLimit(20);
         break;
     }
   }, [height, width]);

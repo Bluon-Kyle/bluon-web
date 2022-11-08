@@ -89,8 +89,8 @@
     padding: 0;
 
     &-section {
-      // display: flex;
-      // flex-direction: row-reverse;
+      display: flex;
+      flex-direction: row-reverse;
     }
 
     &-desk-wrapper,
@@ -111,6 +111,13 @@
     &-testimonial {
       width: auto;
       padding: 0;
+
+      &-container {
+        padding: 0;
+        p {
+          font-size: 1rem;
+        }
+      }
     }
 
     &-ratings {
