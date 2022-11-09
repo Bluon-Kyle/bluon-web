@@ -223,15 +223,22 @@
         }
       }
     }
-    &-bottom-video-vid-wrapper{
-      display:flex; 
-      justify-content: center;
-      align-items: center;
-      width:100%;  
-      padding:0; 
-      margin: 0; 
-      .dist-vid{
-        width:85%; 
+    &-bottom-video{
+      &-text{
+        h2{
+          font-size: 2.2rem;
+        }
+      }
+      &-vid-wrapper{
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        width:100%;  
+        padding:0; 
+        margin: 0; 
+        .dist-vid{
+          width:85%; 
+        }
       }
     }
 
@@ -285,10 +292,17 @@
         width:45%; 
       }
     }
-    &-bottom-video-vid-wrapper{
-      
-      .dist-vid{
-        width:60%; 
+    &-bottom-video{
+      &-text{
+        h2{
+          font-size:3rem;
+        }
+      }
+      &-vid-wrapper{
+        
+        .dist-vid{
+          width:65%; 
+        }
       }
     }
     

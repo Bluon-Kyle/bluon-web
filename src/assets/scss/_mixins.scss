@@ -47,6 +47,15 @@
   display: grid;
   grid-template-columns: repeat($size, 1fr);
 }
+@mixin space-grid($gridsize) {
+  justify-content: space-around;
+  align-items: center;
+  //text-align: center;
+  display: grid;
+  grid-template-columns: repeat($gridsize, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 //fonts
 @mixin title-mobile {
