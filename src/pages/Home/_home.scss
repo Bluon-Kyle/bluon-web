@@ -82,6 +82,7 @@
         padding-right: 2rem;
         list-style: circle;
         padding-bottom: 1.2rem;
+        color: $bluon-background-grey-5;
         li {
           padding-bottom: 1rem;
           line-height: 1.5rem;
@@ -94,6 +95,10 @@
         border-radius: 50px;
         width: 130px;
         height: 45px;
+        &:hover{
+          color: white; 
+          background-color: black;
+        }
       }
     }
 

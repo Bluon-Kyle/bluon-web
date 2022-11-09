@@ -37,7 +37,7 @@
     font-size: 14px;
     //text-transform: uppercase;
     border-radius: 50px;
-    font-weight: 400;
+    font-weight: 600;
     display: block;
     width: 100%;
     cursor: pointer;
@@ -113,9 +113,8 @@
       li.cards_item{
         .card{
           max-width:340px;
-          &_image{
-
-          }
+          // &_image{
+          // }
           &_content{
             .card{
               &_title{
@@ -125,7 +124,6 @@
               }
             }
           }
-          
         }
       }
     }
