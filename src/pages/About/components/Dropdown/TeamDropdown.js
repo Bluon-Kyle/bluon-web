@@ -1,7 +1,8 @@
 import React from 'react'
 import ScrollToSection from '../../../../components/common/scroll/ScrollToSection';
 import './_teamdropdown.scss'
-import Luminance from '../../../../assets/animations/text/luminance2/Luminance';
+// import Luminance from '../../../../assets/animations/text/luminance2/Luminance';
+// import RotateBoarder from '../../../../assets/animations/text/rotate/RotateBorder'
 const TeamDropdown = () => {
     const [open, setOpen] = React.useState(false);
 
@@ -15,8 +16,8 @@ const TeamDropdown = () => {
     return (
       <div className="team-dropdown">
         <div className='team-dropdown-box' onClick={handleOpen}>
-            {/* <h3 className='border-image-clip-path'>Select a Team</h3> */}
-            <Luminance text="Select a Team"/>
+            <h4 className=''>Select a Team</h4>
+            {/* <Luminance text="Select a Team"/> */}
         </div>
         {open ? (
           <ul className="team-menu">

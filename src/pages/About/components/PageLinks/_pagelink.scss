@@ -1,8 +1,13 @@
 
 .page-link{
     &-desktop{
-        display:flex;
-        align-content: center;
-        justify-content: center;
+        display:none; 
+    }
+    @media(min-width: 1020px){
+        &-desktop{
+            display:flex;
+            align-content: center;
+            justify-content: center;
+        }
     }
 }

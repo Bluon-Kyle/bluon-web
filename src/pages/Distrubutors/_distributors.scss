@@ -42,32 +42,7 @@
       padding-bottom: 1.5rem;
     }
     //top-
-    @media(min-width: 768px){
-
-    }
-    //top-
-    @media(min-width: 1020px){
-      display:flex; 
-      justify-content: space-around;
-      align-items: center;
-      padding-top:4rem; 
-      padding-bottom: 4rem;
-      background-image: url('../../assets/images/distributors/Lineart-Blue.png');
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      &-text{
-        padding-left: 3rem;
-        width:38%; 
-        //padding-right: 2rem;
-      }
-      &-video{
-        width:50%; 
-        .dist-vid{
-          width:100%; 
-        }
-      }
-    }
+ 
   }
   &-divider{
     img{
@@ -121,6 +96,16 @@
     &-demo{
       padding-top: 2rem;
       padding-bottom: 2rem; 
+      &-desktop{
+        display:none;
+      }
+      &-search{
+        .blive-search-content{
+          &-desktop{
+            display:none; 
+          }
+        }
+      }
     
     }
    
@@ -148,26 +133,7 @@
         width: 100%;
       }
     }
-    @media(min-width: 1020px){
-      display:flex; 
-      align-items:flex-start;
-      justify-content: space-around;
-      padding-top: 8vh;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      &-text{
-        padding-left:3vw;
-        padding-top: 3vh;
-        h2{
-          font-size: 3rem;
-        }
-      }
-      &-map{
-        display: flex;
-        padding:0;
-        width:45%; 
-      }
-    }
+
   }
   &-bottom {
     padding-top: 2.6rem;
@@ -196,19 +162,64 @@
     width: 100%;
    }  
   }
-  @media(min-width: 768px){
+
+
+}
+@media(min-width: 768px){
+  .distributors{
+    &-top{
+      &-text{
+        h2{
+          font-size: 3.5rem;
+          padding-bottom:1rem; 
+
+        }
+        
+      }
+    }
     &-bluon-live{
       &-demo{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
+        //display:flex; 
+        .distributors-blive-content{
+          display:flex; 
+          justify-content: center;
+          align-items: center;
+        
+          
+        }
+        &-mobile{
+          display:none; 
+        }
+        &-desktop{
+          display:flex;
+          flex-direction: column; 
+          // img{
+          // }
+        }
         img{
           max-width: 200px;
         }
         &-search{
-          img{
-            max-width: 200px;
+
+          .blive-search-content{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            &-mobile{
+              // display:none; 
+              padding-top:4rem; 
+              
+            }
+            // &-desktop{
+            //   padding-top: 3rem;
+            //   display:flex; 
+            //   flex-direction: column;
+            // }
+            // img{
+            //   max-width: 200px;
+            // }
           }
+
         }
       }
     }
@@ -225,12 +236,61 @@
     }
 
   }
-  @media(min-width: 1020px){
+}
+//top-
+@media(min-width: 1020px){
+  .distributors{
+    &-top{
+      display:flex; 
+      justify-content: space-around;
+      align-items: center;
+      padding-top:4rem; 
+      padding-bottom: 4rem;
+      background-image: url('../../assets/images/distributors/Lineart-Blue.png');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &-text{
+        padding-left: 3rem;
+        width:50%; 
+        //padding-right: 2rem;
+        h2{
+          font-size: 4rem;
+        }
+      }
+      &-video{
+        width:50%; 
+        .dist-vid{
+          width:100%; 
+        }
+      }
+    }
+    &-impact{
+      display:flex; 
+      align-items:flex-start;
+      justify-content: space-around;
+      padding-top: 8vh;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      &-text{
+        padding-left:3vw;
+        padding-top: 3vh;
+        h2{
+          font-size: 3rem;
+        }
+      }
+      &-map{
+        display: flex;
+        padding:0;
+        width:45%; 
+      }
+    }
     &-bottom-video-vid-wrapper{
       
       .dist-vid{
         width:60%; 
       }
     }
+    
   }
 }
