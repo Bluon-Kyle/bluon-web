@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import video1 from "../../assets/video/BluonAnimation.mp4";
 import { Link } from "react-router-dom";
 import appImg from "./phone-one-app.png";
@@ -7,10 +7,24 @@ import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";
 import "./_home.scss";
-import LottieLoop3 from '../../components/common/LottieLoop/LottieLoop3'
-import map from '../../data/lottie/map-new.json'
-import video from '../../assets/video/BluonTechPortal.mp4'
+import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
+import map from "../../data/lottie/map-new.json";
+import video from "../../assets/video/BluonTechPortal.mp4";
+import axios from "axios";
 const HomeIndex = () => {
+  const [totalUsers, setTotalUsers] = useState();
+
+  useEffect(() => {
+    const getTotalUsers = async () => {
+      const result = await axios.get(
+        "https://hubspot-backend-rrh95.ondigitalocean.app/totalUsers"
+      );
+
+      setTotalUsers(result.data);
+    };
+    getTotalUsers();
+  }, []);
+
   return (
     <div className="home">
       <div className="home-welcome-wrapper">
@@ -35,7 +49,7 @@ const HomeIndex = () => {
 
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
-          <LottieLoop3 anii={map}/>
+          <LottieLoop3 anii={map} />
         </div>
       </div>
 
@@ -64,7 +78,6 @@ const HomeIndex = () => {
 
       <div className="home-app">
         <div className="home-app-text">
-          
           <div className="outer">
             <h1 className="outer-title">One App for Every Job</h1>
           </div>
@@ -85,10 +98,9 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      
       <div className="home-mla-mobile">
-        <AppleReviews/>
-        <JoinBluon/>
+        <AppleReviews />
+        <JoinBluon />
         <div className="mla-video">
           <video
             className="video"
@@ -131,7 +143,6 @@ const HomeIndex = () => {
           ></ButtonCard>
         </div>
       </div>
-
     </div>
   );
 };
