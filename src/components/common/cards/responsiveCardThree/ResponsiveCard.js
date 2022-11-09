@@ -1,6 +1,7 @@
 import React from 'react'
 import './_responsiveCard.scss'
 import { Link } from 'react-router-dom'
+import arrow from '../../../../assets/icons/arrow.svg';
 //import imgfill from '../../../../pages/home/ForContractors.jpg'
 const ResponsiveCard = (props) => {
     
@@ -19,7 +20,9 @@ const ResponsiveCard = (props) => {
                             <p className="card_text">{props.text1}</p>
                             <p className='card_text'>{props.bottomtext1}</p>
                             <Link to={`/${props.buttonLink1}`}>
-                                <button className="btn card_btn">{props.buttonText1} &nbsp;&nbsp;<strong> &rarr;</strong></button>
+                                <button className="btn card_btn">{props.buttonText1} &nbsp;&nbsp;
+                                    <img alt='arrow-right' src={arrow}/>
+                                </button>
                             </Link>
                             
                         </div>
@@ -36,7 +39,9 @@ const ResponsiveCard = (props) => {
                             <p className="card_text">{props.text2}</p>
                             <p className='card_text'>{props.bottomtext2}</p>
                             <Link to={`/${props.buttonLink2}`}>
-                                <button className="btn card_btn">{props.buttonText2} &nbsp;&nbsp;<strong> &rarr;</strong></button>
+                                <button className="btn card_btn">{props.buttonText2} &nbsp;&nbsp;
+                                    <img alt='arrow-right' src={arrow}/>
+                                </button>
                             </Link>                        
                         </div>
                     </div>
@@ -52,8 +57,11 @@ const ResponsiveCard = (props) => {
                             <p className="card_text">{props.text3}</p>
                             <p className='card_text'>{props.bottomtext3}</p>
                             <Link to={`/${props.buttonLink3}`}>
-                                <button className="btn card_btn">{props.buttonText3} &nbsp;&nbsp;<strong> &rarr;</strong></button>
-                            </Link>                        </div>
+                                <button className="btn card_btn">{props.buttonText3} &nbsp;&nbsp;
+                                    <img alt='arrow-right' src={arrow}/>
+                                </button>
+                            </Link>                        
+                        </div>
                     </div>
                 </li>
             </ul>
