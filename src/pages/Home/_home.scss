@@ -84,8 +84,15 @@
         padding-bottom: 1.2rem;
         color: $bluon-background-grey-5;
         li {
+          img{
+            padding-right:.5rem
+          }
+          // list-style-image: url('../../assets/icons/white-circle.svg');
+          display: flex;
+          align-items:flex-start;
+          //background-position: left 20px;
           padding-bottom: 1rem;
-          line-height: 1.5rem;
+          // line-height: 1rem;
         }
       }
       //button will be changed
@@ -200,7 +207,17 @@
           width:65%; 
         }
       }
+      &-text{
+        button{
+          width:200px; 
+          font-size: 1.2rem;
+        }
+      }
     }
+  }
+  //4k hirez media 
+  @media(min-width: 1400px){
+
   }
 
 

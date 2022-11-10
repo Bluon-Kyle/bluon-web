@@ -11,6 +11,7 @@ import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
 import map from "../../data/lottie/map-new.json";
 import video from "../../assets/video/BluonTechPortal.mp4";
 import axios from "axios";
+import bullet from '../../assets/icons/white-circle.svg'
 const HomeIndex = () => {
   const [totalUsers, setTotalUsers] = useState();
 
@@ -82,9 +83,18 @@ const HomeIndex = () => {
             <h1 className="outer-title">One App for Every Job</h1>
           </div>
           <ul className="inner">
-            <li>Database of 300k HVAC units with manuals</li>
-            <li>Includes part #s and specs for most models</li>
-            <li>Order parts from local suppliers</li>
+            <li>
+              <img alt='bullet' src={bullet}/>
+              Database of 300k HVAC units with manuals
+            </li>
+            <li>
+              <img alt='bullet' src={bullet}/>
+              Includes part #s and specs for most models
+            </li>
+            <li>
+              <img alt='bullet' src={bullet}/>
+              Order parts from local suppliers
+            </li>
           </ul>
           <Link to={"/App"}>
             <button>
