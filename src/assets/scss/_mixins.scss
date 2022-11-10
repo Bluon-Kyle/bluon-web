@@ -25,6 +25,21 @@
   border-radius: 50px;
 }
 
+@mixin padding-y($y) {
+  padding-top:$y;
+  padding-bottom:$y;
+}
+@mixin padding-x($x) {
+  padding-left:$x; 
+  padding-right: $x;
+}
+@mixin padding-xy($x, $y){
+  padding-top:$y;
+  padding-bottom:$y; 
+  padding-left:$x; 
+  padding-right:$x; 
+}
+
 @mixin button-hover($color, $backgroundcolor) {
   color: $color;
   background-color: $backgroundcolor;

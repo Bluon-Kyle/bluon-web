@@ -9,6 +9,7 @@
   padding-left: $size;
   padding-right: $size;
 }
+
 @mixin grid($rowCount, $spacing) {
   display: grid;
   //justify-content: space-around;
@@ -57,6 +58,33 @@
     // .lottie-loop3{
     //   height:100%; 
     // }
+    &-counter{
+      padding-bottom:2rem;
+      &-container{
+        background-color: white;
+        @include m.padding-x(2rem); 
+        @include m.padding-y(2rem); 
+        .total-techs-counter{
+          .counter-users-total{
+            //font-size: 20rem;
+            p{
+
+            }
+          }
+        }
+        .added-today-counter{
+
+        }
+        .pie-chart{
+          .pie-animation{
+            @include m.padding-y(2rem);
+          } 
+        }
+        .market-growth{
+          
+        }
+      }
+    }
   }
   &-cards {
     //@include center-flex;
@@ -159,6 +187,7 @@
       }
     }
     &-impact{
+      
       text-align: center;
       h1{
         font-size: 2vw;
@@ -166,6 +195,30 @@
       h2{
         font-size: 4vw;
       }
+      // &-counter{
+
+      //   &-container{
+
+      //     .total-techs-counter{
+      //       .counter-users-total{
+      //         //font-size: 20rem;
+      //         p{
+
+      //         }
+      //       }
+      //     }
+      //     .added-today-counter{
+
+      //     }
+      //     .pie-chart{
+      //       .pie-animation{
+      //       } 
+      //     }
+      //     .market-growth{
+            
+      //     }
+      //   }
+      // }
     }
     &-app{
       display:flex; 

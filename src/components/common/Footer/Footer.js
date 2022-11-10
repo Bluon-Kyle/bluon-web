@@ -76,7 +76,7 @@ const Footer = () => {
               className="footer-terms-and-privacy-container-terms"
               to="/Terms"
             >
-              Terms & Conditions
+              Terms
             </Link>
 
             <Link

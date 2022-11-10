@@ -24,6 +24,7 @@ import MobileTerms from "./pages/TermsPrivacy/MobileTerms/MobileTerms";
 //import AdLanding from "./pages/AdLanding/AdLanding";
 //import TestPage from "./pages/test/TestPage";
 //import LottieTest from './pages/test/LottieTest'
+import CountUpTest from "./components/common/Counter/CountUpTest";
 //vitals
 import reportWebVitals from "./reportWebVitals";
 
@@ -89,7 +90,7 @@ root.render(
         />
 
         <Route path="/ThankYou" element={<ThankYou />} />
-        {/* <Route path="TestPage" element={<LottieTest />} /> */}
+        {/* <Route path="TestPage" element={<CountUpTest />} /> */}
         <Route path='/BluonLiveStores' element={<BluonLiveStores/>}/>
         <Route path='/SignUp' element={<SignUp/>}/>
         <Route path='/Mobile-Terms-Conditions' element={<MobileTerms/>}/>

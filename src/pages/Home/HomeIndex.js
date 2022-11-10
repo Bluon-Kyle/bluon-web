@@ -12,18 +12,30 @@ import map from "../../data/lottie/map-new.json";
 import video from "../../assets/video/BluonTechPortal.mp4";
 import axios from "axios";
 import bullet from '../../assets/icons/white-circle.svg'
+import CountUpTest from "../../components/common/Counter/CountUpTest";
+import arrowup from '../../assets/icons/arrow-up-blue.svg'
 const HomeIndex = () => {
   const [totalUsers, setTotalUsers] = useState();
 
   useEffect(() => {
-    const getTotalUsers = async () => {
-      const result = await axios.get(
-        "https://hubspot-backend-rrh95.ondigitalocean.app/totalUsers"
-      );
 
-      setTotalUsers(result.data);
-    };
-    getTotalUsers();
+      const getTotalUsers = async () => {
+    
+        try{
+          const result = await axios.get(
+            "https://hubspot-backend-rrh95.ondigitalocean.app/totalUsers"
+          )
+          //console.log(result.data)
+          setTotalUsers(result.data);
+        }
+        catch(err){
+          console.log("loading api", err.response.data.error)
+        }
+      };
+      getTotalUsers();
+    
+    
+    
   }, []);
 
   return (
@@ -51,6 +63,79 @@ const HomeIndex = () => {
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
           <LottieLoop3 anii={map} />
+          <div className="home-impact-counter">
+            <div className="home-impact-counter-container">
+
+              <div className="total-techs-counter">
+                <CountUpTest
+                  startnum={0}
+                  endnum={totalUsers?.life}
+                  duration={15}
+                  comma=','
+                  deci={0}
+                  decimals={'.'}
+                  prefix=''
+                  suffix=''
+                  label='HVAC Technicians'
+                  name='users-total'
+                />
+              </div>
+
+              <div className="added-today-counter">
+                <CountUpTest
+                    startnum={0}
+                    endnum={totalUsers?.today}
+                    duration={20}
+                    comma=','
+                    deci={0}
+                    decimals={'.'}
+                    prefix=''
+                    suffix=''
+                    label='added today'
+                    name="users-today"
+                    arrow={true}
+                  />
+              </div>
+
+              <div className="pie-chart">
+                <div className="pie-animation">
+                  pie will go here
+                </div>
+              </div>
+
+              <div className="market-percent">
+                <CountUpTest
+                      startnum={0}
+                      endnum={49}
+                      duration={10}
+                      comma=','
+                      deci={0}
+                      decimals={'.'}
+                      prefix=''
+                      suffix='%'
+                      label='of all technicians in the US are Bluon Technicians'
+                      name="market-percent"
+                  />
+              </div>
+
+              <div className="market-growth">
+                  <CountUpTest
+                        startnum={0}
+                        endnum={3}
+                        duration={5}
+                        comma=','
+                        deci={0}
+                        decimals={'.'}
+                        prefix=''
+                        suffix='%'
+                        label='market growth per month'
+                        name="market-growth"
+                        arrow={true}
+                  />
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
 
@@ -61,19 +146,19 @@ const HomeIndex = () => {
           text1="Transform your counter staff with a single tool to receive live orders from 100k+ Bluon Techs in the field."
           bottomtext1="Also gain access to the most comprehensive cross-reference search in the industry"
           buttonLink1="RequestDemo"
-          buttonText1="Get a Demo"
+          buttonText1="Get a demo"
           title2="For Contractors"
           img2={require("./ForContractors.jpg")}
           text2="Empower your techs to get more jobs done. Bluon is a mobile support platform your techs will actually use."
           bottomtext2="Identify and order parts directly from your local suppliers - no more wrong parts or extra supply runs."
           buttonLink2="TechDemo"
-          buttonText2="Learn More"
+          buttonText2="Learn more"
           title3="For Technicians"
           img3={require("./ForTechnicians.jpg")}
           text3="Join the largest community of HVAC techs and the only support platform to truly empower those in the trade."
           bottomtext3="Get access to 325k HVAC units with manuals, original parts lists and 24/7 tech support."
           buttonLink3="App"
-          buttonText3="Get the Bluon App"
+          buttonText3="Get the Bluon app"
         />
       </div>
 

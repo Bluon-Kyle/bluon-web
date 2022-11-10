@@ -36,8 +36,12 @@ const AppleReviews = () => {
 
   useEffect(() => {
     const retrieveAppleReviews = async () => {
-      const reviews = await getAppleReviews();
-      setAppleReviews(reviews.data);
+      try{
+        const reviews = await getAppleReviews();
+        setAppleReviews(reviews.data);
+      }catch(err){
+        console.log("loading api:", err)
+      }
     };
     retrieveAppleReviews();
   }, [limit]);
