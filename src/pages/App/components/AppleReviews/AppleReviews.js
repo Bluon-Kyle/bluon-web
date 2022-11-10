@@ -27,6 +27,7 @@ const AppleReviews = () => {
     const config = {
       params: {
         limit,
+        ratings: 5,
       },
     };
     const result = await axios.get(url, config);
@@ -36,11 +37,11 @@ const AppleReviews = () => {
 
   useEffect(() => {
     const retrieveAppleReviews = async () => {
-      try{
+      try {
         const reviews = await getAppleReviews();
         setAppleReviews(reviews.data);
-      }catch(err){
-        console.log("loading api:", err)
+      } catch (err) {
+        console.log("loading api:", err);
       }
     };
     retrieveAppleReviews();
@@ -50,7 +51,7 @@ const AppleReviews = () => {
     switch (true) {
       case width > DESKTOP_BREAKPOINT:
         setCardsPerSlide(8);
-        setLimit(100);
+        setLimit(200);
         break;
       case width > TABLET_BREAKPOINT:
         setCardsPerSlide(4);
