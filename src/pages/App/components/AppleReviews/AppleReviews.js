@@ -70,6 +70,7 @@ const AppleReviews = () => {
   return (
     <div className="apple-reviews">
       <div className="apple-reviews-section">
+        {/* <img className="apple-reviews-ratings-top" src={ratings} alt="ratings" /> */}
         <div className="apple-reviews-desk-wrapper">
           <div className="apple-reviews-header">
             <h2 className="apple-reviews-header-heading">The Most Loved App</h2>

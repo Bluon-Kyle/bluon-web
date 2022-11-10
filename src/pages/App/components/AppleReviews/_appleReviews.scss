@@ -2,6 +2,10 @@
 
 .apple-reviews {
   padding: 0 1.25rem;
+  // &-section{
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  // }
   &-header {
     display: flex;
     flex-direction: column;
@@ -91,6 +95,9 @@
     &-section {
       display: flex;
       flex-direction: row-reverse;
+      .apple-reviews-ratings-top{
+        display:none; 
+      }
     }
 
     &-desk-wrapper,

@@ -59,10 +59,10 @@ const Footer = () => {
             />
             <IconInformation
               className="footer-contact-email"
-              href={"mailto:info@bluon.com"}
+              href={"mailto:contact@bluon.com"}
               src={emailIcon}
               alt="email-icon"
-              information="info@bluon.com"
+              information="contact@bluon.com"
             />
             <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6885872.js"></script>
           </div>
