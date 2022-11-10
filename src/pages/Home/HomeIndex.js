@@ -13,10 +13,13 @@ import video from "../../assets/video/BluonTechPortal.mp4";
 import axios from "axios";
 import bullet from '../../assets/icons/white-circle.svg'
 import CountUpTest from "../../components/common/Counter/CountUpTest";
-import arrowup from '../../assets/icons/arrow-up-blue.svg'
+//import arrowup from '../../assets/icons/arrow-up-blue.svg'
+import bdot from '../../assets/icons/blue-circle.svg'
+import ydot from '../../assets/icons/yellow-circle.svg'
 const HomeIndex = () => {
   const [totalUsers, setTotalUsers] = useState();
-
+  const [marketP, setMarketP] = useState();
+  const [marketG, setMarketG] =useState();  
   useEffect(() => {
 
       const getTotalUsers = async () => {
@@ -27,6 +30,8 @@ const HomeIndex = () => {
           )
           //console.log(result.data)
           setTotalUsers(result.data);
+          setMarketG(3);
+          setMarketP(49); 
         }
         catch(err){
           console.log("loading api", err.response.data.error)
@@ -42,7 +47,7 @@ const HomeIndex = () => {
     <div className="home">
       <div className="home-welcome-wrapper">
         <h1>
-          Upgrading the <br></br>HVAC Industry
+          Upgrading the HVAC Industry
         </h1>
         <div className="home-video-container">
           <video
@@ -63,6 +68,16 @@ const HomeIndex = () => {
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
           <LottieLoop3 anii={map} />
+          <div className="home-impact-map-inner">
+            
+            <p className="p1">
+              <img src={bdot} alt='techs'/> HVAC Technicians
+            </p>
+            <p className="p2">
+              <img src={ydot} alt='techs'/> BluonLive Distributors
+            </p>
+          
+          </div>
           <div className="home-impact-counter">
             <div className="home-impact-counter-container">
 
@@ -106,7 +121,7 @@ const HomeIndex = () => {
               <div className="market-percent">
                 <CountUpTest
                       startnum={0}
-                      endnum={49}
+                      endnum={marketP}
                       duration={10}
                       comma=','
                       deci={0}
@@ -121,7 +136,7 @@ const HomeIndex = () => {
               <div className="market-growth">
                   <CountUpTest
                         startnum={0}
-                        endnum={3}
+                        endnum={marketG}
                         duration={5}
                         comma=','
                         deci={0}
@@ -134,7 +149,7 @@ const HomeIndex = () => {
                   />
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>

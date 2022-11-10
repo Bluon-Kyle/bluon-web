@@ -32,7 +32,7 @@ function CountUpTest(props) {
         {({ countUpRef, start }) => (
             <div className={`counter-${cl}`}>
               {arrow ? <img alt='arrow up' src={barrow}/> : ''}
-              <span ref={countUpRef} onChange={start} />
+              <span ref={countUpRef} onChange={start} onScroll={start}/>
               {/* <button onClick={start}>Start</button> */}
               <p>{text}</p>
             </div>
