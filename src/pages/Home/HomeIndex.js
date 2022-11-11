@@ -89,7 +89,7 @@ const HomeIndex = () => {
                 <CountUpTest
                   startnum={0}
                   endnum={totalUsers?.life}
-                  duration={15}
+                  duration={12}
                   comma=','
                   deci={0}
                   decimals={'.'}
@@ -104,7 +104,7 @@ const HomeIndex = () => {
                 <CountUpTest
                     startnum={0}
                     endnum={totalUsers?.today}
-                    duration={20}
+                    duration={10}
                     comma=','
                     deci={0}
                     decimals={'.'}
@@ -141,7 +141,7 @@ const HomeIndex = () => {
                   <CountUpTest
                         startnum={0}
                         endnum={marketG}
-                        duration={5}
+                        duration={6}
                         comma=','
                         deci={0}
                         decimals={'.'}

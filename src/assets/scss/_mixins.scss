@@ -76,6 +76,17 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+@mixin no-space-grid($size) {
+  
+  //text-align: center;
+
+  display: grid;
+  justify-content:center ;
+  align-items: center;
+  grid-template-columns: repeat($size, 1fr);
+  //padding-left: 5%;
+  //padding-right: 5%;
+}
 
 //fonts
 @mixin title-mobile {
