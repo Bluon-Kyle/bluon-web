@@ -2,15 +2,18 @@
 
 .headshot {
   margin-bottom: 3rem;
+  height: 250px;
   &-wrapper {
     //text-align: center;
-    padding: 1vw 5vw 1vw 1vw;
+    //height:400px; 
+    //padding: 1vw 5vw 1vw 1vw;
     h6 {
       //name
       font-size: 1rem;
       font-weight: 400;
       padding-top: 1rem;
       margin-bottom: 0.5rem;
+      //height:100%; 
     }
     p {
       //title and bio
@@ -18,6 +21,7 @@
       font-weight: 400;
       color: $bluon-background-grey-3;
       line-height: 20px;
+      //height:40px; 
     }
   }
   &-contact{
@@ -26,7 +30,15 @@
     
     //justify-content: space-between;
     &-tel{
-      padding-right: 1vw; 
+      padding-right: 4vw; 
     }
+  }
+  @media(min-width: 768px){
+    &-contact{
+      
+    }
+  }
+  @media(min-width: 1020px){
+
   }
 }

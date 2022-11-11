@@ -1,7 +1,7 @@
 @use "../../../../assets/scss/colors" as *;
 
 .team-grid {
-  padding: 0 0.75rem;
+  //padding: 0 0.75rem;
 
   &-header {
     padding: 1.5rem 0.75rem 1.875rem;
@@ -30,8 +30,8 @@
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   @media(min-width: 768px){
     grid-template-columns: repeat(3, 1fr);
   }
