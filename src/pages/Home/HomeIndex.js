@@ -7,13 +7,13 @@ import ButtonCard from "../../components/common/cards/buttonCard/ButtonCard";
 import AppleReviews from "../App/components/AppleReviews/AppleReviews";
 import JoinBluon from "../App/components/JoinBluon/JoinBluon";
 import "./_home.scss";
-import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
+// import LottieLoop3 from "../../components/common/LottieLoop/LottieLoop3";
 import map from "../../data/lottie/map-new.json";
 import video from "../../assets/video/BluonTechPortal.mp4";
 import axios from "axios";
 import bullet from '../../assets/icons/white-circle.svg'
 import CountUpTest from "../../components/common/Counter/CountUpTest";
-//import arrowup from '../../assets/icons/arrow-up-blue.svg'
+import LottieMapLoop from "../../components/common/LottieLoop/LottieMapLoop";
 import bdot from '../../assets/icons/blue-circle.svg'
 import ydot from '../../assets/icons/yellow-circle.svg'
 const HomeIndex = () => {
@@ -67,17 +67,21 @@ const HomeIndex = () => {
 
         <h2> The Largest HVAC Community on Earth</h2>
         <div className="home-impact-map-wrapper">
-          <LottieLoop3 anii={map} />
-          <div className="home-impact-map-inner">
+          <div className="map-and-legend">
+            {/* <LottieLoop3 anii={map} /> */}
+            <LottieMapLoop anii={map}/>
+            <div className="home-impact-map-inner">
+              
+              <p className="p1">
+                <img src={bdot} alt='techs'/> HVAC Technicians
+              </p>
+              <p className="p2">
+                <img src={ydot} alt='techs'/> BluonLive Distributors
+              </p>
             
-            <p className="p1">
-              <img src={bdot} alt='techs'/> HVAC Technicians
-            </p>
-            <p className="p2">
-              <img src={ydot} alt='techs'/> BluonLive Distributors
-            </p>
-          
+            </div>
           </div>
+          
           <div className="home-impact-counter">
             <div className="home-impact-counter-container">
 
