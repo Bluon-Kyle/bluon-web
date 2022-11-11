@@ -197,9 +197,8 @@ const HomeIndex = () => {
             </li>
           </ul>
           <Link to={"/App"}>
-            <button>
-              {" "}
-              <strong>Explore App</strong>
+            <button className="home-app-btn">
+              <strong>Explore app</strong>
             </button>
           </Link>
         </div>

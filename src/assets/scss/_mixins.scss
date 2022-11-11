@@ -9,6 +9,11 @@
 @mixin block {
   display: block;
 }
+@mixin flexleft{
+  display:flex; 
+  justify-content: left;
+  align-items: baseline;
+}
 @mixin tablet {
   @media (min-width: 600px) {
     @include block;

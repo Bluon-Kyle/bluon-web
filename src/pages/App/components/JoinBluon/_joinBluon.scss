@@ -39,8 +39,13 @@
       }
     }
     &-quote{
-      font-size: 1.7rem;
+      font-size: 1.4rem;
     }
 
+  }
+  @media(min-width: 1020px){
+    &-quote{
+      font-size: 1.8rem;
+    }
   }
 }

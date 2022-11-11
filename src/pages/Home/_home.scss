@@ -57,7 +57,7 @@
     }
     &-map-wrapper{
       .home-impact-map-inner{
-
+        
       }
     }
     &-counter{
@@ -178,7 +178,7 @@
     align-items: center;
   }
   //home- (tablet sizing)
-  @media (min-width:786px){
+  @media (min-width:768px){
     &-welcome-wrapper{
       h1{
         font-size: 3rem;
@@ -197,42 +197,75 @@
       h2{
         font-size: 4vw;
       }
-      // &-counter{
+      &-map{
+        &-inner{
+          .p1{
+            @include m.flexleft;
+          }
+          .p2{
+            @include m.flexleft;
+          }
+        }
+      }
+      &-counter{
+        display:flex; 
+        justify-content: center;
+        align-items: center;
+        &-container{
+          width:65%; 
+          .total-techs-counter{
+            .counter-users-total{
+              //font-size: 20rem;
+              span{
+                @include m.flexleft;
+              }
+              p{
+                @include m.flexleft;
+              }
+            }
+          }
+          .added-today-counter{
 
-      //   &-container{
+          }
+          .pie-chart{
+            .pie-animation{
+            } 
+          }
+          .market-percent{
+            span{
+              @include m.flexleft;
+            }
+            p{
+              @include m.flexleft;
 
-      //     .total-techs-counter{
-      //       .counter-users-total{
-      //         //font-size: 20rem;
-      //         p{
-
-      //         }
-      //       }
-      //     }
-      //     .added-today-counter{
-
-      //     }
-      //     .pie-chart{
-      //       .pie-animation{
-      //       } 
-      //     }
-      //     .market-growth{
+            }
+          }
+          .market-growth{
             
-      //     }
-      //   }
-      // }
+          }
+        }
+      }
     }
     &-app{
       display:flex; 
       justify-content: center;
+      //min-height: 440px;
       &-text{
 
       }
+      // &-btn{
+      //   width:200px; 
+      // }
       &-img{
         img{
-          width: 55%;
+          width: 85%;
+          transform: translateY(2rem);
+          overflow-y: hidden;
         }
       }
+    }
+    &-mla-mobile{
+      padding-top:2rem; 
     }
     &-button-cards{
       //@include center-flex();
@@ -243,9 +276,9 @@
   //home- (desktop sizing) 
   @media(min-width: 1028px){
     &-welcome-wrapper{
-      // h1{
-      //   font-size: 4rem;
-      // }
+      h1{
+        //font-size: 4rem;
+      }
       .home-video-container{
         padding-bottom:10vh; 
         video{
