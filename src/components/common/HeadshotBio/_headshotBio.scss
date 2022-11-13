@@ -7,6 +7,7 @@
     //text-align: center;
     //height:400px; 
     //padding: 1vw 5vw 1vw 1vw;
+    height: 350px;
     h6 {
       //name
       font-size: 1rem;
@@ -35,10 +36,27 @@
   }
   @media(min-width: 768px){
     &-contact{
-      
+      &-tel{
+        padding-right: 3vw;
+        img{
+          width:17px; 
+        }
+      }
+      &-email{
+        img{
+          width:18px; 
+        }
+      }
     }
   }
   @media(min-width: 1020px){
+    &-contact{
+      &-tel{
+        padding-right:2vw; 
+      }
+      &-email{
 
+      }
+    }
   }
 }

@@ -64,7 +64,7 @@ export const salesList = [
     picAlt: "Jeremy Williams",
     name: "Jeremy Williams",
     position: "Business Development",
-    bio: ">Business Technology Admin",
+    bio: "Business Technology Admin",
     contact: true,
     tel: "jwilliams@bluon.com",
     email: "(410) 660-7138",
