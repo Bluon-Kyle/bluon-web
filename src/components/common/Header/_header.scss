@@ -1,6 +1,6 @@
 @use '../../../assets/scss/colors' as *; 
 .head-wrapper{
-  &-white{
+  &-white-contact{
     background-color: $bluon-brand-blue;
   }
 }
@@ -52,6 +52,7 @@
     &-blive, &-blive-white{
       padding-right:2rem;
       font-size: 1.1rem;
+      display:flex; 
       a{
         color:blue; 
         text-decoration: none;
@@ -67,6 +68,9 @@
           &:hover{
             color:lightblue;
           }
+        }
+        p{
+          color:lightgrey;
         }
       }
     }

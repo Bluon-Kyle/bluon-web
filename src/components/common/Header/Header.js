@@ -27,9 +27,8 @@ const Header = () => {
   useEffect(() => {
     setIsApp(location.pathname === "/App");
     setIsAds(location.pathname === '/HVAC-APP-LP3');
-    if(location.pathname == '/Contact'){
-      setIsApp(location.pathname === '/Contact');
-    }
+    setIsCon(location.pathname === '/Contact');
+    
   }, [location]);
 
   const isHeaderOpen = () => {
@@ -42,6 +41,10 @@ const Header = () => {
   const getColor = () => {
     return (isApp || isAds || isCon) ? '-white' : '';
   };
+  const getBack = () => {
+    console.log(location.pathname, '!!!!!!');
+    return isCon ? '-white-contact' : ''; 
+  }
 
   const getHamburgerIcon = () => {
     return (isApp || isAds || isCon) && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
@@ -53,7 +56,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`head-wrapper${getColor()}`}>
+    <div className={`head-wrapper${getBack()}`}>
       <div className={`header ${isHeaderOpen()}`}>
         <div className="header-container">
           <Link to={'/'}>
@@ -95,7 +98,7 @@ const Header = () => {
               <NavBar />
             </div>
             <div className={`desktop-header-blive${getColor()}`}>
-                Looking for BluonLive? <a href="https://bluonlive.com/" className="nav-login">Login here</a>
+                <p>Looking for BluonLive?&nbsp;</p> <a href="https://bluonlive.com/" className="nav-login">Login here</a>
             </div>
           </div>
           

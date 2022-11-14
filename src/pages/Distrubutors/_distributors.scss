@@ -302,10 +302,14 @@
             padding-top:5.5rem;
           }
         }
+        &-mobile{
+          display:none; 
+        }
       }
       &-demo-search{
         display: flex;
         justify-content: space-around;
+        padding-left:2.5rem; 
         .blive-search-content{
 
         }
