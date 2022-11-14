@@ -63,38 +63,61 @@ const Distrubutors = (props) => {
         <div className="distributors-bluon-live-demo">
           <div className="distributors-blive-content">
             <div className="distributors-bluon-live-demo-mobile">
-              <img className='bluon-logo' src={blive} alt='bluon live makes your life easier'/>
-              <h2>Receive Order Requests from Techs in the Field</h2>
-              <ul>
-                <li key='1'>See model, parts and cross references.</li>
-                <li key='2'>Save hours of research and headache.</li>
-              </ul>
+              <div className="mobile-inner">
+                <img className='bluon-logo' src={blive} alt='bluon live makes your life easier'/>
+                <h2>Receive Order Requests from Techs in the Field</h2>
+                <ul>
+                  <li key='1'>See model, parts and cross references.</li>
+                  <li key='2'>Save hours of research and headache.</li>
+                </ul>
+                <div className='demo-button'>
+                  {signup ? 
+                    <ButtonNav to='/BluonLive-SignUp' color='primary'>
+                      <div className="button-arrow">
+                        Sign up for BluonLive <img alt="arrow" src={arrow} />
+                      </div>
+                    </ButtonNav> :
+                    <ButtonNav to="/RequestDemo" color="primary">
+                      Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+                    </ButtonNav>
+                  } 
+                </div>
+              </div>
+              <LottieLoop3 anii={anim1}/>
             </div>
             
-            <LottieLoop3 anii={anim1}/>
+            
             <div className="distributors-bluon-live-demo-desktop">
-              <img className='bluon-logo' src={blive} alt='bluon live makes your life easier'/>
-              <h2>Receive Order Requests from Techs in the Field</h2>
-              <ul>
-                <li key='1'>See model, parts and cross references.</li>
-                <li key='2'>Save hours of research and headache.</li>
-              </ul>
+              <LottieLoop3 anii={anim1}/>
+              
+              <div className="desktop-inner">
+                <img className='bluon-logo' src={blive} alt='bluon live makes your life easier'/>
+                <h2>Receive Order Requests from Techs in the Field</h2>
+                <ul>
+                  <li key='1'>See model, parts and cross references.</li>
+                  <li key='2'>Save hours of research and headache.</li>
+                </ul>
+                <div className='demo-button'>
+                  {signup ? 
+                    <ButtonNav to='/BluonLive-SignUp' color='primary'>
+                      <div className="button-arrow">
+                        Sign up for BluonLive <img alt="arrow" src={arrow} />
+                      </div>
+                    </ButtonNav> :
+                    <ButtonNav to="/RequestDemo" color="primary">
+                      Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+                    </ButtonNav>
+                  } 
+                </div>
+              </div>
+              
             </div>
+
+
           </div>
           
-          <div className='demo-button'>
-            
-            {signup ? 
-              <ButtonNav to='/BluonLive-SignUp' color='primary'>
-                <div className="button-arrow">
-                  Sign up for BluonLive <img alt="arrow" src={arrow} />
-                </div>
-              </ButtonNav> :
-              <ButtonNav to="/RequestDemo" color="primary">
-                Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
-              </ButtonNav>
-          }
-          </div>
+          
+          
         </div>
 
         <div className="distributors-bluon-live-demo-search">
@@ -109,34 +132,21 @@ const Distrubutors = (props) => {
                 <li key='3'>Unlimited access for all BluonLive distributors</li>
               </ul>
             </div>
+            <div className='demo-button'>
 
-            <LottieLoop3 anii={anim2}/>
+              {signup ? 
+                <ButtonNav to='/BluonLive-SignUp' color='primary'>
+                  Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+                </ButtonNav> :
+                <ButtonNav to="/RequestDemo" color="primary">
+                  Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
+                </ButtonNav>
+              }
 
-            {/* <div className="blive-search-content-desktop">
-              <img className='bluon-logo' src={bsearch} alt='bluon search'/>
-              <h2>The Best Cross Reference Engine</h2>
-              <ul>
-                <li key='1'>Cross reference 100+ brands with over 3M parts</li>
-                <li key='2'>See parts w/ specs & manuals for 300k model</li>
-                <li key='3'>Unlimited access for all BluonLive distributors</li>
-              </ul>
-            </div> */}
-
-          </div>
-          
-          
-          <div className='demo-button'>
-
-            {signup ? 
-              <ButtonNav to='/BluonLive-SignUp' color='primary'>
-                Sign up for BluonLive &nbsp;&nbsp;<img alt="arrow" src={arrow} />
-              </ButtonNav> :
-              <ButtonNav to="/RequestDemo" color="primary">
-                Get a demo &nbsp;&nbsp;<img alt="arrow" src={arrow} />
-              </ButtonNav>
-            }
-
-          </div>
+            </div>
+          </div> 
+          {/* end contant wrapper  */}
+          <LottieLoop3 anii={anim2}/>
         </div>
       </div>
 

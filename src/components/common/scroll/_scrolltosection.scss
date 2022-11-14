@@ -10,19 +10,23 @@ div.scroller-comp{
         color:#0000ff; 
     }
     h3{
-        //width:200px; 
+        text-align: left;
+        width:150px; 
         //background-color: lightblue;
         //border-radius: 25px;
-        font-size: 1.6vw;
+        font-size: 3vw;
         padding-right:1.3vw; 
     }
 }
 @media (min-width:768px){
     div.scroller-comp{
         //display:none; 
+        justify-content: center;
         color:grey; 
         h3{
             font-size: 1.8vw;
+            text-align: center;
+            width:100%; 
         }
         
     }

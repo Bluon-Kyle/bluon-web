@@ -5,7 +5,6 @@ import bluonLogoSecondary from "../../../assets/logo/bluon-logo-secondary.svg";
 import hamburgerIconPrimary from "../../../assets/icons/hamburger-primary.svg";
 import hamburgerIconSecondary from "../../../assets/icons/hamburger-secondary.svg";
 import { options, subMenuOptions } from "../../../data/header/options";
-
 import "./_header.scss";
 import HamburgerIcon from "../HamburgerIcon/HamburgerIcon";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
@@ -20,6 +19,7 @@ const Header = () => {
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const [isApp, setIsApp] = useState(false);
   const [isAds, setIsAds] = useState(false); 
+  const [isCon, setIsCon] = useState(false); 
   const location = useLocation();
   const isOpen = open ? "" : "displayNone";
   const subMenuButtonLabel = "More";
@@ -27,6 +27,9 @@ const Header = () => {
   useEffect(() => {
     setIsApp(location.pathname === "/App");
     setIsAds(location.pathname === '/HVAC-APP-LP3');
+    if(location.pathname == '/Contact'){
+      setIsApp(location.pathname === '/Contact');
+    }
   }, [location]);
 
   const isHeaderOpen = () => {
@@ -34,14 +37,14 @@ const Header = () => {
   };
 
   const getLogo = () => {
-    return (isApp || isAds) && !open ? bluonLogoSecondary : bluonLogo;
+    return (isApp || isAds || isCon) && !open ? bluonLogoSecondary : bluonLogo;
   };
   const getColor = () => {
-    return isApp || isAds ? '-white' : '';
+    return (isApp || isAds || isCon) ? '-white' : '';
   };
 
   const getHamburgerIcon = () => {
-    return (isApp || isAds) && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
+    return (isApp || isAds || isCon) && !open ? hamburgerIconSecondary : hamburgerIconPrimary;
   };
 
   const resetOpen = () => {
@@ -50,7 +53,7 @@ const Header = () => {
   };
 
   return (
-    <div className="head-wrapper">
+    <div className={`head-wrapper${getColor()}`}>
       <div className={`header ${isHeaderOpen()}`}>
         <div className="header-container">
           <Link to={'/'}>
@@ -89,7 +92,7 @@ const Header = () => {
           </Link>
           <div className="desktop-header-nav-wrapper">
             <div className="desktop-header-nav">
-              <NavBar primary={isApp}/>
+              <NavBar />
             </div>
             <div className={`desktop-header-blive${getColor()}`}>
                 Looking for BluonLive? <a href="https://bluonlive.com/" className="nav-login">Login here</a>

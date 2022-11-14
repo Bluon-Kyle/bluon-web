@@ -5,15 +5,17 @@ import { useEffect, useState } from 'react';
 const Dropdown = ({submenus, dropdown}) => {
   const [isApp, setIsApp] = useState(false);
   const [isAds, setIsAds] = useState(false);
+  const [isCon, setIsCon] = useState(false);
   const location = useLocation();
 
 
   useEffect(() => {
     setIsApp(location.pathname === "/App");
     setIsAds(location.pathname === '/HVAC-APP-LP3');
+    setIsCon(location.pathname === '/Contact');
   }, [location]);
   const getColor = () => {
-    return isApp || isAds ? '-white' : '';
+    return (isApp || isAds || isCon) ? '-white' : '';
   };
   return (
     <ul className={`dropdown ${dropdown ? "show" : ""}`}>

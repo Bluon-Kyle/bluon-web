@@ -3,6 +3,7 @@ import ScrollToSection from '../../../../components/common/scroll/ScrollToSectio
 import './_teamdropdown.scss'
 // import Luminance from '../../../../assets/animations/text/luminance2/Luminance';
 // import RotateBoarder from '../../../../assets/animations/text/rotate/RotateBorder'
+import arrow from '../../../../assets/icons/arrow-down-collapsible.svg'
 const TeamDropdown = () => {
     const [open, setOpen] = React.useState(false);
 
@@ -15,8 +16,10 @@ const TeamDropdown = () => {
   
     return (
       <div className="team-dropdown">
-        <div className='team-dropdown-box' onClick={handleOpen}>
-            <h4 className=''>Select a Team</h4>
+        <div className='team-dropdown-box box glowing' onClick={handleOpen}>
+            <h4 className=''>Select a Team
+            </h4>
+            <img src={arrow} alt='dropdown-arrow'/>
             {/* <Luminance text="Select a Team"/> */}
         </div>
         {open ? (

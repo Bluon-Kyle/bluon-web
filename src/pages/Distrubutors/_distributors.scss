@@ -15,15 +15,17 @@
 
     &-text {
       padding-top: 2.5rem;
-      //padding-left: 2.6rem;
+      
       padding-bottom: 2.5rem;
       //width: 80%;
       text-align: center;
       h2 {
         font-size: 2rem;
+        @include padding-side(.5rem);
       }
       p {
-        font-size: 1.8vh;
+        font-size: 1.1rem;
+        @include padding-side(.5rem);
         //width: 90%;
         //padding-left: 1rem;
       }
@@ -170,39 +172,46 @@
     &-top{
       &-text{
         h2{
-          font-size: 3.5rem;
+          font-size: 3.2rem;
           padding-bottom:1rem; 
-
+          @include padding-side(.5rem);
+        }
+        p{
+          font-size: 1.5rem;
+          padding-bottom:0; 
         }
         
+      }
+      &-signup{
+        padding:0; 
       }
     }
     &-bluon-live{
       &-demo{
         //display:flex; 
         .distributors-blive-content{
-          display:flex; 
+          //display:flex; 
           justify-content: center;
           align-items: center;
         
           
         }
-        &-mobile{
-          display:none; 
-        }
-        &-desktop{
-          display:flex;
-          flex-direction: column; 
-          // img{
-          // }
-        }
+        // &-mobile{
+        //   display:none; 
+        // }
+        // &-desktop{
+        //   display:flex;
+        //   flex-direction: column; 
+        //   // img{
+        //   // }
+        // }
         img{
           max-width: 200px;
         }
         &-search{
 
           .blive-search-content{
-            display:flex;
+            //display:flex;
             justify-content: center;
             align-items: center;
             &-mobile{
@@ -215,11 +224,21 @@
             //   display:flex; 
             //   flex-direction: column;
             // }
-            // img{
-            //   max-width: 200px;
-            // }
+            img{
+              max-width: 200px;
+            }
           }
 
+        }
+      }
+    }
+    &-impact{
+      &-text{
+        h2{
+          font-size: 3rem;
+        }
+        h3{
+          font-size: 1.7rem;
         }
       }
     }
@@ -272,18 +291,41 @@
         }
       }
     }
+    &-bluon-live{
+      &-demo{
+        &-desktop{
+          display:flex; 
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+          .desktop-inner{
+            padding-top:5.5rem;
+          }
+        }
+      }
+      &-demo-search{
+        display: flex;
+        justify-content: space-around;
+        .blive-search-content{
+
+        }
+      }
+    }
     &-impact{
       display:flex; 
       align-items:flex-start;
       justify-content: space-around;
-      padding-top: 8vh;
-      padding-bottom: 0;
+      padding-top: 7vh;
+      padding-bottom: 7vh;
       margin-bottom: 0;
       &-text{
         padding-left:3vw;
-        padding-top: 3vh;
+        //padding-top: 1rem;
         h2{
-          font-size: 3rem;
+          font-size: 2.8rem;
+        }
+        h3{
+          font-size: 1.5rem;
         }
       }
       &-map{

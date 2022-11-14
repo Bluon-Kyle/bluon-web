@@ -7,9 +7,10 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Bluon has your back! Innovating the HVAC industry."
+      content="Bluon has your back! Upgrading, innovating and optimizing the HVAC Industry, connecting technicians to parts faster than ever! Heating, air conditioning, bluon app, hvac app, hvac"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="author" content="Bluon Inc">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,11 +41,15 @@
       type="text/javascript"
       src="//js.hsforms.net/forms/v2.js"
     ></script>
-
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6885872.js">
+    </script>
     <title>Bluon</title>
+    <script>
+      {{require_js(get_asset_url('//js.hs-scripts.com/6885872.js') )}}
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Welcome to Bluon.com! Make sure to enable javascript to see all our content!</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
