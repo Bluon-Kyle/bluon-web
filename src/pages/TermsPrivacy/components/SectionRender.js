@@ -15,7 +15,7 @@ const SectionRender = ({page,
                 {content ?
                      <p className='inner-content'>
                         {content}</p>:
-                    <br></br>
+                    <></>
                 }
             </div>
             {list1 ?
@@ -27,7 +27,7 @@ const SectionRender = ({page,
                         </li>
                         )
                     })}
-                </ul>:<br></br>
+                </ul>:<></>
             }
             {inner1 ?
             <div className='section-content-p'>{inner1.map((p, index)=> {
@@ -47,7 +47,7 @@ const SectionRender = ({page,
                         </li>
                         )
                     })}
-                </ul>:<br></br>
+                </ul>:<></>
             }
             {inner2 ?
             <div className='section-content-p'>{inner2.map((p, index)=> {
@@ -56,8 +56,7 @@ const SectionRender = ({page,
                         {p}
                     </p>
                 )
-            })}</div>:
-            <></>}
+            })}</div>:''}
             {list3 ?
                 <ul>
                     {list3.map((menu, index) => {
@@ -108,7 +107,7 @@ const SectionRender = ({page,
                         </p>
                     )
                 })}</>:
-                <br></br>}
+                <></>}
                 <div>{content2} </div>
             </div>
             {list ?
@@ -120,7 +119,7 @@ const SectionRender = ({page,
                         </li>
                         )
                     })}
-                </ul>:<br></br>
+                </ul>:<></>
             }
             {numberedList ?
                 <ul className='numbered'>
@@ -131,7 +130,7 @@ const SectionRender = ({page,
                         </li>
                         )
                     })}
-                </ul>:<br></br>
+                </ul>:<></>
             }
             
                 {content_bottom ?
@@ -142,7 +141,7 @@ const SectionRender = ({page,
                         </p>
                     )
                 })}</div>:
-                <br></br>}
+                <></>}
         </div>
     )}
 }

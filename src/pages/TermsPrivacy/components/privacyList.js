@@ -48,8 +48,7 @@ export const privacyList = [
         ],
         list2:[
             "Directly from you when you provide it to us",
-            "Automatically as you navigate through the site, such as usage details, IP addresses, and information collected through cookies."
-
+            "Automatically as you navigate through the site, such as usage details, IP addresses, and information collected through cookies.",
         ]
     },
     {
@@ -91,7 +90,6 @@ export const privacyList = [
             "Cookies (or browser cookies). A cookie is a small file placed on the hard drive of your computer. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting, you may be unable to access certain parts of our Mobile App. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our Mobile App.",
             "Flash Cookies. Certain features of our Mobile App may use local stored objects (or Flash cookies) to collect and store information about your preferences and navigation to, from, and on our Mobile App. Flash cookies are not managed by the same browser settings as are used for browser cookies.",
             "Web Beacons. Pages of our Mobile App may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, tracking pixels, advertising pixels, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or and for other related Mobile App statistics (for example, recording the popularity of certain Mobile App content and verifying system and server integrity).",
-
         ]
     },
     {
@@ -159,9 +157,10 @@ export const privacyList = [
     {
         title:'10. Data Security',
         inner1:[
-            `We have implemented reasonable measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. All information you provide to us is stored on our secure servers behind firewalls. Unfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to our Mobile App. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Mobile App.`,
-            `The safety and security of your information also depends on you. Where we have given you (or where you have chosen) a password for access to certain parts of our Mobile App, you are responsible for keeping this password confidential. We ask you not to share your password with anyone. We urge you to be careful about giving out information in public areas of the Mobile App like message boards. The information you share in public areas may be viewed by any user of the Mobile App.`
-        ]
+            'We have implemented reasonable measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure. All information you provide to us is stored on our secure servers behind firewalls. Unfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to our Mobile App. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Mobile App.',
+            'The safety and security of your information also depends on you. Where we have given you (or where you have chosen) a password for access to certain parts of our Mobile App, you are responsible for keeping this password confidential. We ask you not to share your password with anyone. We urge you to be careful about giving out information in public areas of the Mobile App like message boards. The information you share in public areas may be viewed by any user of the Mobile App.',
+        ],
+        inner2: false
     },
     {
         title:'11. Changes to Our Privacy Policy',

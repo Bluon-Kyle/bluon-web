@@ -19,8 +19,8 @@
     line-height: 25px;
 }
 @mixin padding {
-    padding-left: 1.5rem;
-    padding-right: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
 }
 
 .terms{
@@ -29,6 +29,7 @@
             @include padding; 
             h2{
                 @include title; 
+                padding-top:3rem; 
             }
             p{
                 padding-top: 1rem;
@@ -52,7 +53,7 @@
                 letter-spacing: -0.02em;
                 font-feature-settings: 'pnum' on, 'lnum' on;
                 //padding-bottom: 1.5rem;
-                //padding-top:1rem;
+                padding-top:1rem;
                 .big-t{
                     @include title; 
                     //padding-bottom: 1.5rem;

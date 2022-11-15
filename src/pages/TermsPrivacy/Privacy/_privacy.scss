@@ -29,10 +29,11 @@
             @include padding; 
             h2{
                 @include title; 
+                padding-top:3rem; 
             }
             p{
                 padding-top: 1rem;
-                padding-bottom: 4rem;
+                padding-bottom: 2rem;
                 font-size: 1rem;
                 font-weight: 300;
                 color:grey; 
@@ -46,6 +47,7 @@
             @include padding;
             // line-height: 4.5vh;
             // width: 100%;
+            padding-bottom: 0;
             &-title{
                 
                 font-weight: 700;
@@ -54,14 +56,16 @@
                 letter-spacing: -0.02em;
                 font-feature-settings: 'pnum' on, 'lnum' on;
                 //padding-bottom: 1.5rem;
-                //padding-top:1rem;
+                padding-top:1rem;
 
                 h2{
                     @include title-small;
                 }
             }
             &-p{
-                @include ptext;
+                //@include ptext;
+                //height:100%; 
+                @include ptext; 
                 .inner-content{
                     //padding-bottom: 2rem;
                     //padding-top:2rem; 
